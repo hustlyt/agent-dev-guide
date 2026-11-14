@@ -20,7 +20,7 @@
   "label": "P2",
   "weeks": "第 3–4 周",
   "title": "从零手写 Agent Harness（核心阶段）",
-  "summary": "核心阶段：工具、权限、hooks、子代理、上下文压缩，自己搭一个 coding agent",
+  "summary": "核心阶段：工具、权限、hooks、子代理、上下文压缩，自己搭一个 coding agent；学完 P0–P2 即算入门",
   "goal": "一个能读写文件、跑 shell、需要确认才执行危险命令、会压缩上下文的命令行 coding agent。"
  },
  {
@@ -67,7 +67,7 @@
   "id": "p8",
   "label": "P8",
   "weeks": "第 12 周",
-  "title": "进阶：Agentic RL 与前沿",
+  "title": "进阶：Agentic RL 与前沿（选修）",
   "summary": "SFT → GRPO 训练智能体，跟读前沿论文",
   "goal": "读懂并复现一篇 agent 训练论文的小规模实验。"
  }

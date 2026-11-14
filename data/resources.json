@@ -2281,6 +2281,145 @@
    "status": "ok",
    "last_checked": null,
    "fail_count": 0
+  },
+  {
+   "extra_links": [
+    {
+     "label": "OpenAI Function calling",
+     "url": "https://platform.openai.com/docs/guides/function-calling"
+    },
+    {
+     "label": "OpenAI Structured outputs",
+     "url": "https://platform.openai.com/docs/guides/structured-outputs"
+    }
+   ],
+   "github": null,
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "claude-tool-use-docs",
+   "title": "Claude Tool Use 文档",
+   "url": "https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview",
+   "category": "official-sdk",
+   "type": "official",
+   "format": "docs",
+   "lang": "英文",
+   "score": 8,
+   "desc": "工具调用的一手文档：客户端/服务端工具、tool_result 回填、并行调用；对照 OpenAI 写法"
+  },
+  {
+   "extra_links": [],
+   "github": "langchain-ai/rag-from-scratch",
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "langchain-ai-rag-from-scratch",
+   "title": "langchain-ai/rag-from-scratch",
+   "url": "https://github.com/langchain-ai/rag-from-scratch",
+   "category": "from-scratch",
+   "type": "official",
+   "format": "repo",
+   "lang": "英文",
+   "score": 8,
+   "desc": "notebook + 视频从零讲 RAG：索引、检索、查询改写、路由、重排，Agentic RAG 的前置基础"
+  },
+  {
+   "extra_links": [
+    {
+     "label": "续篇：A Field Guide to Rapidly Improving AI Products",
+     "url": "https://hamel.dev/blog/posts/field-guide/"
+    }
+   ],
+   "github": null,
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "hamel-evals",
+   "title": "Hamel Husain · Your AI Product Needs Evals",
+   "url": "https://hamel.dev/blog/posts/evals/",
+   "category": "production",
+   "type": "community",
+   "format": "article",
+   "lang": "英文",
+   "score": 9,
+   "desc": "一线顾问的评估方法论：误差分析先于工具、数据查看器、断言+LLM 评审分层，配真实案例"
+  },
+  {
+   "extra_links": [],
+   "github": null,
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "simonwillison-lethal-trifecta",
+   "title": "The lethal trifecta for AI agents",
+   "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+   "category": "articles",
+   "type": "community",
+   "format": "article",
+   "lang": "英文",
+   "score": 8,
+   "desc": "私有数据 + 不可信内容 + 对外通信三者同时具备就会被提示注入窃取数据；agent 安全第一课"
+  },
+  {
+   "extra_links": [],
+   "github": null,
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "owasp-agentic-top-10-2026",
+   "title": "OWASP Top 10 for Agentic Applications 2026",
+   "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+   "category": "production",
+   "type": "official",
+   "format": "docs",
+   "lang": "英文",
+   "score": 8,
+   "desc": "100+ 专家评审的 agent 十大安全风险与缓解措施，做安全检查清单用"
+  },
+  {
+   "extra_links": [
+    {
+     "label": "LangGraph Persistence（checkpointer 与 store）",
+     "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution"
+    }
+   ],
+   "github": null,
+   "note": "Temporal 官方博客，带产品倾向",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "id": "temporal-dynamic-ai-agents",
+   "title": "Of course you can build dynamic AI agents with Temporal",
+   "url": "https://temporal.io/blog/of-course-you-can-build-dynamic-ai-agents-with-temporal",
+   "category": "production",
+   "type": "official",
+   "format": "article",
+   "lang": "英文",
+   "score": 7,
+   "desc": "持久化执行讲清楚：LLM/工具调用放 Activity，崩溃后重放历史续跑，不重复调用模型"
   }
  ]
 }

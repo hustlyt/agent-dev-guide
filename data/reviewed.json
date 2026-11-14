@@ -1804,5 +1804,41 @@
   "decision": "reject",
   "score": 5,
   "reason": "Transformer 单页交互导读，超出 agent 开发范围"
+ },
+ "docs.claude.com/en/docs/agents-and-tools/tool-use/overview": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "路线查缺补漏：P0 缺官方工具调用文档"
+ },
+ "github.com/langchain-ai/rag-from-scratch": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "路线查缺补漏：补 P4 RAG 基础"
+ },
+ "hamel.dev/blog/posts/evals": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 9,
+  "reason": "路线查缺补漏：误差分析实操，库内无同类"
+ },
+ "simonwillison.net/2025/Jun/16/the-lethal-trifecta": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "路线查缺补漏：提示注入核心概念，补 P6 安全"
+ },
+ "genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "路线查缺补漏：同行评审的 agent 安全清单"
+ },
+ "temporal.io/blog/of-course-you-can-build-dynamic-ai-agents-with-temporal": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "路线查缺补漏：补 P7 持久化执行；厂商博客，降 1 分"
  }
 }

@@ -101,6 +101,7 @@ li.del{color:var(--muted);text-decoration:line-through}
 .side a.on{background:var(--chip);color:var(--fg);font-weight:600} .side a:hover{text-decoration:none;background:var(--chip)}
 .side .back{font-weight:700;color:var(--fg);margin-bottom:6px}
 .phasepage h2{font-size:18px;border:none;margin:28px 0 6px;padding:0}
+.phasepage h3{font-size:15px;margin:18px 0 2px;color:var(--muted)} .phasepage h3+ul{margin-top:4px}
 .phasepage ul{padding-left:20px} .phasepage li{margin:8px 0}
 .crumb{font-size:13px;color:var(--muted);margin:0 0 4px}
 .goal.big{background:var(--chip);border-radius:8px;padding:12px 16px;margin-top:24px;font-size:15px}
@@ -125,11 +126,17 @@ li.del{color:var(--muted);text-decoration:line-through}
 <body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
 <nav><a href="index.html">首页</a><a href="path.html" class=on>学习路线</a><a href="resources.html">资料库</a><a href="capstone.html">毕业项目</a><a href="tips.html">学习建议</a><a href="changelog.html">更新日志</a></nav></div></div>
 <div class="wrap">
-<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a><a href="phase-p0.html"><b>P0</b> LLM API 与工具调用基础</a><a href="phase-p1.html"><b>P1</b> Agent 原理与经典范式</a><a href="phase-p2.html"><b>P2</b> 从零手写 Agent Harness（核心阶段）</a><a href="phase-p3.html" class=on><b>P3</b> 主流框架与 SDK</a><a href="phase-p4.html"><b>P4</b> 上下文工程、记忆、RAG 与协议</a><a href="phase-p5.html"><b>P5</b> 多智能体系统</a><a href="phase-p6.html"><b>P6</b> 评估、可观测性与安全</a><a href="phase-p7.html"><b>P7</b> 生产部署</a><a href="phase-p8.html"><b>P8</b> 进阶：Agentic RL 与前沿</a></aside><article class="phasepage"><p class="crumb">P3 · 第 5–6 周</p><h1>主流框架与 SDK</h1><p class="lead">LangGraph 与各家 SDK，弄清框架替你做了什么、藏了什么</p><h2>要读什么</h2><ul>
-      <li>Hello-Agents 第 5–7 章：Coze / Dify / n8n 低代码，AutoGen / AgentScope / LangGraph，自研 HelloAgents 框架</li>
+<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a><a href="phase-p0.html"><b>P0</b> LLM API 与工具调用基础</a><a href="phase-p1.html"><b>P1</b> Agent 原理与经典范式</a><a href="phase-p2.html"><b>P2</b> 从零手写 Agent Harness（核心阶段）</a><a href="phase-p3.html" class=on><b>P3</b> 主流框架与 SDK</a><a href="phase-p4.html"><b>P4</b> 上下文工程、记忆、RAG 与协议</a><a href="phase-p5.html"><b>P5</b> 多智能体系统</a><a href="phase-p6.html"><b>P6</b> 评估、可观测性与安全</a><a href="phase-p7.html"><b>P7</b> 生产部署</a><a href="phase-p8.html"><b>P8</b> 进阶：Agentic RL 与前沿（选修）</a></aside><article class="phasepage"><p class="crumb">P3 · 第 5–6 周</p><h1>主流框架与 SDK</h1><p class="lead">LangGraph 与各家 SDK，弄清框架替你做了什么、藏了什么</p><h2>要读什么</h2><h3>必做</h3>
+<ul>
       <li><a href="https://github.com/langchain-ai/langchain-academy">LangChain Academy</a> module 0–6（LangGraph 状态图、持久化、人在回路）</li>
-      <li>选 1–2 个 SDK 深入：<a href="https://openai.github.io/openai-agents-python/">OpenAI Agents SDK</a> · <a href="https://code.claude.com/docs/en/agent-sdk/overview">Claude Agent SDK</a> · <a href="https://adk.dev/">Google ADK</a> · <a href="https://github.com/pydantic/pydantic-ai">Pydantic AI</a> · <a href="https://github.com/huggingface/smolagents">smolagents</a></li>
+      <li>再选 1 个 SDK 深入：<a href="https://openai.github.io/openai-agents-python/">OpenAI Agents SDK</a> · <a href="https://code.claude.com/docs/en/agent-sdk/overview">Claude Agent SDK</a> · <a href="https://adk.dev/">Google ADK</a> · <a href="https://github.com/pydantic/pydantic-ai">Pydantic AI</a> · <a href="https://github.com/huggingface/smolagents">smolagents</a></li>
+    </ul>
+<h3>选读</h3>
+<ul>
+      <li>Hello-Agents 第 5–7 章：Coze / Dify / n8n 低代码，AutoGen / AgentScope / LangGraph，自研 HelloAgents 框架</li>
       <li>横向对比：<a href="https://huggingface.co/learn/agents-course">HF Agents Course</a> Unit 2（smolagents / LlamaIndex / LangGraph 同一问题三种写法）</li>
+      <li>TypeScript 栈：<a href="https://github.com/vercel/ai">Vercel AI SDK</a> 或 <a href="https://github.com/mastra-ai/mastra">Mastra</a></li>
+      <li>看清框架的最小骨架：<a href="https://github.com/The-Pocket/PocketFlow">PocketFlow</a>（100 行）</li>
     </ul>
 <div class="goal big">✔ 学完应做出：把 P2 的 agent 用一个框架重写，写一页笔记对比“框架帮你做了什么、藏了什么”。</div><nav class="pn"><a href="phase-p2.html">← P2 从零手写 Agent Harness（核心阶段）</a><a href="phase-p4.html">P4 上下文工程、记忆、RAG 与协议 →</a></nav></article></div>
 <footer>最近更新：2026-11-15 · 每周一自动检索新资料、核对链接、审核后发布 ·

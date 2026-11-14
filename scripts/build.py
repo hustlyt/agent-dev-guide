@@ -314,7 +314,8 @@ def main() -> int:
 
     path_body = ('<header class="pagehead"><h1>12 周学习路线</h1><p class="lead">每周约 8–10 小时；'
                  '有 Python 和 LLM API 基础可压缩到 8 周。每个阶段给出要读的材料和学完后应该做出的东西。'
-                 '按顺序走，不要囤教程。</p></header>' + phase_cards(True)
+                 '按顺序走，不要囤教程。每个阶段先做完“必做”，“选读”按需挑。P0–P2（约 4 周）学完即算入门，'
+                 'P3–P7 是进阶，P8 选修。</p></header>' + phase_cards(True)
                  + '<p class="note">想找某个主题的更多材料，去<a href="resources.html">资料库</a>搜索。</p>')
     write("path.html", f"学习路线 · {TITLE}", path_body, "path")
 

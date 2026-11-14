@@ -101,6 +101,7 @@ li.del{color:var(--muted);text-decoration:line-through}
 .side a.on{background:var(--chip);color:var(--fg);font-weight:600} .side a:hover{text-decoration:none;background:var(--chip)}
 .side .back{font-weight:700;color:var(--fg);margin-bottom:6px}
 .phasepage h2{font-size:18px;border:none;margin:28px 0 6px;padding:0}
+.phasepage h3{font-size:15px;margin:18px 0 2px;color:var(--muted)} .phasepage h3+ul{margin-top:4px}
 .phasepage ul{padding-left:20px} .phasepage li{margin:8px 0}
 .crumb{font-size:13px;color:var(--muted);margin:0 0 4px}
 .goal.big{background:var(--chip);border-radius:8px;padding:12px 16px;margin-top:24px;font-size:15px}
@@ -125,9 +126,14 @@ li.del{color:var(--muted);text-decoration:line-through}
 <body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
 <nav><a href="index.html">首页</a><a href="path.html" class=on>学习路线</a><a href="resources.html">资料库</a><a href="capstone.html">毕业项目</a><a href="tips.html">学习建议</a><a href="changelog.html">更新日志</a></nav></div></div>
 <div class="wrap">
-<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a><a href="phase-p0.html"><b>P0</b> LLM API 与工具调用基础</a><a href="phase-p1.html"><b>P1</b> Agent 原理与经典范式</a><a href="phase-p2.html"><b>P2</b> 从零手写 Agent Harness（核心阶段）</a><a href="phase-p3.html"><b>P3</b> 主流框架与 SDK</a><a href="phase-p4.html"><b>P4</b> 上下文工程、记忆、RAG 与协议</a><a href="phase-p5.html" class=on><b>P5</b> 多智能体系统</a><a href="phase-p6.html"><b>P6</b> 评估、可观测性与安全</a><a href="phase-p7.html"><b>P7</b> 生产部署</a><a href="phase-p8.html"><b>P8</b> 进阶：Agentic RL 与前沿</a></aside><article class="phasepage"><p class="crumb">P5 · 第 8 周</p><h1>多智能体系统</h1><p class="lead">什么时候该拆多智能体、怎么拆，正反两面的工程经验</p><h2>要读什么</h2><ul>
-      <li>正反两面一起读：<a href="https://www.anthropic.com/research/multi-agent-research-system">Anthropic · How we built our multi-agent research system</a> 与 <a href="https://cognition.com/blog/dont-build-multi-agents">Cognition · Don't Build Multi-Agents</a>，再读它的续篇 <a href="https://cognition.com/blog/multi-agents-working">Multi-Agents: What's Actually Working</a>（结论：多个 agent 贡献智能，写操作保持单线程）</li>
-      <li>Hello-Agents 第 14 章（DeepResearch 复现）、第 15 章（赛博小镇）</li>
+<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a><a href="phase-p0.html"><b>P0</b> LLM API 与工具调用基础</a><a href="phase-p1.html"><b>P1</b> Agent 原理与经典范式</a><a href="phase-p2.html"><b>P2</b> 从零手写 Agent Harness（核心阶段）</a><a href="phase-p3.html"><b>P3</b> 主流框架与 SDK</a><a href="phase-p4.html"><b>P4</b> 上下文工程、记忆、RAG 与协议</a><a href="phase-p5.html" class=on><b>P5</b> 多智能体系统</a><a href="phase-p6.html"><b>P6</b> 评估、可观测性与安全</a><a href="phase-p7.html"><b>P7</b> 生产部署</a><a href="phase-p8.html"><b>P8</b> 进阶：Agentic RL 与前沿（选修）</a></aside><article class="phasepage"><p class="crumb">P5 · 第 8 周</p><h1>多智能体系统</h1><p class="lead">什么时候该拆多智能体、怎么拆，正反两面的工程经验</p><h2>要读什么</h2><h3>必做</h3>
+<ul>
+      <li>正反两面一起读：<a href="https://www.anthropic.com/research/multi-agent-research-system">Anthropic · How we built our multi-agent research system</a> 与 <a href="https://cognition.com/blog/dont-build-multi-agents">Cognition · Don't Build Multi-Agents</a>，再读续篇 <a href="https://cognition.com/blog/multi-agents-working">Multi-Agents: What's Actually Working</a>（结论：多个 agent 贡献智能，写操作保持单线程）</li>
+      <li>Hello-Agents 第 14 章（DeepResearch 复现）</li>
+    </ul>
+<h3>选读</h3>
+<ul>
+      <li>Hello-Agents 第 15 章（赛博小镇）</li>
       <li><a href="https://github.com/datawhalechina/handy-multi-agent">handy-multi-agent</a>（基于 CAMEL 的中文多智能体教程）</li>
       <li>框架：<a href="https://github.com/crewAIInc/crewAI">CrewAI</a>、<a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a>、<a href="https://github.com/openai/swarm">OpenAI Swarm</a>（教学用，看 handoff 设计）</li>
     </ul>
