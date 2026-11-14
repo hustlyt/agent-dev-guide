@@ -1,6 +1,26 @@
 [
  {
   "date": "2026-11-15",
+  "summary": "tools 类补充 5 个：Smithery（MCP 注册表）、mcp.so（MCP 目录）、skill-of-skills（Skills 排名引擎）、awesome-ai-agent-tools（机器可读工具目录）、Agentic-Index（评分排名 agent 工具）",
+  "stats": {
+   "候选": 8,
+   "审核": 8,
+   "新增": 5,
+   "移除": 0
+  },
+  "added": [
+   "smithery-ai",
+   "mcp-so",
+   "the911fund-skill-of-skills",
+   "tonydzi-awesome-ai-agent-tools",
+   "adrianwedd-agentic-index"
+  ],
+  "changed": [],
+  "removed": [],
+  "guide_changes": []
+ },
+ {
+  "date": "2026-11-15",
   "summary": "新增「工具与辅助网站」分类，收录 5 个辅助学习 Agent 的工具站",
   "stats": {
    "候选": 5,

@@ -1894,5 +1894,53 @@
   "decision": "accept",
   "score": 7,
   "reason": "版本 diff 视图，badlogic 有一手经验"
+ },
+ "smithery.ai": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "最主流 MCP 注册表，使用量排名+社区投票"
+ },
+ "mcp.so": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "社区 MCP 目录 2.3 万+条，多语言"
+ },
+ "github.com/the911fund/skill-of-skills": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "跨 agent skills/MCP 质量排名工具"
+ },
+ "github.com/tonydzi/awesome-ai-agent-tools": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "644 条机器可读 agent 工具目录"
+ },
+ "github.com/adrianwedd/Agentic-Index": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "评分排名 agent 工具目录，每周刷新"
+ },
+ "opentools.ai": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 6,
+  "reason": "偏泛用工具导航，agent dev 针对性不足"
+ },
+ "github.com/itgoyo/awesome-agent-skills": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 6,
+  "reason": "维护频率和深度一般"
+ },
+ "agentops.ai": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 7,
+  "reason": "本轮未选入，留待下次评估 production 类空缺时"
  }
 }
