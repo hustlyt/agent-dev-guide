@@ -126,7 +126,7 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
                                r["lang"], TYPES[r["type"]], FORMATS[r["format"]]]).lower()
             rows.append(
                 f'<tr data-t="{r["type"]}" data-f="{r["format"]}" data-zh="{int("中文" in r["lang"])}" '
-                f'data-new="{int(isnew)}" data-c="{c["id"]}" data-s="{e(search)}">'
+                f'data-new="{int(isnew)}" data-c="{c["id"]}" data-sc="{r.get("score", 0)}" data-s="{e(search)}">'
                 f'<td><a href="{e(r["url"])}">{e(r["title"])}</a>{badge(r)}{new}{score_badge(r)}{extra}{note}</td>'
                 f'<td class="{tcls}">{TYPES[r["type"]]}<span class="fmt">{FORMATS[r["format"]]}</span></td>'
                 f'<td class="hide-sm">{e(r["lang"])}</td>'
@@ -146,6 +146,7 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
     <button data-k="f:article">文章</button><button data-k="f:video">视频</button>
     <button data-k="f:paper">论文</button><button data-k="f:course">课程</button>
     <button data-k="zh">只看中文</button><button data-k="new">最近新增</button>
+    <button data-k="sc:9">★★★ 顶级</button><button data-k="sc:8">★★☆ 推荐+</button><button data-k="sc:7">★☆☆ 收录+</button>
   </div>
   <details class="catbox"><summary>按分类</summary><div class="filters" id="catfilters">{chips}</div></details>
   <p class="note" id="count" aria-live="polite"></p>
@@ -206,7 +207,9 @@ SEARCH_JS = r"""
     if(key==='all') return true;
     if(key==='zh') return r.dataset.zh==='1';
     if(key==='new') return r.dataset.new==='1';
-    const [k,v]=key.split(':'); return r.dataset[k]===v;
+    const [k,v]=key.split(':');
+    if(k==='sc') return parseInt(r.dataset.sc||0)>=parseInt(v);
+    return r.dataset[k]===v;
   }
   function apply(){
     const words=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
