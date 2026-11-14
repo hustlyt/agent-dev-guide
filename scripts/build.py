@@ -408,7 +408,6 @@ def main() -> int:
                + '</nav>')
     p0_content = rd("phases/" + path_p0["id"] + ".html")
     path_body = (f'<div class="layout"><aside class="side">'
-                 f'<p class="side-intro">9 个阶段，每周 8–10 小时。P0–P2 学完即算入门，P3–P7 进阶，P8 选修。</p>'
                  f'{path_side}</aside>'
                  f'<article class="phasepage"><p class="crumb">{path_p0["label"]} · {path_p0["weeks"]}</p>'
                  f'<h1>{e(path_p0["title"])}</h1><p class="lead">{e(path_p0["summary"])}</p>'
