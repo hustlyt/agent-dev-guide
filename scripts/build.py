@@ -99,7 +99,7 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
         if not items:
             continue
         items.sort(key=lambda r: (not r.get("pick"), -(r.get("stars") or 0)))
-        rows.append(f'<tr class="cat"><td colspan="5">{e(c["name"])}'
+        rows.append(f'<tr class="cat" data-c="{c["id"]}"><td colspan="5">{e(c["name"])}'
                     f'<span class="cnt">{len(items)}</span></td></tr>')
         for r in items:
             extra = "".join(f' · <a href="{e(x["url"])}">{e(x["label"])}</a>' for x in r.get("extra_links", []))
@@ -111,33 +111,37 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
                                r["lang"], TYPES[r["type"]], FORMATS[r["format"]]]).lower()
             rows.append(
                 f'<tr data-t="{r["type"]}" data-f="{r["format"]}" data-zh="{int("中文" in r["lang"])}" '
-                f'data-new="{int(isnew)}" data-s="{e(search)}">'
+                f'data-new="{int(isnew)}" data-c="{c["id"]}" data-s="{e(search)}">'
                 f'<td><a href="{e(r["url"])}">{e(r["title"])}</a>{badge(r)}{new}{extra}{note}</td>'
                 f'<td class="{tcls}">{TYPES[r["type"]]}<span class="fmt">{FORMATS[r["format"]]}</span></td>'
                 f'<td class="hide-sm">{e(r["lang"])}</td>'
                 f'<td class="n">{stars(r.get("stars"))}</td>'
                 f'<td>{md_links(r["desc"])}</td></tr>')
     total = sum(1 for r in data["resources"] if r.get("status") != "removed")
-    return f'''<section id="refs">
-<h2>参考资料清单 <small>{total} 条 · 按类型、形式筛选或直接搜索</small></h2>
+    chips = "".join(f'<button data-k="c:{c["id"]}">{e(c["name"])}</button>' for c in cats
+                    if any(r["category"] == c["id"] for r in data["resources"]))
+    return f'''<header class="pagehead"><h1>资料库</h1>
+<p class="lead">{total} 条教程、课程、文档、文章、论文与视频，每周自动检索并经质量审核后更新。支持搜索标题、说明、仓库名，可叠加筛选。</p></header>
 <div class="toolbar">
-  <input id="q" type="search" placeholder="搜索标题、描述、仓库名…" aria-label="搜索资料">
-  <div class="filters" id="filters">
+  <input id="q" type="search" placeholder="搜索，例如：mcp、评估、中文、langgraph…" aria-label="搜索资料" autofocus>
+  <div class="filters" id="filters" data-group="main">
     <button class="on" data-k="all">全部</button>
     <button data-k="t:official">官方</button><button data-k="t:community">第三方</button>
     <button data-k="t:academic">学术</button><button data-k="t:ai">AI 生成</button>
     <button data-k="f:article">文章</button><button data-k="f:video">视频</button>
-    <button data-k="f:paper">论文</button><button data-k="zh">只看中文</button>
-    <button data-k="new">最近新增</button>
+    <button data-k="f:paper">论文</button><button data-k="f:course">课程</button>
+    <button data-k="zh">只看中文</button><button data-k="new">最近新增</button>
   </div>
+  <details class="catbox"><summary>按分类</summary><div class="filters" id="catfilters">{chips}</div></details>
+  <p class="note" id="count" aria-live="polite"></p>
 </div>
 <div class="tblwrap"><table class="tbl" id="reftbl">
 <thead><tr><th>资料</th><th>类型</th><th class="hide-sm">语言</th><th>★</th><th>说明</th></tr></thead>
 <tbody>
 {chr(10).join(rows)}
 </tbody></table></div>
-<p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。“久未更新”= 超过一年无提交；“链接失效”= 连续两次检查失败，下次更新时会被替换或移除。</p>
-</section>'''
+<p id="empty" class="empty" hidden>没有匹配的资料。换个关键词，或取消筛选。</p>
+<p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。“久未更新”= 超过一年无提交；“链接失效”= 连续两次检查失败，下次更新时会被替换或移除。</p>'''
 
 
 def changelog_html(log: list, by_id: dict) -> str:
@@ -171,49 +175,76 @@ def changelog_html(log: list, by_id: dict) -> str:
     return "\n".join(parts) or "<p>暂无记录。</p>"
 
 
-def page(title: str, body: str, active: str, updated: str) -> str:
+NAV = [("home", "index.html", "首页"), ("path", "path.html", "学习路线"), ("refs", "resources.html", "资料库"),
+       ("capstone", "capstone.html", "毕业项目"), ("tips", "tips.html", "学习建议"),
+       ("changelog", "changelog.html", "更新日志")]
+
+SEARCH_JS = r"""
+(function(){
+  const q=document.getElementById('q'); if(!q) return;
+  const rows=[...document.querySelectorAll('#reftbl tbody tr')];
+  const items=rows.filter(r=>!r.classList.contains('cat'));
+  const cnt=document.getElementById('count'), empty=document.getElementById('empty');
+  let key='all', cat='';
+  function ok(r){
+    if(cat && r.dataset.c!==cat) return false;
+    if(key==='all') return true;
+    if(key==='zh') return r.dataset.zh==='1';
+    if(key==='new') return r.dataset.new==='1';
+    const [k,v]=key.split(':'); return r.dataset[k]===v;
+  }
+  function apply(){
+    const words=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let n=0;
+    items.forEach(r=>{
+      const show=ok(r)&&words.every(w=>r.dataset.s.includes(w));
+      r.style.display=show?'':'none'; if(show) n++;
+    });
+    rows.forEach((r,i)=>{ if(!r.classList.contains('cat')) return; let j=i+1,any=false;
+      while(j<rows.length&&!rows[j].classList.contains('cat')){ if(rows[j].style.display!=='none') any=true; j++; }
+      r.style.display=any?'':'none';
+      const k=r.querySelector('.cnt'); if(k){ let m=0; for(let t=i+1;t<rows.length&&!rows[t].classList.contains('cat');t++) if(rows[t].style.display!=='none') m++; k.textContent=m; } });
+    cnt.textContent='显示 '+n+' / '+items.length+' 条';
+    empty.hidden=n>0;
+    const u=new URL(location); q.value?u.searchParams.set('q',q.value):u.searchParams.delete('q');
+    history.replaceState(null,'',u);
+  }
+  document.querySelectorAll('#filters button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); key=b.dataset.k; apply(); }));
+  const cb=[...document.querySelectorAll('#catfilters button')];
+  cb.forEach(b=>b.addEventListener('click',()=>{
+    const on=b.classList.contains('on'); cb.forEach(x=>x.classList.remove('on'));
+    cat=on?'':b.dataset.k.slice(2); if(!on) b.classList.add('on'); apply(); }));
+  q.addEventListener('input',apply);
+  document.addEventListener('keydown',ev=>{ if(ev.key==='/'&&document.activeElement!==q){ev.preventDefault();q.focus();} });
+  const init=new URL(location).searchParams.get('q'); if(init) q.value=init;
+  apply();
+})();
+"""
+
+
+def page(title: str, body: str, active: str, updated: str, desc: str = "") -> str:
     css = (CONTENT / "style.css").read_text(encoding="utf-8")
-    nav = "".join(
-        f'<a href="{href}"{" class=on" if key == active else ""}>{label}</a>'
-        for key, href, label in [("index", "index.html", "教程"), ("refs", "index.html#refs", "资料库"),
-                                 ("changelog", "changelog.html", "更新日志"), ("feed", "feed.xml", "RSS")])
+    nav = "".join(f'<a href="{href}"{" class=on" if key == active else ""}>{label}</a>'
+                  for key, href, label in NAV)
+    desc = desc or "AI Agent 开发深入学习路线与持续更新的资料库：官方教程、社区课程、工程文章、论文与视频。"
+    script = f"<script>{SEARCH_JS}</script>" if active == "refs" else ""
     return f'''<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
-<meta name="description" content="AI Agent 开发深入学习路线与持续更新的资料库：官方教程、社区课程、工程文章、论文与视频。">
+<meta name="description" content="{e(desc)}">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} 更新日志" href="feed.xml">
 <style>{css}</style></head>
 <body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
 <nav>{nav}</nav></div></div>
 <div class="wrap">
 {body}
-<footer>最近更新：{e(updated)} · 每周一自动检索新资料、核对链接并人工式审核后发布 ·
-<a href="changelog.html">更新日志</a> · <a href="{REPO_URL}">源码与数据</a></footer>
+<footer>最近更新：{e(updated)} · 每周一自动检索新资料、核对链接、审核后发布 ·
+<a href="changelog.html">更新日志</a> · <a href="feed.xml">RSS</a> · <a href="{REPO_URL}">源码与数据</a></footer>
 </div>
-<script>
-(function(){{
-  const q=document.getElementById('q'); if(!q) return;
-  const rows=[...document.querySelectorAll('#reftbl tbody tr')];
-  const btns=[...document.querySelectorAll('#filters button')]; let key='all';
-  function ok(r){{
-    if(key==='all') return true;
-    if(key==='zh') return r.dataset.zh==='1';
-    if(key==='new') return r.dataset.new==='1';
-    const [k,v]=key.split(':'); return r.dataset[k]===v;
-  }}
-  function apply(){{
-    const s=q.value.trim().toLowerCase();
-    rows.forEach(r=>{{ if(r.classList.contains('cat')) return;
-      r.style.display=(ok(r)&&(!s||r.dataset.s.includes(s)))?'':'none'; }});
-    rows.forEach((r,i)=>{{ if(!r.classList.contains('cat')) return; let j=i+1,any=false;
-      while(j<rows.length&&!rows[j].classList.contains('cat')){{ if(rows[j].style.display!=='none') any=true; j++; }}
-      r.style.display=any?'':'none'; }});
-  }}
-  btns.forEach(b=>b.addEventListener('click',()=>{{btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');key=b.dataset.k;apply();}}));
-  q.addEventListener('input',apply);
-}})();
-</script></body></html>
+{script}</body></html>
 '''
 
 
@@ -248,23 +279,73 @@ def main() -> int:
     # "new" = added in the latest 2 changelog entries, excluding the initial import
     new_ids = {x for entry in log[:2] if not entry.get("initial") for x in entry.get("added", []) if isinstance(x, str)}
 
-    guide = (CONTENT / "guide.html").read_text(encoding="utf-8")
+    phases = json.loads((CONTENT / "phases.json").read_text(encoding="utf-8"))
+    rd = lambda n: (CONTENT / n).read_text(encoding="utf-8")  # noqa: E731
+
+    def phase_cards(detail: bool) -> str:
+        out = []
+        for p in phases:
+            extra = (f'<p class="goal">产出：{p["goal"]}</p>' if detail else "")
+            out.append(f'<a class="pcard" href="phase-{p["id"]}.html"><span class="pno">{p["label"]}'
+                       f'<small>{p["weeks"]}</small></span><span><b>{e(p["title"])}</b>'
+                       f'<span class="ps">{e(p["summary"])}</span>{extra}</span></a>')
+        return '<div class="pgrid">' + "".join(out) + "</div>"
+
+    def write(name: str, title: str, body: str, active: str, desc: str = "") -> None:
+        (DOCS / name).write_text(page(title, body, active, updated, desc), encoding="utf-8")
+
     latest = ""
     if log:
         l0 = log[0]
         latest = (f'<p class="latest">最近一次更新 <a href="changelog.html#v{e(l0["date"])}">{e(l0["date"])}</a>：'
                   f'{e(l0["summary"])}</p>')
-    header = (CONTENT / "header.html").read_text(encoding="utf-8").replace("<!-- LATEST -->", latest)
-    body = header + guide.replace("<!-- RESOURCES -->", resource_table(data, new_ids))
+    header = rd("header.html").replace("<!-- LATEST -->", latest)
 
     if DOCS.exists():
         shutil.rmtree(DOCS)
     DOCS.mkdir()
-    (DOCS / "index.html").write_text(page(f"{TITLE}：学习路线与资料库", body, "index", updated), encoding="utf-8")
-    log_body = (f'<header><h1>更新日志</h1><p class="lead">每周一自动检索 GitHub、官方博客、技术社区、arXiv，'
+    total = sum(1 for r in data["resources"] if r.get("status") != "removed")
+    home = (header + rd("home.html")
+            + '<section id="roadmap"><h2>学习路线一览 <small>9 个阶段，点进去看每周要读什么、做什么</small></h2>'
+            + phase_cards(False) + '<p><a href="path.html">查看完整路线 →</a></p></section>'
+            + f'<section class="cta"><h2>资料库</h2><p>{total} 条精选教程、文章、论文与视频，支持搜索与筛选。'
+              '<a href="resources.html">打开资料库 →</a></p></section>')
+    write("index.html", f"{TITLE}：学习路线与资料库", home, "home")
+
+    path_body = ('<header class="pagehead"><h1>12 周学习路线</h1><p class="lead">每周约 8–10 小时；'
+                 '有 Python 和 LLM API 基础可压缩到 8 周。每个阶段给出要读的材料和学完后应该做出的东西。'
+                 '按顺序走，不要囤教程。</p></header>' + phase_cards(True)
+                 + '<p class="note">想找某个主题的更多材料，去<a href="resources.html">资料库</a>搜索。</p>')
+    write("path.html", f"学习路线 · {TITLE}", path_body, "path")
+
+    for i, p in enumerate(phases):
+        prev_ = phases[i - 1] if i else None
+        next_ = phases[i + 1] if i + 1 < len(phases) else None
+        side = "".join(f'<a href="phase-{q["id"]}.html"{" class=on" if q is p else ""}>'
+                       f'<b>{q["label"]}</b> {e(q["title"])}</a>' for q in phases)
+        pn = ('<nav class="pn">'
+              + (f'<a href="phase-{prev_["id"]}.html">← {prev_["label"]} {e(prev_["title"])}</a>' if prev_
+                 else '<a href="path.html">← 路线总览</a>')
+              + (f'<a href="phase-{next_["id"]}.html">{next_["label"]} {e(next_["title"])} →</a>' if next_
+                 else '<a href="capstone.html">毕业项目 →</a>') + '</nav>')
+        body = (f'<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a>{side}</aside>'
+                f'<article class="phasepage"><p class="crumb">{p["label"]} · {p["weeks"]}</p>'
+                f'<h1>{e(p["title"])}</h1><p class="lead">{e(p["summary"])}</p>'
+                f'<h2>要读什么</h2>{rd(f"phases/{p["id"]}.html")}'
+                f'<div class="goal big">✔ 学完应做出：{p["goal"]}</div>{pn}</article></div>')
+        write(f"phase-{p['id']}.html", f"{p['label']} {p['title']} · {TITLE}", body, "path", p["summary"])
+
+    write("resources.html", f"资料库 · {TITLE}", resource_table(data, new_ids), "refs",
+          f"{total} 条 AI Agent 教程、文档、文章、论文与视频，可搜索与筛选。")
+    write("capstone.html", f"毕业项目 · {TITLE}",
+          '<header class="pagehead"><h1>毕业项目建议</h1><p class="lead">选一个，把前面所有阶段串起来。</p></header>'
+          + rd("capstone.html"), "capstone")
+    write("tips.html", f"学习建议 · {TITLE}",
+          '<header class="pagehead"><h1>学习建议</h1></header>' + rd("tips.html"), "tips")
+    log_body = (f'<header class="pagehead"><h1>更新日志</h1><p class="lead">每周一自动检索 GitHub、官方博客、技术社区、arXiv，'
                 f'经质量审核后收录。也可以 <a href="feed.xml">订阅 RSS</a>。</p></header>'
                 + changelog_html(log, by_id))
-    (DOCS / "changelog.html").write_text(page(f"更新日志 · {TITLE}", log_body, "changelog", updated), encoding="utf-8")
+    write("changelog.html", f"更新日志 · {TITLE}", log_body, "changelog")
     (DOCS / "feed.xml").write_text(feed_xml(log, by_id), encoding="utf-8")
     pub = [{k: v for k, v in r.items() if k not in ("fail_count",)} for r in data["resources"]]
     (DOCS / "resources.json").write_text(json.dumps({"updated": updated, "categories": data["categories"],

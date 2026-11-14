@@ -1,0 +1,74 @@
+[
+ {
+  "id": "p0",
+  "label": "P0",
+  "weeks": "第 1 周",
+  "title": "LLM API 与工具调用基础",
+  "summary": "用 API 和工具调用跑通最小的 agent 往返",
+  "goal": "不用任何框架，手写一次“模型 → tool_call → 执行 → 回填结果 → 再调用”的往返。"
+ },
+ {
+  "id": "p1",
+  "label": "P1",
+  "weeks": "第 2 周",
+  "title": "Agent 原理与经典范式",
+  "summary": "ReAct、Plan-and-Solve、Reflection，分清 workflow 与 agent",
+  "goal": "自己的 ReAct agent，带 3 个工具，能处理工具报错并重试。"
+ },
+ {
+  "id": "p2",
+  "label": "P2",
+  "weeks": "第 3–4 周",
+  "title": "从零手写 Agent Harness（核心阶段）",
+  "summary": "核心阶段：工具、权限、hooks、子代理、上下文压缩，自己搭一个 coding agent",
+  "goal": "一个能读写文件、跑 shell、需要确认才执行危险命令、会压缩上下文的命令行 coding agent。"
+ },
+ {
+  "id": "p3",
+  "label": "P3",
+  "weeks": "第 5–6 周",
+  "title": "主流框架与 SDK",
+  "summary": "LangGraph 与各家 SDK，弄清框架替你做了什么、藏了什么",
+  "goal": "把 P2 的 agent 用一个框架重写，写一页笔记对比“框架帮你做了什么、藏了什么”。"
+ },
+ {
+  "id": "p4",
+  "label": "P4",
+  "weeks": "第 7 周",
+  "title": "上下文工程、记忆、RAG 与协议",
+  "summary": "上下文管理、长期记忆、RAG，以及 MCP / A2A 协议",
+  "goal": "给自己的 agent 写一个 MCP server，并加跨会话长期记忆。"
+ },
+ {
+  "id": "p5",
+  "label": "P5",
+  "weeks": "第 8 周",
+  "title": "多智能体系统",
+  "summary": "什么时候该拆多智能体、怎么拆，正反两面的工程经验",
+  "goal": "orchestrator + 并行子代理的研究型 agent，并测量它比单 agent 多花多少 token、多拿多少分。"
+ },
+ {
+  "id": "p6",
+  "label": "P6",
+  "weeks": "第 9–10 周",
+  "title": "评估、可观测性与安全",
+  "summary": "建评估集、做追踪、跑基准，并守住安全底线",
+  "goal": "给自己的 agent 建 30+ 条评估用例，改 prompt 或换模型后能自动出对比报告。"
+ },
+ {
+  "id": "p7",
+  "label": "P7",
+  "weeks": "第 11 周",
+  "title": "生产部署",
+  "summary": "无头服务、触发器、监控与成本控制",
+  "goal": "agent 以无头服务方式部署，能由 webhook / cron 触发，带追踪和费用监控。"
+ },
+ {
+  "id": "p8",
+  "label": "P8",
+  "weeks": "第 12 周",
+  "title": "进阶：Agentic RL 与前沿",
+  "summary": "SFT → GRPO 训练智能体，跟读前沿论文",
+  "goal": "读懂并复现一篇 agent 训练论文的小规模实验。"
+ }
+]

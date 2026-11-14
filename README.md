@@ -2,7 +2,7 @@
 
 学习路线 + 持续更新的资料库：官方教程、社区课程、工程文章、论文、视频和 AI 生成的教程。
 
-**网站：** https://hustlyt.github.io/agent-dev-guide/ · [更新日志](https://hustlyt.github.io/agent-dev-guide/changelog.html) · [RSS](https://hustlyt.github.io/agent-dev-guide/feed.xml)
+**网站：** https://hustlyt.github.io/agent-dev-guide/ · [资料库（可搜索）](https://hustlyt.github.io/agent-dev-guide/resources.html) · [更新日志](https://hustlyt.github.io/agent-dev-guide/changelog.html) · [RSS](https://hustlyt.github.io/agent-dev-guide/feed.xml)
 
 ## 怎么更新
 
@@ -23,5 +23,5 @@
 | `data/changelog.json` | 更新日志 |
 | `data/reviewed.json` | 已审核过的 URL，避免重复审核 |
 | `data/sources.json` | 搜集用的数据源和关键词 |
-| `content/` | 教程正文、页头和样式 |
+| `content/` | 教程页面正文：`home.html`、`phases/`（各阶段阅读清单）、`phases.json`、`capstone.html`、`tips.html`，以及样式 |
 | `docs/` | 生成的网站（不要手改） |

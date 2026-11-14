@@ -8,8 +8,8 @@
 
 1. **同步**：`git pull --ff-only`。失败（有冲突/本地脏）就停止，报告原因，不要强推。
 2. **健康检查**：`python3 scripts/check.py` → 读 `work/check-report.md`。
-   - `改名 / 重定向`：把 `data/resources.json` 和 `content/guide.html` 里的旧 URL 换成新 URL（确认新地址是同一内容，不是首页或登录页）。
-   - `已判定失效`：先手动 `curl -IL` 复核；确实失效就把该条移出 `resources.json`，在 changelog 的 `removed` 记录 `{id,title,reason}`；如果它在教程正文被引用，找替代并改 `content/guide.html`。
+   - `改名 / 重定向`：把 `data/resources.json` 和 `content/` 下各页面（`home.html`、`phases/p*.html`、`capstone.html`、`tips.html`）里的旧 URL 换成新 URL（确认新地址是同一内容，不是首页或登录页）。
+   - `已判定失效`：先手动 `curl -IL` 复核；确实失效就把该条移出 `resources.json`，在 changelog 的 `removed` 记录 `{id,title,reason}`；如果它在教程正文被引用，找替代并改对应的 `content/` 页面。
    - `超过一年未更新`：评估是否仍有价值。经典/规范类（论文清单、原则文档）设 `"evergreen": true`；过时的（API 已废弃、框架已停更）移除或降级说明。
 3. **搜集候选**：`python3 scripts/discover.py` → 读 `work/candidates.md`（已排除收录过和审核过的 URL）。
 4. **补充检索（必须做，不能只靠脚本）**：用 Web 搜索查最近 3 周的
@@ -19,9 +19,15 @@
    - 重要新论文/综述（agent 评估、上下文工程、记忆、多智能体、Agentic RL）。
 5. **审核**：对每个有希望的候选，**打开原文读**（README / 正文 / 目录），按下方评分标准打分。不要只看标题和 star 数。
 6. **写入**：通过的条目加进 `data/resources.json`；所有看过的候选（通过和拒绝都算）写进 `data/reviewed.json`，避免下周重复审核。
-7. **教程正文**：只有出现明显更好的资料或某阶段内容过时，才改 `content/guide.html`（推荐组合、学习路线）。改动要在 changelog 的 `guide_changes` 里写清楚。主教材更换需要非常强的理由。
+7. **教程正文**：只有出现明显更好的资料或某阶段内容过时，才改教程页面。改动要在 changelog 的 `guide_changes` 里写清楚。主教材更换需要非常强的理由。页面对应关系：
+   - 首页的“推荐主教材”和“推荐组合”：`content/home.html`
+   - 学习路线每个阶段的阅读清单：`content/phases/p0.html` … `p8.html`（只写 `<ul>` 列表）
+   - 阶段标题、周次、一句话简介、产出：`content/phases.json`
+   - 毕业项目：`content/capstone.html`；学习建议与 AI 生成教程说明：`content/tips.html`
+   - 资料库页面是自动生成的，不要手改，改 `data/resources.json`。
+   - 每个阶段页保持 4–7 条阅读材料，新增时同步淘汰过时的，别越堆越长。
 8. **更新日志**：在 `data/changelog.json` 最前面加一条（见格式）。
-9. **构建与自检**：`python3 scripts/build.py`（会做数据校验，失败必须修好），再用浏览器或 `grep` 抽查 `docs/index.html`、`docs/changelog.html`。
+9. **构建与自检**：`python3 scripts/build.py`（会做数据校验，失败必须修好），再用浏览器或 `grep` 抽查 `docs/index.html`、`docs/resources.html`、`docs/changelog.html`。
 10. **发布**：`git add -A && git commit -m "update: YYYY-MM-DD ..." && git push`。推送后约 1 分钟 GitHub Pages 生效，用 `curl -s https://hustlyt.github.io/agent-dev-guide/changelog.html | grep YYYY-MM-DD` 确认。
 11. **汇报**：用中文简要说明新增几条（列标题）、移除/调整了什么、正文是否改动、网站链接。
 
