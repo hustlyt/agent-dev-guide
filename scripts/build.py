@@ -77,6 +77,21 @@ def stars(n) -> str:
     return f"{n / 1000:.1f}k" if n >= 1000 else str(n)
 
 
+def score_badge(r: dict) -> str:
+    score = r.get("score")
+    if score is None:
+        return ""
+    if score >= 9:
+        label, text = "★★★", "顶级"
+    elif score >= 8:
+        label, text = "★★☆", "推荐"
+    elif score >= 7:
+        label, text = "★☆☆", "收录"
+    else:
+        label, text = "☆☆☆", "备选"
+    return f' <span class="sc-badge" title="评分 {score}/10">{label} {text}</span>'
+
+
 def badge(r: dict) -> str:
     out = ""
     if r.get("pick"):
@@ -112,7 +127,7 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
             rows.append(
                 f'<tr data-t="{r["type"]}" data-f="{r["format"]}" data-zh="{int("中文" in r["lang"])}" '
                 f'data-new="{int(isnew)}" data-c="{c["id"]}" data-s="{e(search)}">'
-                f'<td><a href="{e(r["url"])}">{e(r["title"])}</a>{badge(r)}{new}{extra}{note}</td>'
+                f'<td><a href="{e(r["url"])}">{e(r["title"])}</a>{badge(r)}{new}{score_badge(r)}{extra}{note}</td>'
                 f'<td class="{tcls}">{TYPES[r["type"]]}<span class="fmt">{FORMATS[r["format"]]}</span></td>'
                 f'<td class="hide-sm">{e(r["lang"])}</td>'
                 f'<td class="n">{stars(r.get("stars"))}</td>'
@@ -141,7 +156,7 @@ def resource_table(data: dict, new_ids: set[str]) -> str:
 {chr(10).join(rows)}
 </tbody></table></div>
 <p id="empty" class="empty" hidden>没有匹配的资料。换个关键词，或取消筛选。</p>
-<p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。“久未更新”= 超过一年无提交；“链接失效”= 连续两次检查失败，下次更新时会被替换或移除。</p>'''
+<p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。评分（★★★/★★☆/★☆☆/☆☆☆）由维护者按内容质量、来源可信度、维护状态、独特性四维度人工评定，满分 10，≥ 7 收录，详见<a href="about.html#rating">关于页评分标准</a>。"久未更新"= 超过一年无提交；"链接失效"= 连续两次检查失败，下次更新时会被替换或移除。</p>'''
 
 
 def changelog_html(log: list, by_id: dict) -> str:
@@ -176,8 +191,8 @@ def changelog_html(log: list, by_id: dict) -> str:
 
 
 NAV = [("home", "index.html", "首页"), ("path", "path.html", "学习路线"), ("refs", "resources.html", "资料库"),
-       ("tools", "tools.html", "工具网站"), ("capstone", "capstone.html", "毕业项目"),
-       ("tips", "tips.html", "学习建议"), ("changelog", "changelog.html", "更新日志")]
+       ("tools", "tools.html", "工具网站"), ("about", "about.html", "关于"),
+       ("changelog", "changelog.html", "更新日志")]
 
 SEARCH_JS = r"""
 (function(){
@@ -289,7 +304,7 @@ def tools_table(data: dict, new_ids: set[str]) -> str:
 {chr(10).join(cards)}
 </div>
 <p id="tempty" class="empty" hidden>没有匹配的工具。换个关键词。</p>
-<p class="note">评分标准同资料库（满分 10，≥ 7 收录）：实用性、来源可信度、维护状态、独特性。</p>'''
+<p class="note">评分标准同资料库（满分 10，≥ 7 收录）：实用性、来源可信度、维护状态、独特性，详见<a href="about.html#rating">关于页评分标准</a>。</p>'''
 
 
 def page(title: str, body: str, active: str, updated: str, desc: str = "") -> str:
@@ -381,11 +396,24 @@ def main() -> int:
               '<a href="resources.html">打开资料库 →</a></p></section>')
     write("index.html", f"{TITLE}：学习路线与资料库", home, "home")
 
-    path_body = ('<header class="pagehead"><h1>12 周学习路线</h1><p class="lead">每周约 8–10 小时；'
-                 '有 Python 和 LLM API 基础可压缩到 8 周。每个阶段给出要读的材料和学完后应该做出的东西。'
-                 '按顺序走，不要囤教程。每个阶段先做完“必做”，“选读”按需挑。P0–P2（约 4 周）学完即算入门，'
-                 'P3–P7 是进阶，P8 选修。</p></header>' + phase_cards(True)
-                 + '<p class="note">想找某个主题的更多材料，去<a href="resources.html">资料库</a>搜索。</p>')
+    path_p0 = phases[0]
+    path_p1 = phases[1]
+    path_side = (
+        f'<a href="path.html" class="on"><b>{e(path_p0["label"])}</b> {e(path_p0["title"])}</a>'
+        + "".join(f'<a href="phase-{q["id"]}.html"><b>{q["label"]}</b> {e(q["title"])}</a>'
+                  for q in phases[1:]))
+    path_pn = ('<nav class="pn">'
+               + '<a href="index.html">← 首页</a>'
+               + f'<a href="phase-{path_p1["id"]}.html">{path_p1["label"]} {e(path_p1["title"])} →</a>'
+               + '</nav>')
+    p0_content = rd("phases/" + path_p0["id"] + ".html")
+    path_body = (f'<div class="layout"><aside class="side">'
+                 f'<p class="side-intro">9 个阶段，每周 8–10 小时。P0–P2 学完即算入门，P3–P7 进阶，P8 选修。</p>'
+                 f'{path_side}</aside>'
+                 f'<article class="phasepage"><p class="crumb">{path_p0["label"]} · {path_p0["weeks"]}</p>'
+                 f'<h1>{e(path_p0["title"])}</h1><p class="lead">{e(path_p0["summary"])}</p>'
+                 f'<h2>要读什么</h2>{p0_content}'
+                 f'<div class="goal big">✔ 学完应做出：{path_p0["goal"]}</div>{path_pn}</article></div>')
     write("path.html", f"学习路线 · {TITLE}", path_body, "path")
 
     for i, p in enumerate(phases):
@@ -395,9 +423,9 @@ def main() -> int:
                        f'<b>{q["label"]}</b> {e(q["title"])}</a>' for q in phases)
         pn = ('<nav class="pn">'
               + (f'<a href="phase-{prev_["id"]}.html">← {prev_["label"]} {e(prev_["title"])}</a>' if prev_
-                 else '<a href="path.html">← 路线总览</a>')
+                 else '<a href="index.html">← 首页</a>')
               + (f'<a href="phase-{next_["id"]}.html">{next_["label"]} {e(next_["title"])} →</a>' if next_
-                 else '<a href="capstone.html">毕业项目 →</a>') + '</nav>')
+                 else '<a href="about.html">关于 →</a>') + '</nav>')
         body = (f'<div class="layout"><aside class="side"><a class="back" href="path.html">学习路线</a>{side}</aside>'
                 f'<article class="phasepage"><p class="crumb">{p["label"]} · {p["weeks"]}</p>'
                 f'<h1>{e(p["title"])}</h1><p class="lead">{e(p["summary"])}</p>'
@@ -409,11 +437,9 @@ def main() -> int:
           f"{total} 条 AI Agent 教程、文档、文章、论文与视频，可搜索与筛选。")
     write("tools.html", f"工具网站 · {TITLE}", tools_table(data, new_ids), "tools",
           "辅助学习和使用 AI Agent 的工具网站：提示词查看器、模板库、生态清单等。")
-    write("capstone.html", f"毕业项目 · {TITLE}",
-          '<header class="pagehead"><h1>毕业项目建议</h1><p class="lead">选一个，把前面所有阶段串起来。</p></header>'
-          + rd("capstone.html"), "capstone")
-    write("tips.html", f"学习建议 · {TITLE}",
-          '<header class="pagehead"><h1>学习建议</h1></header>' + rd("tips.html"), "tips")
+    write("about.html", f"关于 · {TITLE}",
+          '<header class="pagehead"><h1>关于</h1><p class="lead">毕业项目建议、学习建议，以及资料库与工具网站的评分标准。</p></header>'
+          + rd("about.html"), "about")
     log_body = (f'<header class="pagehead"><h1>更新日志</h1><p class="lead">每周一自动检索 GitHub、官方博客、技术社区、arXiv，'
                 f'经质量审核后收录。也可以 <a href="feed.xml">订阅 RSS</a>。</p></header>'
                 + changelog_html(log, by_id))

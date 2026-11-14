@@ -68,7 +68,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "microsoft-ai-agents-for-beginners",
@@ -88,7 +89,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "huggingface-agents-course",
@@ -108,7 +110,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "ed-donner-agents",
@@ -128,7 +131,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "langchain-ai-langchain-academy",
@@ -148,7 +152,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "aws-samples-sample-getting-started-with-strands-agents-cours",
@@ -168,7 +173,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "kaggle-com-learn-guide-5-day-agents",
@@ -197,7 +203,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "deeplearning-ai-courses-agentic-ai",
@@ -217,7 +224,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "shareai-lab-learn-claude-code",
@@ -237,7 +245,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "decodingai-magazine-building-a-coding-agent-from-scratch-cou",
@@ -257,7 +266,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "swe-agent-mini-swe-agent",
@@ -277,7 +287,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "neural-maze-agentic-patterns-course",
@@ -298,7 +309,8 @@
    "last_checked": "2026-11-15",
    "note": "",
    "fail_count": 0,
-   "evergreen": true
+   "evergreen": true,
+   "score": 7
   },
   {
    "id": "pguso-ai-agents-from-scratch",
@@ -318,7 +330,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "the-pocket-pocketflow",
@@ -338,7 +351,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "jiji262-build-code-agent",
@@ -358,7 +372,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "liiiiiiiiil-coding-agent-from-scratch",
@@ -378,7 +393,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "amitshekhariitbhu-ai-agents-tutorial",
@@ -398,7 +414,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "ranxi2001-zero2agent",
@@ -418,7 +435,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "baby-llm-baby-agent",
@@ -438,7 +456,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "datawhalechina-handy-multi-agent",
@@ -458,7 +477,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "datawhalechina-llm-cookbook",
@@ -479,7 +499,8 @@
    "last_checked": "2026-11-15",
    "note": "",
    "fail_count": 0,
-   "evergreen": true
+   "evergreen": true,
+   "score": 8
   },
   {
    "id": "chenmingyong0423-mcp-tutorials",
@@ -499,7 +520,8 @@
    "status": "stale",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "anthropics-courses",
@@ -519,7 +541,8 @@
    "status": "archived",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "anthropics-claude-cookbooks",
@@ -539,7 +562,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "anthropics-claude-quickstarts",
@@ -559,7 +583,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "anthropics-claude-agent-sdk-python",
@@ -584,7 +609,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "openai-openai-agents-python",
@@ -609,7 +635,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "openai-openai-cookbook",
@@ -629,7 +656,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "google-adk-python",
@@ -654,7 +682,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "langchain-ai-langgraph",
@@ -674,7 +703,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "microsoft-agent-framework",
@@ -694,7 +724,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "huggingface-smolagents",
@@ -714,7 +745,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "pydantic-pydantic-ai",
@@ -734,7 +766,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "strands-agents-harness-sdk",
@@ -754,7 +787,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "mastra-ai-mastra",
@@ -774,7 +808,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "vercel-ai",
@@ -794,7 +829,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "modelcontextprotocol-modelcontextprotocol",
@@ -819,7 +855,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "microsoft-mcp-for-beginners",
@@ -839,7 +876,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "a2a-protocol-org",
@@ -859,7 +897,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "tsadoq-a2a-mcp-tutorial",
@@ -879,7 +918,8 @@
    "status": "stale",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "anthropic-com-engineering-building-effective-agents",
@@ -899,7 +939,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "anthropic-com-engineering-effective-context-engineering-for-",
@@ -919,7 +960,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "anthropic-com-engineering-writing-tools-for-agents",
@@ -939,7 +981,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "anthropic-com-engineering-multi-agent-research-system",
@@ -959,7 +1002,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "anthropic-com-engineering-claude-code-best-practices",
@@ -988,7 +1032,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "cdn-openai-com-business-guides-and-resources-a-practical-gui",
@@ -1008,7 +1053,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "cognition-ai-blog-dont-build-multi-agents",
@@ -1028,7 +1074,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "humanlayer-12-factor-agents",
@@ -1049,7 +1096,8 @@
    "last_checked": "2026-11-15",
    "note": "",
    "fail_count": 0,
-   "evergreen": true
+   "evergreen": true,
+   "score": 9
   },
   {
    "id": "lilianweng-github-io-posts-2023-06-23-agent",
@@ -1069,7 +1117,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "nibzard-awesome-agentic-patterns",
@@ -1089,7 +1138,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "dair-ai-prompt-engineering-guide",
@@ -1109,7 +1159,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "nirdiamant-agents-towards-production",
@@ -1129,7 +1180,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "nirdiamant-genai-agents",
@@ -1149,7 +1201,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "googlecloudplatform-agent-starter-pack",
@@ -1169,7 +1222,8 @@
    "status": "archived",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "langfuse-langfuse",
@@ -1189,7 +1243,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "arize-ai-phoenix",
@@ -1209,7 +1264,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "ukgovernmentbeis-inspect-ai",
@@ -1229,7 +1285,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "swe-bench-swe-bench",
@@ -1249,7 +1306,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "sierra-research-tau2-bench",
@@ -1269,7 +1327,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "mem0ai-mem0",
@@ -1289,7 +1348,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "letta-ai-letta",
@@ -1309,7 +1369,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "shubhamsaboo-awesome-llm-apps",
@@ -1329,7 +1390,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "patchy631-ai-engineering-hub",
@@ -1349,7 +1411,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "ashishpatel26-500-ai-agents-projects",
@@ -1369,7 +1432,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "e2b-dev-awesome-ai-agents",
@@ -1389,7 +1453,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "openhands-openhands",
@@ -1409,7 +1474,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "browser-use-browser-use",
@@ -1429,7 +1495,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "hkuds-nanobot",
@@ -1449,7 +1516,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "llmagents-learning-org-f24",
@@ -1469,7 +1537,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "arxiv-org-abs-2210-03629",
@@ -1489,7 +1558,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 9
   },
   {
    "id": "woooodyy-llm-agent-paper-list",
@@ -1510,7 +1580,8 @@
    "last_checked": "2026-11-15",
    "note": "",
    "fail_count": 0,
-   "evergreen": true
+   "evergreen": true,
+   "score": 8
   },
   {
    "id": "paitesanshi-llm-agent-survey",
@@ -1531,7 +1602,8 @@
    "last_checked": "2026-11-15",
    "note": "",
    "fail_count": 0,
-   "evergreen": true
+   "evergreen": true,
+   "score": 7
   },
   {
    "id": "microsoft-agent-lightning",
@@ -1551,7 +1623,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "the-pocket-pocketflow-tutorial-codebase-knowledge",
@@ -1571,7 +1644,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 8
   },
   {
    "id": "az9713-codex-cli-tutorial",
@@ -1591,7 +1665,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "ly-wo-ai-agent-course",
@@ -1611,7 +1686,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "genearnold-ai-agent-engineering-course",
@@ -1631,7 +1707,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 6
   },
   {
    "id": "mgratzer-bloomery",
@@ -1651,7 +1728,8 @@
    "status": "ok",
    "last_checked": "2026-11-15",
    "note": "",
-   "fail_count": 0
+   "fail_count": 0,
+   "score": 7
   },
   {
    "id": "anthropic-demystifying-evals",
@@ -1709,7 +1787,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 9,
+   "score": 8,
    "stars": null,
    "pushed_at": null,
    "status": "ok",
@@ -1819,7 +1897,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 9,
+   "score": 7,
    "stars": null,
    "pushed_at": null,
    "status": "ok",
@@ -1840,7 +1918,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 8,
+   "score": 7,
    "stars": null,
    "pushed_at": null,
    "status": "ok",
@@ -1924,7 +2002,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 8,
+   "score": 7,
    "stars": 179,
    "pushed_at": "2026-11-07",
    "status": "ok",
@@ -1971,7 +2049,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 7,
+   "score": 8,
    "stars": 11971,
    "pushed_at": "2026-11-05",
    "status": "ok",
@@ -2149,7 +2227,7 @@
    "lang": "英文/中文",
    "github": "walkinglabs/learn-harness-engineering",
    "desc": "14 讲 + 8 个项目教你给 coding agent 搭 harness：AGENTS.md、跨会话交接、验证闭环，附主流工具拆解",
-   "score": 9
+   "score": 7
   },
   {
    "extra_links": [],
@@ -2170,7 +2248,7 @@
    "lang": "英文",
    "github": null,
    "desc": "Anthropic 官方免费课程：Claude API、Claude Code、MCP 入门与进阶、Agent Skills、Subagents",
-   "score": 9
+   "score": 8
   },
   {
    "extra_links": [],
@@ -2191,7 +2269,7 @@
    "lang": "英文",
    "github": null,
    "desc": "Anthropic：agentic search 与 RAG 索引的取舍，以及 CLAUDE.md→hooks→skills→plugins→MCP 的搭建顺序",
-   "score": 8
+   "score": 7
   },
   {
    "extra_links": [],
@@ -2212,7 +2290,7 @@
    "lang": "英文",
    "github": "obra/superpowers",
    "desc": "业界标杆 skills 工作流：头脑风暴→计划→子代理开发→TDD→验证，学技能与流程设计的范本",
-   "score": 8
+   "score": 7
   },
   {
    "extra_links": [],
@@ -2233,7 +2311,7 @@
    "lang": "英文",
    "github": null,
    "desc": "Skills 设计心得：写流程而非散文、反合理化表、按开发生命周期组织技能",
-   "score": 8
+   "score": 7
   },
   {
    "extra_links": [],
@@ -2254,7 +2332,7 @@
    "lang": "中文（繁体）",
    "github": null,
    "desc": "演讲 + 9 篇系列文：从 agent 开发者视角讲工具内、请求间、单轮结束、外层 loop 四个反馈时机",
-   "score": 8
+   "score": 7
   },
   {
    "id": "nano-ai-agent-from-scratch",
@@ -2279,7 +2357,7 @@
    "note": "最值得读：第 3 课权限、第 4 课上下文管理、第 12 课拆解 Claude Code、第 18 课总对照表",
    "pick": false,
    "added": "2026-11-15",
-   "score": 8,
+   "score": 7,
    "stars": null,
    "pushed_at": null,
    "status": "ok",
@@ -2312,7 +2390,7 @@
    "type": "official",
    "format": "docs",
    "lang": "英文",
-   "score": 8,
+   "score": 9,
    "desc": "工具调用的一手文档：客户端/服务端工具、tool_result 回填、并行调用；对照 OpenAI 写法"
   },
   {
@@ -2377,7 +2455,7 @@
    "type": "community",
    "format": "article",
    "lang": "英文",
-   "score": 8,
+   "score": 9,
    "desc": "私有数据 + 不可信内容 + 对外通信三者同时具备就会被提示注入窃取数据；agent 安全第一课"
   },
   {
@@ -2397,7 +2475,7 @@
    "type": "official",
    "format": "docs",
    "lang": "英文",
-   "score": 8,
+   "score": 9,
    "desc": "100+ 专家评审的 agent 十大安全风险与缓解措施，做安全检查清单用"
   },
   {
@@ -2422,7 +2500,7 @@
    "type": "official",
    "format": "article",
    "lang": "英文",
-   "score": 7,
+   "score": 8,
    "desc": "持久化执行讲清楚：LLM/工具调用放 Activity，崩溃后重放历史续跑，不重复调用模型"
   },
   {
@@ -2444,7 +2522,7 @@
    "note": "",
    "pick": false,
    "added": "2026-11-15",
-   "score": 8,
+   "score": 7,
    "stars": null,
    "pushed_at": null,
    "status": "ok",
@@ -2490,7 +2568,7 @@
    "desc": "22 章骨架课，框架无关，覆盖 harness/记忆/多智能体/自进化，配套 AI partner 展开",
    "pick": false,
    "added": "2026-11-15",
-   "score": 9,
+   "score": 7,
    "stars": 716,
    "pushed_at": "2026-06-22",
    "status": "ok",

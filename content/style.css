@@ -124,6 +124,10 @@ li.del{color:var(--muted);text-decoration:line-through}
 .tool-card h3{margin:0;font-size:16px;line-height:1.3}
 .tool-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;margin-top:4px}
 .sc-badge{font-size:12px;color:var(--accent);font-weight:600}
+.sc-badge.sc-low{color:var(--muted)}
+.score-legend{margin:18px 0;line-height:2;font-size:14px}
+.score-legend .sc-badge{margin-right:4px}
+.side-intro{font-size:12px;color:var(--muted);padding:0 10px 8px;margin-bottom:4px;line-height:1.5}
 .tool-desc{margin:0;font-size:14px;color:var(--fg);line-height:1.6}
 .tool-links{font-size:12px;color:var(--muted);word-break:break-all}
 .stat{font-size:12px;color:var(--muted)}

@@ -1,0 +1,51 @@
+<section id="capstone">
+<h2>毕业项目建议</h2>
+<p class="lead">选一个，把前面所有阶段串起来。</p>
+<ol class="tight">
+  <li><strong>个人 coding agent</strong>：P2 的 harness + MCP + 子代理 + 评估集（用 SWE-bench Lite 子集打分）。</li>
+  <li><strong>深度研究 agent</strong>：对照 Hello-Agents 第 14 章与 Anthropic 多智能体文章，做引用可追溯的研究报告生成器。</li>
+  <li><strong>业务 agent</strong>：客服 / 运维 / 数据分析场景，用 τ²-bench 的思路设计"工具 + 用户模拟器 + 策略约束"评测。</li>
+</ol>
+<p class="note">Hello-Agents 第 16 章和它的 <a href="https://github.com/datawhalechina/hello-agents/blob/main/Co-creation-projects">共创项目</a> 目录里有大量往届示例可参考。</p>
+</section>
+
+<section id="tips">
+<h2>学习建议</h2>
+<ol class="tight">
+  <li><strong>先手写，再用框架。</strong>不理解 agent loop 和工具回填就上 LangGraph / CrewAI，出问题时无从下手。</li>
+  <li><strong>不要囤教程。</strong>主线只选一本（Hello-Agents），其余当查阅资料。上面的清单是索引，不是待办。</li>
+  <li><strong>尽早建评估集。</strong>agent 开发的难点在"改了之后有没有变好"，没有评估就是凭感觉调 prompt。</li>
+  <li><strong>多智能体不是默认选项。</strong>先把单 agent + 好工具 + 好上下文做到极致，再评估是否需要拆分。</li>
+  <li><strong>关注一手来源。</strong>框架迭代快，以官方文档和仓库 README 为准，Star 数只代表热度不代表质量。</li>
+</ol>
+</section>
+
+<section id="ai-gen">
+<h2>关于 AI 生成的教程</h2>
+<ul class="tight">
+  <li>GitHub 上 2026 年新出现的大量 "agent 教程" 仓库由 AI 批量生成，结构完整但常见问题有：API 已过时、代码跑不通、概念张冠李戴、缺少评估与失败案例。</li>
+  <li>它们最有价值的用法不是当主教材，而是当<strong>源码导读工具</strong>：用 PocketFlow-Tutorial-Codebase-Knowledge 或你自己的 coding agent，对 mini-swe-agent、OpenHands、learn-claude-code 生成导读，再对照源码验证。</li>
+  <li>判断质量的快速方法：看是否有可运行代码和测试、最近是否更新、是否引用一手来源、Issue 区是否有人反馈错误。</li>
+</ul>
+</section>
+
+<section id="rating">
+<h2>评分标准</h2>
+<p>资料库和工具网站的每条收录都有一个 1–10 的综合评分，取四个维度的加权判断：</p>
+<table class="tbl" style="max-width:640px">
+<thead><tr><th>维度</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td><strong>内容质量</strong></td><td>讲清了什么、有没有可运行代码、是否覆盖失败情形和评估方法</td></tr>
+<tr><td><strong>来源可信度</strong></td><td>官方 / 权威作者 / 一线工程实践，优先于热度</td></tr>
+<tr><td><strong>维护状态</strong></td><td>最近是否有提交、链接是否可访问、API 是否仍然有效</td></tr>
+<tr><td><strong>独特性</strong></td><td>是否填补了其他资料的空缺，而非重复覆盖</td></tr>
+</tbody>
+</table>
+<div class="score-legend">
+  <span class="sc-badge">★★★ 顶级</span> 9 分：必读，通常是权威一手来源或领域奠基材料。<br>
+  <span class="sc-badge">★★☆ 推荐</span> 8 分：内容扎实、维护活跃，建议重点关注。<br>
+  <span class="sc-badge">★☆☆ 收录</span> 7 分：覆盖特定子主题，按需查阅。<br>
+  <span class="sc-badge sc-low">☆☆☆ 备选</span> 6 分：有一定价值但深度或覆盖有限，可酌情参考。
+</div>
+<p class="note">评分由维护者人工评定，每次资料库更新时同步复核。GitHub Star 数显示在资料库 ★ 列，仅代表热度，不影响评分。</p>
+</section>
