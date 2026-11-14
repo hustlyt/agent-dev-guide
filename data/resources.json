@@ -170,7 +170,16 @@
    "id": "kaggle-com-learn-guide-5-day-agents",
    "title": "Google × Kaggle 5-Day AI Agents",
    "url": "https://www.kaggle.com/learn-guide/5-day-agents",
-   "extra_links": [],
+   "extra_links": [
+    {
+     "label": "白皮书：Introduction to Agents",
+     "url": "https://www.kaggle.com/whitepaper-introduction-to-agents"
+    },
+    {
+     "label": "白皮书：Context Engineering: Sessions & Memory",
+     "url": "https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory"
+    }
+   ],
    "category": "courses",
    "type": "official",
    "format": "course",
@@ -952,7 +961,16 @@
    "id": "anthropic-com-engineering-claude-code-best-practices",
    "title": "Claude Code Best Practices",
    "url": "https://code.claude.com/docs/en/best-practices",
-   "extra_links": [],
+   "extra_links": [
+    {
+     "label": "OpenAI Codex Best practices",
+     "url": "https://developers.openai.com/codex/learn/best-practices"
+    },
+    {
+     "label": "AGENTS.md 规范",
+     "url": "https://agents.md/"
+    }
+   ],
    "category": "articles",
    "type": "official",
    "format": "docs",
@@ -2101,6 +2119,167 @@
    "pushed_at": null,
    "status": "ok",
    "last_checked": "2026-11-15",
+   "fail_count": 0
+  },
+  {
+   "extra_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/walkinglabs/learn-harness-engineering"
+    }
+   ],
+   "note": "讲怎么约束 agent，与 learn-claude-code（讲怎么手写 agent）互补",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "walkinglabs-learn-harness-engineering",
+   "title": "walkinglabs/learn-harness-engineering",
+   "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
+   "category": "courses",
+   "type": "community",
+   "format": "course",
+   "lang": "英文/中文",
+   "github": "walkinglabs/learn-harness-engineering",
+   "desc": "14 讲 + 8 个项目教你给 coding agent 搭 harness：AGENTS.md、跨会话交接、验证闭环，附主流工具拆解",
+   "score": 9
+  },
+  {
+   "extra_links": [],
+   "note": "需注册登录；与 agent 开发最相关的是 MCP 两门、Agent Skills、Subagents",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "anthropic-academy",
+   "title": "Anthropic Academy",
+   "url": "https://anthropic.skilljar.com/",
+   "category": "courses",
+   "type": "official",
+   "format": "course",
+   "lang": "英文",
+   "github": null,
+   "desc": "Anthropic 官方免费课程：Claude API、Claude Code、MCP 入门与进阶、Agent Skills、Subagents",
+   "score": 9
+  },
+  {
+   "extra_links": [],
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "claude-code-large-codebases",
+   "title": "How Claude Code Works in Large Codebases",
+   "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+   "category": "articles",
+   "type": "official",
+   "format": "article",
+   "lang": "英文",
+   "github": null,
+   "desc": "Anthropic：agentic search 与 RAG 索引的取舍，以及 CLAUDE.md→hooks→skills→plugins→MCP 的搭建顺序",
+   "score": 8
+  },
+  {
+   "extra_links": [],
+   "note": "重点读 writing-skills：先用子代理证明没有技能会失败，再写技能",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "obra-superpowers",
+   "title": "obra/superpowers",
+   "url": "https://github.com/obra/superpowers",
+   "category": "examples",
+   "type": "community",
+   "format": "repo",
+   "lang": "英文",
+   "github": "obra/superpowers",
+   "desc": "业界标杆 skills 工作流：头脑风暴→计划→子代理开发→TDD→验证，学技能与流程设计的范本",
+   "score": 8
+  },
+  {
+   "extra_links": [],
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "addyosmani-agent-skills",
+   "title": "Addy Osmani · Agent Skills",
+   "url": "https://addyosmani.com/blog/agent-skills/",
+   "category": "articles",
+   "type": "community",
+   "format": "article",
+   "lang": "英文",
+   "github": null,
+   "desc": "Skills 设计心得：写流程而非散文、反合理化表、按开发生命周期组织技能",
+   "score": 8
+  },
+  {
+   "extra_links": [],
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0,
+   "id": "ihower-harness-engineering",
+   "title": "ihower · 給 Agent 開發者的 Harness + Loop Engineering 系列",
+   "url": "https://ihower.tw/blog/13721-harness-engineering",
+   "category": "zh-community",
+   "type": "community",
+   "format": "article",
+   "lang": "中文（繁体）",
+   "github": null,
+   "desc": "演讲 + 9 篇系列文：从 agent 开发者视角讲工具内、请求间、单轮结束、外层 loop 四个反馈时机",
+   "score": 8
+  },
+  {
+   "id": "nano-ai-agent-from-scratch",
+   "title": "纳米AI · 从零手写 Agent",
+   "url": "https://nano-ai.tech/agent/",
+   "extra_links": [
+    {
+     "label": "代码 NamiAgent",
+     "url": "https://github.com/aa1143/NamiAgent"
+    },
+    {
+     "label": "图解：Agent 是怎么工作的",
+     "url": "https://nano-ai.tech/matrix/agent/"
+    }
+   ],
+   "category": "zh-community",
+   "type": "community",
+   "format": "course",
+   "lang": "中文",
+   "github": "aa1143/NamiAgent",
+   "desc": "18 课：从 100 行循环手写到权限、上下文、Skills、MCP、子代理、记忆，再横向拆解 Claude Code/Codex 等",
+   "note": "最值得读：第 3 课权限、第 4 课上下文管理、第 12 课拆解 Claude Code、第 18 课总对照表",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 8,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
    "fail_count": 0
   }
  ]

@@ -25,3 +25,5 @@
 | `data/sources.json` | 搜集用的数据源和关键词 |
 | `content/` | 教程页面正文：`home.html`、`phases/`（各阶段阅读清单）、`phases.json`、`capstone.html`、`tips.html`，以及样式 |
 | `docs/` | 生成的网站（不要手改） |
+| `scripts/lookup.py` | 查某个 URL 是否已收录/审核过、相近条目和 GitHub 数据（评估单个链接时用） |
+| `.claude/skills/evaluate-course/` | 评估用户发来的课程链接的 Skill（`.agents/skills/` 是指向它的软链接） |

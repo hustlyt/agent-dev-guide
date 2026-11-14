@@ -1,11 +1,11 @@
 [
  {
   "date": "2026-11-15",
-  "summary": "改版为网站并开启每周自动更新；新增 22 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness 等），新增“博客、Newsletter 与视频”分类",
+  "summary": "改版为网站并开启每周自动更新；新增 29 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类",
   "stats": {
    "候选": 274,
-   "新增": 22,
-   "调整": 9
+   "新增": 29,
+   "调整": 11
   },
   "added": [
    "anthropic-demystifying-evals",
@@ -29,7 +29,14 @@
    "voltagent-awesome-ai-agent-papers",
    "latent-space",
    "simonwillison-ai-agents",
-   "decodingai-newsletter"
+   "decodingai-newsletter",
+   "walkinglabs-learn-harness-engineering",
+   "anthropic-academy",
+   "claude-code-large-codebases",
+   "obra-superpowers",
+   "addyosmani-agent-skills",
+   "ihower-harness-engineering",
+   "nano-ai-agent-from-scratch"
   ],
   "changed": [
    {
@@ -56,6 +63,16 @@
     "id": "cognition",
     "title": "Don't Build Multi-Agents",
     "reason": "域名迁移到 cognition.com"
+   },
+   {
+    "id": "anthropic-com-engineering-claude-code-best-practices",
+    "title": "Claude Code Best Practices",
+    "reason": "补充链接：OpenAI Codex Best practices、AGENTS.md"
+   },
+   {
+    "id": "kaggle-com-learn-guide-5-day-agents",
+    "title": "Google × Kaggle 5-Day AI Agents",
+    "reason": "补充链接：两篇白皮书"
    }
   ],
   "guide_changes": [
