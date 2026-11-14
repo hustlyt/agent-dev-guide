@@ -1,10 +1,10 @@
 [
  {
   "date": "2026-11-15",
-  "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行",
+  "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行；新增 sandbox 专项：DeepLearning.AI coding agent with tool execution 课程、OpenSandbox 自托管平台",
   "stats": {
    "候选": 274,
-   "新增": 35,
+   "新增": 37,
    "调整": 11
   },
   "added": [
@@ -42,7 +42,9 @@
    "hamel-evals",
    "simonwillison-lethal-trifecta",
    "owasp-agentic-top-10-2026",
-   "temporal-dynamic-ai-agents"
+   "temporal-dynamic-ai-agents",
+   "deeplearning-ai-building-coding-agents-tool-execution",
+   "opensandbox-group-opensandbox"
   ],
   "changed": [
    {
@@ -88,7 +90,8 @@
    "网站结构调整：资料库独立成可搜索页面；学习路线拆成总览 + 9 个阶段页；毕业项目、学习建议各自成页",
    "学习路线各阶段拆成“必做 / 选读”，标明 P0–P2 学完即入门，P8 改为选修",
    "P0 补官方工具调用文档；P1 补吴恩达 Agentic AI；P2 补 Agent Skills；P3 补 TypeScript 路线",
-   "P4 补 RAG from Scratch 和 Anthropic 记忆文章；P6 补 Hamel 评估方法与 agent 安全（lethal trifecta、OWASP）；P7 补持久化执行"
+   "P4 补 RAG from Scratch 和 Anthropic 记忆文章；P6 补 Hamel 评估方法与 agent 安全（lethal trifecta、OWASP）；P7 补持久化执行",
+   "学习路线 P2 选读：补充 sandbox 执行环境教程（DeepLearning.AI × E2B）和 OpenSandbox 自托管方案"
   ]
  },
  {

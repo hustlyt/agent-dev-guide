@@ -2420,6 +2420,58 @@
    "lang": "英文",
    "score": 7,
    "desc": "持久化执行讲清楚：LLM/工具调用放 Activity，崩溃后重放历史续跑，不重复调用模型"
+  },
+  {
+   "id": "deeplearning-ai-building-coding-agents-tool-execution",
+   "title": "DeepLearning.AI · Building Coding Agents with Tool Execution",
+   "url": "https://www.deeplearning.ai/short-courses/building-coding-agents-with-tool-execution",
+   "extra_links": [
+    {
+     "label": "E2B 文档",
+     "url": "https://docs.e2b.dev/quickstart"
+    }
+   ],
+   "category": "courses",
+   "type": "community",
+   "format": "course",
+   "lang": "英文",
+   "github": null,
+   "desc": "1h21m，DeepLearning.AI × E2B；对比 local/Docker/gVisor/microVM 执行环境，用 E2B 实现隔离 coding agent",
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 8,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0
+  },
+  {
+   "id": "opensandbox-group-opensandbox",
+   "title": "opensandbox-group/OpenSandbox",
+   "url": "https://github.com/opensandbox-group/OpenSandbox",
+   "extra_links": [
+    {
+     "label": "文档",
+     "url": "https://open-sandbox.ai/getting-started/"
+    }
+   ],
+   "category": "official-sdk",
+   "type": "official",
+   "format": "repo",
+   "lang": "英文",
+   "github": "opensandbox-group/OpenSandbox",
+   "desc": "阿里开源 agent sandbox 平台；Docker/K8s/Firecracker/gVisor，多语言 SDK，64ms 冷启动，可自托管",
+   "note": "",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 7,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "fail_count": 0
   }
  ]
 }

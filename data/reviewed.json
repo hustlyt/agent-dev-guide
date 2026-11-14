@@ -1840,5 +1840,23 @@
   "decision": "accept",
   "score": 7,
   "reason": "路线查缺补漏：补 P7 持久化执行；厂商博客，降 1 分"
+ },
+ "deeplearning.ai/short-courses/building-coding-agents-with-tool-execution": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "唯一专门讲 agent sandbox 执行环境的课程，对比 local/Docker/gVisor/microVM，代码可运行"
+ },
+ "github.com/opensandbox-group/opensandbox": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "阿里开源自托管 sandbox，17k★，业界标杆，文档完整，补 E2B 商业方案空缺"
+ },
+ "docs.e2b.dev": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 6,
+  "reason": "纯参考文档，无教程结构，作为 extra_link 附在 DeepLearning.AI 条目上"
  }
 }
