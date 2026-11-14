@@ -1,0 +1,186 @@
+<section id="verdict">
+<div class="verdict">
+  <p style="margin:0 0 8px"><b>推荐主教材：</b><a href="https://github.com/datawhalechina/hello-agents">Datawhale《Hello-Agents：从零开始构建智能体》</a>（87k★，中文，16 章）。</p>
+  <p style="margin:0">它是目前唯一一份同时覆盖<strong>原理 → 经典范式手写 → 主流框架 → 自研框架 → 记忆/RAG/上下文工程 → MCP/A2A 协议 → Agentic RL 训练 → 评估 → 综合项目</strong>的完整中文教程，深度和广度都够。但它偏“框架与系统”，对 <strong>coding-agent 式的 harness 工程</strong>（权限、hooks、压缩、子代理、任务系统）和<strong>生产级评估</strong>讲得少，所以配两份补充材料：<a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a>（17 课手写 harness）和 <a href="https://github.com/NirDiamant/agents-towards-production">agents-towards-production</a>（生产化），再加 Anthropic 的工程文章作为理论锚点。</p>
+</div>
+</section>
+
+<section id="combo">
+<h2>推荐组合 <small>一本主教材 + 三份补充</small></h2>
+<div class="grid">
+  <div class="card"><div class="role">主教材 · 系统</div><h4><a href="https://github.com/datawhalechina/hello-agents">Hello-Agents</a></h4><p>中文。ReAct / Plan-and-Solve / Reflection 手写实现，AutoGen / AgentScope / LangGraph 实践，从 0 写框架，Memory、上下文工程、MCP/A2A/ANP、SFT→GRPO、评估、DeepResearch 复现。<a href="https://datawhalechina.github.io/hello-agents/">在线阅读</a></p></div>
+  <div class="card"><div class="role">补充 · Harness 工程</div><h4><a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a></h4><p>80k★。从 <code>while True</code> 循环开始，逐课加入工具、权限、Hooks、TodoWrite、子代理、Skill、上下文压缩、记忆、任务系统、后台任务、Agent Teams、MCP、Goal Loop，共 17 课。</p></div>
+  <div class="card"><div class="role">补充 · 进阶 Harness + 评估</div><h4><a href="https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course">Coding Agent from Scratch</a></h4><p>Decoding AI 出品。Pydantic AI 实现，含 Docker/Modal 沙箱、LSP、子代理、可观测性、Eval harness、用失败轨迹扩充回归集、轨迹回放。每节配文章+视频。</p></div>
+  <div class="card"><div class="role">补充 · 生产化</div><h4><a href="https://github.com/NirDiamant/agents-towards-production">Agents Towards Production</a></h4><p>22k★。工具集成、记忆、部署、多智能体协调、GPU 部署、安全、追踪调试、评估、前端，全部 code-first notebook。</p></div>
+</div>
+<p class="note">英文读者可把主教材换成 <a href="https://github.com/microsoft/ai-agents-for-beginners">Microsoft AI Agents for Beginners</a>（18 课，有视频）+ <a href="https://huggingface.co/learn/agents-course">Hugging Face Agents Course</a>（有认证），但两者深度都不如 Hello-Agents。</p>
+</section>
+
+<section id="path">
+<h2>12 周学习路线 <small>每周约 8–10 小时；有 Python 和 LLM API 基础可压缩到 8 周</small></h2>
+
+<div class="phase">
+  <div class="no">P0<span>第 1 周</span></div>
+  <div>
+    <h3>LLM API 与工具调用基础</h3>
+    <ul>
+      <li><a href="https://github.com/anthropics/courses">Anthropic Courses</a>：<code>anthropic_api_fundamentals</code> → <code>tool_use</code>（工具调用最清楚的入门）</li>
+      <li>Hello-Agents 第 1–3 章：智能体定义、发展史、LLM 基础</li>
+      <li>可选：<a href="https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial">Prompt Engineering 交互教程</a></li>
+    </ul>
+    <div class="goal">✔ 产出：不用任何框架，手写一次“模型 → tool_call → 执行 → 回填结果 → 再调用”的往返。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P1<span>第 2 周</span></div>
+  <div>
+    <h3>Agent 原理与经典范式</h3>
+    <ul>
+      <li>必读：<a href="https://www.anthropic.com/research/building-effective-agents">Anthropic · Building Effective Agents</a>（workflow 与 agent 的区别、5 种模式）</li>
+      <li>必读：<a href="https://lilianweng.github.io/posts/2023-06-23-agent/">Lilian Weng · LLM Powered Autonomous Agents</a>、<a href="https://arxiv.org/abs/2210.03629">ReAct 论文</a></li>
+      <li>Hello-Agents 第 4 章：手写 ReAct、Plan-and-Solve、Reflection</li>
+      <li>对照：<a href="https://github.com/neural-maze/agentic-patterns-course">agentic-patterns-course</a>（从零实现 Reflection / Tool / Planning / Multi-agent 四种模式）</li>
+      <li>读源码：<a href="https://github.com/SWE-agent/mini-swe-agent">mini-swe-agent</a>（约 100 行能解 GitHub issue 的 agent）</li>
+    </ul>
+    <div class="goal">✔ 产出：自己的 ReAct agent，带 3 个工具，能处理工具报错并重试。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P2<span>第 3–4 周</span></div>
+  <div>
+    <h3>从零手写 Agent Harness（核心阶段）</h3>
+    <ul>
+      <li><a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a> s01–s17 全部跑一遍并改写：Agent Loop → Tool Use → Permission → Hooks → TodoWrite → Subagent → Skill → Context Compact → Memory → Task System → Background → Cron → Agent Teams → MCP → Integrated Harness → Workflow → Goal Loop</li>
+      <li>配读：<a href="https://www.anthropic.com/research/writing-tools-for-agents">Writing effective tools for agents</a>、<a href="https://code.claude.com/docs/en/best-practices">Claude Code best practices</a></li>
+      <li>原则：<a href="https://github.com/humanlayer/12-factor-agents">12-Factor Agents</a>（自己掌控 prompt、上下文窗口和控制流）</li>
+      <li>第二份可读源码：<a href="https://github.com/phuryn/mini-harness">mini-harness</a>（约 1400 行，含 goal 模式、AI 权限判官、MCP、子代理），对照自己的实现找差距</li>
+      <li>长任务：<a href="https://www.anthropic.com/research/harness-design-long-running-apps">Harness design for long-running application development</a></li>
+    </ul>
+    <div class="goal">✔ 产出：一个能读写文件、跑 shell、需要确认才执行危险命令、会压缩上下文的命令行 coding agent。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P3<span>第 5–6 周</span></div>
+  <div>
+    <h3>主流框架与 SDK</h3>
+    <ul>
+      <li>Hello-Agents 第 5–7 章：Coze / Dify / n8n 低代码，AutoGen / AgentScope / LangGraph，自研 HelloAgents 框架</li>
+      <li><a href="https://github.com/langchain-ai/langchain-academy">LangChain Academy</a> module 0–6（LangGraph 状态图、持久化、人在回路）</li>
+      <li>选 1–2 个 SDK 深入：<a href="https://openai.github.io/openai-agents-python/">OpenAI Agents SDK</a> · <a href="https://code.claude.com/docs/en/agent-sdk/overview">Claude Agent SDK</a> · <a href="https://adk.dev/">Google ADK</a> · <a href="https://github.com/pydantic/pydantic-ai">Pydantic AI</a> · <a href="https://github.com/huggingface/smolagents">smolagents</a></li>
+      <li>横向对比：<a href="https://huggingface.co/learn/agents-course">HF Agents Course</a> Unit 2（smolagents / LlamaIndex / LangGraph 同一问题三种写法）</li>
+    </ul>
+    <div class="goal">✔ 产出：把 P2 的 agent 用一个框架重写，写一页笔记对比“框架帮你做了什么、藏了什么”。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P4<span>第 7 周</span></div>
+  <div>
+    <h3>上下文工程、记忆、RAG 与协议</h3>
+    <ul>
+      <li>Hello-Agents 第 8–10 章 + Extra02 上下文工程补充</li>
+      <li><a href="https://www.anthropic.com/research/effective-context-engineering-for-ai-agents">Anthropic · Effective context engineering for AI agents</a>、<a href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html">The State of Context Engineering</a>（上下文失效类型与修复）</li>
+      <li>工具规模化：<a href="https://www.anthropic.com/research/code-execution-with-mcp">Code execution with MCP</a>、<a href="https://www.anthropic.com/research/advanced-tool-use">Advanced tool use</a></li>
+      <li>Microsoft 课程第 5、11、12、13 课（Agentic RAG、MCP/A2A/NLWeb、上下文工程、记忆）</li>
+      <li><a href="https://github.com/microsoft/mcp-for-beginners">MCP for Beginners</a> + <a href="https://modelcontextprotocol.io">MCP 规范</a>；<a href="https://a2a-protocol.org">A2A 协议</a></li>
+      <li>记忆系统参考实现：<a href="https://github.com/mem0ai/mem0">mem0</a>、<a href="https://github.com/letta-ai/letta">Letta (MemGPT)</a></li>
+    </ul>
+    <div class="goal">✔ 产出：给自己的 agent 写一个 MCP server，并加跨会话长期记忆。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P5<span>第 8 周</span></div>
+  <div>
+    <h3>多智能体系统</h3>
+    <ul>
+      <li>正反两面一起读：<a href="https://www.anthropic.com/research/multi-agent-research-system">Anthropic · How we built our multi-agent research system</a> 与 <a href="https://cognition.com/blog/dont-build-multi-agents">Cognition · Don't Build Multi-Agents</a>，再读它的续篇 <a href="https://cognition.com/blog/multi-agents-working">Multi-Agents: What's Actually Working</a>（结论：多个 agent 贡献智能，写操作保持单线程）</li>
+      <li>Hello-Agents 第 14 章（DeepResearch 复现）、第 15 章（赛博小镇）</li>
+      <li><a href="https://github.com/datawhalechina/handy-multi-agent">handy-multi-agent</a>（基于 CAMEL 的中文多智能体教程）</li>
+      <li>框架：<a href="https://github.com/crewAIInc/crewAI">CrewAI</a>、<a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a>、<a href="https://github.com/openai/swarm">OpenAI Swarm</a>（教学用，看 handoff 设计）</li>
+    </ul>
+    <div class="goal">✔ 产出：orchestrator + 并行子代理的研究型 agent，并测量它比单 agent 多花多少 token、多拿多少分。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P6<span>第 9–10 周</span></div>
+  <div>
+    <h3>评估、可观测性与安全</h3>
+    <ul>
+      <li>必读：<a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Anthropic · Demystifying evals for AI agents</a></li>
+      <li>Hello-Agents 第 12 章（指标、基准、评估框架）</li>
+      <li>Coding Agent from Scratch 课程第 7–8 篇：benchmark 与回归测试、用失败轨迹扩充回归集、轨迹回放</li>
+      <li>HF Agents Course Bonus Unit 2（追踪与评估）</li>
+      <li>工具：<a href="https://github.com/langfuse/langfuse">Langfuse</a> / <a href="https://github.com/Arize-ai/phoenix">Phoenix</a>（追踪），<a href="https://github.com/UKGovernmentBEIS/inspect_ai">Inspect</a>（评估框架）</li>
+      <li>基准：<a href="https://github.com/SWE-bench/SWE-bench">SWE-bench</a>、<a href="https://github.com/sierra-research/tau2-bench">τ²-bench</a></li>
+      <li>安全：Microsoft 课程第 6、18 课（可信 Agent、Agent 安全）；agents-towards-production 安全章节</li>
+    </ul>
+    <div class="goal">✔ 产出：给自己的 agent 建 30+ 条评估用例，改 prompt 或换模型后能自动出对比报告。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P7<span>第 11 周</span></div>
+  <div>
+    <h3>生产部署</h3>
+    <ul>
+      <li><a href="https://github.com/NirDiamant/agents-towards-production">agents-towards-production</a>：部署、GPU 部署、UI、追踪</li>
+      <li><a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">OpenAI · A Practical Guide to Building Agents</a>（PDF，guardrails 与编排）</li>
+      <li>模板：<a href="https://github.com/GoogleCloudPlatform/agent-starter-pack">Agent Starter Pack</a>（含 CI/CD 与评估）、<a href="https://github.com/anthropics/claude-quickstarts">Claude Quickstarts</a></li>
+      <li>Microsoft 课程第 10、16、17 课（生产、可扩展部署、本地 Agent）</li>
+    </ul>
+    <div class="goal">✔ 产出：agent 以无头服务方式部署，能由 webhook / cron 触发，带追踪和费用监控。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P8<span>第 12 周</span></div>
+  <div>
+    <h3>进阶：Agentic RL 与前沿</h3>
+    <ul>
+      <li>Hello-Agents 第 11 章：SFT → GRPO 训练智能体</li>
+      <li><a href="https://github.com/microsoft/agent-lightning">Agent Lightning</a>（用 RL 训练已有 agent）</li>
+      <li>HF Agents Course Bonus Unit 1（微调函数调用模型）</li>
+      <li><a href="https://llmagents-learning.org/f24">UC Berkeley LLM Agents MOOC</a>（讲座覆盖推理、规划、代码 agent、安全）</li>
+      <li>论文索引：<a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">LLM-Agent-Paper-List</a></li>
+    </ul>
+    <div class="goal">✔ 产出：读懂并复现一篇 agent 训练论文的小规模实验。</div>
+  </div>
+</div>
+</section>
+
+<section id="capstone">
+<h2>毕业项目建议 <small>选一个，把前面所有阶段串起来</small></h2>
+<ol class="tight">
+  <li><strong>个人 coding agent</strong>：P2 的 harness + MCP + 子代理 + 评估集（用 SWE-bench Lite 子集打分）。</li>
+  <li><strong>深度研究 agent</strong>：对照 Hello-Agents 第 14 章与 Anthropic 多智能体文章，做引用可追溯的研究报告生成器。</li>
+  <li><strong>业务 agent</strong>：客服 / 运维 / 数据分析场景，用 τ²-bench 的思路设计“工具 + 用户模拟器 + 策略约束”评测。</li>
+</ol>
+<p class="note">Hello-Agents 第 16 章和它的 <a href="https://github.com/datawhalechina/hello-agents/blob/main/Co-creation-projects">共创项目</a> 目录里有大量往届示例可参考。</p>
+</section>
+
+<!-- RESOURCES -->
+
+<section id="ai-gen">
+<h2>关于 AI 生成的教程</h2>
+<ul class="tight">
+  <li>GitHub 上 2026 年新出现的大量 “agent 教程” 仓库由 AI 批量生成，结构完整但常见问题有：API 已过时、代码跑不通、概念张冠李戴、缺少评估与失败案例。</li>
+  <li>它们最有价值的用法不是当主教材，而是当<strong>源码导读工具</strong>：用 PocketFlow-Tutorial-Codebase-Knowledge 或你自己的 coding agent，对 mini-swe-agent、OpenHands、learn-claude-code 生成导读，再对照源码验证。</li>
+  <li>判断质量的快速方法：看是否有可运行代码和测试、最近是否更新、是否引用一手来源、Issue 区是否有人反馈错误。</li>
+</ul>
+</section>
+
+<section id="tips">
+<h2>避坑建议</h2>
+<ol class="tight">
+  <li><strong>先手写，再用框架。</strong>不理解 agent loop 和工具回填就上 LangGraph / CrewAI，出问题时无从下手。</li>
+  <li><strong>不要囤教程。</strong>主线只选一本（Hello-Agents），其余当查阅资料。上面的清单是索引，不是待办。</li>
+  <li><strong>尽早建评估集。</strong>agent 开发的难点在“改了之后有没有变好”，没有评估就是凭感觉调 prompt。</li>
+  <li><strong>多智能体不是默认选项。</strong>先把单 agent + 好工具 + 好上下文做到极致，再评估是否需要拆分。</li>
+  <li><strong>关注一手来源。</strong>框架迭代快，以官方文档和仓库 README 为准，Star 数只代表热度不代表质量。</li>
+</ol>
+</section>

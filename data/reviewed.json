@@ -1,0 +1,1664 @@
+{
+"anthropic.com/research/advanced-tool-use": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"anthropic.com/research/april-23-postmortem": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"anthropic.com/research/claude-code-auto-mode": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"anthropic.com/research/claude-code-sandboxing": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"anthropic.com/research/code-execution-with-mcp": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"anthropic.com/research/components-of-agent-memory": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"anthropic.com/research/demystifying-evals-for-ai-agents": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 9,
+"reason": "已收录"
+},
+"anthropic.com/research/desktop-extensions": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"anthropic.com/research/harness-design-long-running-apps": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 9,
+"reason": "已收录"
+},
+"anthropic.com/research/infrastructure-noise": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2610.37741": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.08946": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.09017": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.09516": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.09721": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.10412": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.10602": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.10837": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.11437": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.11509": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.11796": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.11896": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.11995": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12014": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12085": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12118": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12222": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12856": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12966": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.12982": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13015": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13183": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13541": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13684": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13713": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13925": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.13994": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14256": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14364": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14511": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14765": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14925": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.14949": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.15262": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.15831": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.16493": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.16590": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.16861": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.16867": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.16991": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"arxiv.org/abs/2611.17267": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/fine-grained-access-control-for-amazon-bedrock-managed-knowledge-base-tools": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/migrate-to-amazon-bedrock-managed-knowledge-base-with-your-coding-agent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"blog.atuin.sh/threads-agent-sessions": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"brave.com/blog/search-api-agentic-payments": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"claude.com/resources/articles/interactive-connectors-full-tool": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"claude.com/resources/articles/j-crew-style-advisor-with-claude": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/closing-the-agent-loop-devin-autofixes-review-comments": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/deepwiki-mcp-server": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/devin-2": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/devin-agent-preview-sonnet-4-5": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/devin-fusion": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/devin-sonnet-4-5-lessons-and-challenges": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/frontier-code-2.0": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/how-cognition-uses-devin-to-build-devin": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/introducing-devin-desktop": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/local-fusion": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/making-fable-cheaper-than-opus": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/mcp-marketplace": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/multi-agents-working": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 9,
+"reason": "已收录"
+},
+"cognition.com/blog/swe-1-5": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/swe-2": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/swe-bench-technical-report": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/swe-check-10x-faster": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/swe-grep": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/testing-development": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cognition.com/blog/windsurf": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"cursor.com/blog/agent-sdk": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"dbreunig.com/2026/10/24/the-state-of-context-engineering.html": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"decodingai.com": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"decodingai.com/p/4-key-decisions-to-solidify-your": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"decodingai.com/p/agentic-rag-vs-single-search-amazon-bedrock": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"decodingai.com/p/claude-code-from-scratch-harness-engineering-roadmap": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"decodingai.com/p/write-your-own-llm-judges": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"devblogs.microsoft.com/foundry/foundry-local-agentic-coding-qwen3-8-27b": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"devblogs.microsoft.com/foundry/microsoft-foundry-azure-developer-cli-ga": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-october-2026": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"devblogs.microsoft.com/foundry/when-one-pass-isnt-enough-agentic-mode-in-azure-content-understanding": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/agent-distraction": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/devfest-is-back": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/fast-reliable-a2ui": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/1jehuang/jcode": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/addyosmani/agent-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/aden-hive/hive": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/adongwanai/agentguide": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/affaan-m/ecc": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/agentevalhq/agenteval": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/agentlogs/agentlogs": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/aggib/stroq": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ai-boost/awesome-prompts": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ai-driven-dev/framework": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ai-mzq/from-zero-to-agi": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/alirezarezvani/claude-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/aml-memory/agent-memory-leaderboard": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/amosblomqvist/learnharness": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/andyhuo520/digital-human-koubo": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/anthropics/skills": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"github.com/avids2/memorix": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/awesome-ai-pedia/awesome-ai-pedia": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/baalimago/clai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/balanov/uncut": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/blader/humanizer": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/bonigarcia/context-engineering": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/caru-ini/stack-diagram": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/chirpz-ai/pandaprobe": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/datus-ai/datus-agent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/deep-jlu/awesome-graph-engineering": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/deepset-ai/haystack": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/didilili/mianstack": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/dodaios/ste80-humanizer": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/drost-ai/tinker-ai-skill": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/duyunzhoudyz/dyz-med-paper-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/emarco177/langchain-course": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/emarco177/langgraph-course": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/failproofai/failproofai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/fullsend-ai/fullsend": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ggozad/haiku.rag": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/giovannipasq/agentic-rag-for-dummies": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/github/awesome-copilot": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/glen-web-app/best-agent-memory-mcp": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/googlechrome/modern-web-guidance": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/hkuds/deepcode": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/iaar-shanghai/awesome-ai-memory": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/janestreet/agent_skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/jiangxinke/harness-rl": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/joshithreddyaleti/ai_engineer_interview_prep": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/jztan/pdf-mcp": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/k-dense-ai/scientific-agent-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/keyuchen21/agentic-engineering-handbook": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/kilo-org/kilocode": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/klad-app/klad": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/kody-hq/kody": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/konlu/story-studio": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/krushnavardhanreddy/paperpilot": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/kubai087/kubai-icons": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/langchain-ai/deepagents": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/langchain-ai/langchain": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/langchain-ai/langchainjs": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/lanqiao-luca/ai-java-workflow": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/leonxlnx/cook": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/leonxlnx/taste-skill": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/microsoft/ai-engineering-coach": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/moh4696/cinematic-skill": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/moh4696/open-3d-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/mvanhorn/last30days-skill": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/nageoffer/ragent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/nirdiamant/agent_memory_techniques": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/nvidia/skillevaluator": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/obra/superpowers": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/obsidianmd/obsidian-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/oceanbase/powercontext": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/okf-memory/okf-agent-memory": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/op7418/guizang-game-skill": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/open-gsd/gsd-pi": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/open-rua/uni-robot-agent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/opendatalab/mineru-html": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/openmontageinc/openmontage": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/p90-rushb/agentark": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/phuryn/mini-harness": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"github.com/phuryn/product-engineering": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/qf-studio/navigator": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/rainyzhou2/sreagentharness": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/repoprompt/repoprompt-ce": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/riponcm/projectmem": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ruvnet/ruflo": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ruvnet/ruvector": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/shanraisshan/claude-code-best-practice": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/shinpr/ai-coding-project-boilerplate": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/sickn33/agentic-awesome-skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/snailclimb/aiguide": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/swingerman/engineer": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/tempestai-dev/tempest": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/tencentcloud/tencentdb-agent-memory": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/tigerless-labs/agent-memory": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/tinyhumansai/openhuman": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/tt-a1i/archify": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/undefined-ui/second-brain-os": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/vectorize-io/hindsight": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/vercel-labs/skills": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/volcengine/openviking": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/voltagent/awesome-ai-agent-papers": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/voltagent/voltagent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/vstorm-co/full-stack-ai-agent-template": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/wakeup-jin/practical-guide-to-context-engineering": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 7,
+"reason": "已收录"
+},
+"github.com/wshobson/agents": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/wujiangxu/a-mem": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/xerj-org/xerj": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/yc-software/minecraft-agent-harness": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/yc-software/qm": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/ywedai/teachable-figures": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/yzfly/awesome-context-engineering": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"github.com/zhayujie/cowagent": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"huggingface.co/blog/qvac/botpsy": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"jatorre.github.io/garden": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"kadhar.dev/blog/multi-agent-systems-from-scratch": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"labs.ycombinator.com/projects/games/index.html": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/community": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/langgraph": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/langsmith/agent-server": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/langsmith/evaluation": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/langsmith/llm-gateway": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"langchain.com/langsmith/sandboxes": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"latent.space": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"latent.space/p/codex-work": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"latent.space/p/resend": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"longcat.ai/blog/longcat-2.5": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"lorekit.io/blog/open-agent-memory-format": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"martinfowler.com/rachels-ramblings/good-devs-wary.html": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"mcp-explained.com": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"openai.com/business/customer-stories/amplitude": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/business/customer-stories/gondola": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/business/customer-stories/holidays-extras-codex": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/accelerating-engineering-for-the-physical-world": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/coderabbit-codex-daybreak": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/cultfit-builds-with-codex": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/gpt-6-1-sol-coderabbit-code-security": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/greptile-code-review-codex-astra": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/heimstaden": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/how-we-detect-frontier-model-misalignment": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/introducing-chatgpt-wallet": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/introducing-gpt-6-1-terra": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/introducing-images-2-6": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/jiostar-vijay-seshadri": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/legora": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/merge-builds-with-openai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/openai-cut-incident-investigation": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/openai-servicenow-partnership-expansion": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/openai-to-acquire-pierre": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/qodo-codex-plugin": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/retell-ai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"openai.com/index/scaling-git-at-openai": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"oreilly.com/radar/choose-your-coding-harness-by-what-you-need-to-control-not-by-who-built-it": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"oreilly.com/radar/resonant-computing-and-common-fabric": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"oreilly.com/radar/the-new-knowledge-artifacts-of-the-ai-economy": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"oreilly.com/radar/what-makes-an-agent-self-evolving": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"oreilly.com/radar/why-git-needs-help-moving-from-files-to-systems-for-source-control": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"ricursive.com/ripple": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"simonwillison.net/tags/ai-agents": {
+"date": "2026-11-15",
+"decision": "accept",
+"score": 8,
+"reason": "已收录"
+},
+"tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+},
+"twitter.com/OcanaSantero/status/2115442964574908902": {
+"date": "2026-11-15",
+"decision": "reject",
+"score": null,
+"reason": "首轮审核：产品新闻/客户案例/工具或与已收录重复，未达收录标准"
+}
+}

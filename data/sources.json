@@ -1,0 +1,210 @@
+{
+ "_doc": "discover.py 的数据源。keywords 用于过滤 RSS/HN/Reddit 条目（标题或摘要命中任一即保留）。新增或删除数据源只需改这里。 pages 类数据源没有日期，只按标题关键词过滤，并依赖 reviewed.json 去重。GitHub 搜索按 2.2 秒间隔串行，避免触发 30 次/分钟限制。",
+ "lookback_days": 21,
+ "keywords": [
+  "agent",
+  "agentic",
+  "智能体",
+  "mcp",
+  "model context protocol",
+  "a2a",
+  "tool use",
+  "tool calling",
+  "function calling",
+  "context engineering",
+  "harness",
+  "multi-agent",
+  "coding assistant",
+  "claude code",
+  "codex",
+  "computer use",
+  "browser use",
+  "deep research",
+  "agent sdk",
+  "langgraph",
+  "crewai",
+  "autogen",
+  "evals"
+ ],
+ "github": {
+  "min_stars": 150,
+  "queries": [
+   "ai agents tutorial",
+   "agents course",
+   "agentic ai course",
+   "build ai agent from scratch",
+   "coding agent from scratch",
+   "agent harness",
+   "context engineering",
+   "agent engineering",
+   "multi-agent tutorial",
+   "mcp tutorial",
+   "agent evaluation",
+   "agent memory",
+   "agentic rag",
+   "智能体 教程",
+   "agent 教程",
+   "从零 构建 agent",
+   "llm agent course",
+   "agent skills"
+  ]
+ },
+ "feeds": [
+  {
+   "name": "OpenAI News",
+   "url": "https://openai.com/news/rss.xml",
+   "type": "official"
+  },
+  {
+   "name": "Hugging Face Blog",
+   "url": "https://huggingface.co/blog/feed.xml",
+   "type": "official"
+  },
+  {
+   "name": "Google Developers Blog",
+   "url": "https://developers.googleblog.com/feeds/posts/default",
+   "type": "official"
+  },
+  {
+   "name": "Google Developers (blog.google)",
+   "url": "https://blog.google/technology/developers/rss/",
+   "type": "official"
+  },
+  {
+   "name": "Microsoft Foundry Blog",
+   "url": "https://devblogs.microsoft.com/foundry/feed/",
+   "type": "official"
+  },
+  {
+   "name": "AWS Machine Learning Blog",
+   "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+   "type": "official"
+  },
+  {
+   "name": "GitHub Blog",
+   "url": "https://github.blog/feed/",
+   "type": "official"
+  },
+  {
+   "name": "CrewAI Blog",
+   "url": "https://blog.crewai.com/rss/",
+   "type": "official"
+  },
+  {
+   "name": "Simon Willison (ai-agents)",
+   "url": "https://simonwillison.net/tags/ai-agents.atom",
+   "type": "community"
+  },
+  {
+   "name": "Latent Space",
+   "url": "https://www.latent.space/feed",
+   "type": "community"
+  },
+  {
+   "name": "Chip Huyen",
+   "url": "https://huyenchip.com/feed.xml",
+   "type": "community"
+  },
+  {
+   "name": "Lilian Weng",
+   "url": "https://lilianweng.github.io/index.xml",
+   "type": "community"
+  },
+  {
+   "name": "Philipp Schmid",
+   "url": "https://www.philschmid.de/rss",
+   "type": "community"
+  },
+  {
+   "name": "Hamel Husain",
+   "url": "https://hamel.dev/index.xml",
+   "type": "community"
+  },
+  {
+   "name": "Eugene Yan",
+   "url": "https://eugeneyan.com/rss/",
+   "type": "community"
+  },
+  {
+   "name": "Decoding AI",
+   "url": "https://www.decodingai.com/feed",
+   "type": "community"
+  },
+  {
+   "name": "Sebastian Raschka",
+   "url": "https://magazine.sebastianraschka.com/feed",
+   "type": "community"
+  },
+  {
+   "name": "Interconnects",
+   "url": "https://www.interconnects.ai/feed",
+   "type": "community"
+  },
+  {
+   "name": "Martin Fowler",
+   "url": "https://martinfowler.com/feed.atom",
+   "type": "community"
+  },
+  {
+   "name": "O'Reilly Radar",
+   "url": "https://www.oreilly.com/radar/feed/",
+   "type": "community"
+  },
+  {
+   "name": "量子位",
+   "url": "https://www.qbitai.com/feed",
+   "type": "community"
+  },
+  {
+   "name": "Reddit r/AI_Agents（周榜）",
+   "url": "https://www.reddit.com/r/AI_Agents/top/.rss?t=week",
+   "type": "community"
+  },
+  {
+   "name": "Reddit r/LocalLLaMA（周榜）",
+   "url": "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week",
+   "type": "community"
+  }
+ ],
+ "pages": [
+  {
+   "name": "Anthropic Engineering",
+   "url": "https://www.anthropic.com/engineering",
+   "link_prefix": "/research/",
+   "type": "official"
+  },
+  {
+   "name": "Claude Articles",
+   "url": "https://claude.com/resources/articles",
+   "link_prefix": "/resources/articles/",
+   "type": "official"
+  },
+  {
+   "name": "LangChain Blog",
+   "url": "https://www.langchain.com/blog",
+   "link_prefix": "/blog/",
+   "type": "official"
+  },
+  {
+   "name": "Cognition Blog",
+   "url": "https://cognition.ai/blog",
+   "link_prefix": "/blog/",
+   "type": "community"
+  }
+ ],
+ "hackernews": {
+  "queries": [
+   "agent",
+   "agents",
+   "agentic",
+   "MCP",
+   "context engineering",
+   "coding agent"
+  ],
+  "min_points": 80
+ },
+ "arxiv": {
+  "query": "(ti:agent OR ti:agents OR ti:agentic) AND (ti:survey OR ti:tutorial OR ti:benchmark OR ti:review OR ti:\"context engineering\")",
+  "max_results": 40
+ }
+}

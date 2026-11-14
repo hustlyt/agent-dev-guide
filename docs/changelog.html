@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>更新日志 · 深入学习 AI Agent 开发</title>
+<meta name="description" content="AI Agent 开发深入学习路线与持续更新的资料库：官方教程、社区课程、工程文章、论文与视频。">
+<link rel="alternate" type="application/rss+xml" title="深入学习 AI Agent 开发 更新日志" href="feed.xml">
+<style>:root{
+    --bg:#fbfaf7; --fg:#1d1d1b; --muted:#6b6a65; --line:#e4e1d9; --card:#ffffff;
+    --accent:#b4532a; --accent-soft:#f6e7df; --ok:#2f7a4f; --chip:#efece5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#161614; --fg:#ebe9e3; --muted:#a19f98; --line:#33322e; --card:#1f1f1c;
+      --accent:#e08a5f; --accent-soft:#3a271d; --ok:#6cc28f; --chip:#2a2926; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+  header h1{font-size:clamp(26px,4vw,38px);line-height:1.25;margin:0 0 12px;letter-spacing:-.5px}
+  header p.lead{color:var(--muted);margin:0 0 6px;max-width:760px}
+  .meta{font-size:13px;color:var(--muted)}
+  nav.toc{margin:28px 0 8px;display:flex;flex-wrap:wrap;gap:8px}
+  nav.toc a{background:var(--chip);padding:4px 12px;border-radius:999px;font-size:14px;color:var(--fg)}
+  h2{font-size:24px;margin:56px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+  h2 small{font-size:14px;color:var(--muted);font-weight:400;margin-left:8px}
+  h3{font-size:18px;margin:24px 0 6px}
+  .verdict{background:var(--accent-soft);border-left:4px solid var(--accent);padding:18px 22px;border-radius:6px;margin:28px 0}
+  .verdict b{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .card .role{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+  .card h4{margin:4px 0 6px;font-size:17px}
+  .card p{margin:0;font-size:14px;color:var(--muted)}
+  .phase{display:grid;grid-template-columns:88px 1fr;gap:18px;padding:20px 0;border-bottom:1px dashed var(--line)}
+  .phase:last-child{border-bottom:none}
+  .phase .no{font-size:30px;font-weight:700;color:var(--accent);line-height:1}
+  .phase .no span{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:6px}
+  .phase h3{margin:0 0 6px}
+  .phase ul{margin:6px 0 0;padding-left:20px} .phase li{margin:3px 0}
+  .goal{font-size:14px;color:var(--ok);margin-top:8px}
+  .tag{display:inline-block;font-size:12px;padding:0 8px;border-radius:4px;background:var(--chip);color:var(--muted);margin-left:4px;vertical-align:1px}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  .filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+  .filters button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .tbl{width:100%;border-collapse:collapse;font-size:14px}
+  .tbl th,.tbl td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-size:12px;color:var(--muted);font-weight:600;position:sticky;top:0;background:var(--bg)}
+  .tbl td.n{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+  .tbl tr.cat td{background:var(--chip);font-weight:600;font-size:13px}
+  .t-off{color:var(--ok)} .t-ai{color:var(--accent)}
+  .pick{font-weight:700;color:var(--accent)}
+  .note{font-size:14px;color:var(--muted)}
+  ol.tight li,ul.tight li{margin:4px 0}
+  .tblwrap{overflow-x:auto}
+  @media (max-width:640px){
+    .phase{grid-template-columns:1fr;gap:6px}
+    .tbl .hide-sm{display:none}
+  }
+  footer{margin-top:60px;font-size:13px;color:var(--muted)}
+
+/* site chrome */
+.topbar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.wrap-top{max-width:1080px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--fg)}
+.topbar nav{display:flex;gap:14px;font-size:14px}
+.topbar nav a{color:var(--muted)} .topbar nav a.on{color:var(--accent);font-weight:600}
+.hero{margin-top:8px}
+.latest{font-size:14px;background:var(--chip);display:inline-block;padding:4px 12px;border-radius:6px;margin:10px 0 0}
+.toolbar{display:flex;flex-direction:column;gap:6px;margin:14px 0}
+.toolbar input{width:100%;max-width:420px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:14px}
+.filters{margin:0}
+.cnt{font-weight:400;color:var(--muted);margin-left:8px;font-size:12px}
+.fmt{display:block;font-size:12px;color:var(--muted)}
+.badge{display:inline-block;font-size:11px;padding:0 6px;border-radius:4px;margin-left:4px;vertical-align:1px;border:1px solid var(--line)}
+.badge.new{background:var(--accent);color:#fff;border-color:var(--accent)}
+.badge.warn{color:#b07a00} .badge.bad{color:#c0392b}
+.note-sm{font-size:12px;color:var(--muted);margin-top:2px}
+.log{border-top:1px solid var(--line);padding:20px 0}
+.log time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.log h3{margin:2px 0 4px} .log h4{margin:14px 0 4px;font-size:14px;color:var(--muted)}
+.log ul{margin:0;padding-left:20px;font-size:14px} .log li{margin:3px 0}
+li.del{color:var(--muted);text-decoration:line-through}
+</style></head>
+<body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
+<nav><a href="index.html">教程</a><a href="index.html#refs">资料库</a><a href="changelog.html" class=on>更新日志</a><a href="feed.xml">RSS</a></nav></div></div>
+<div class="wrap">
+<header><h1>更新日志</h1><p class="lead">每周一自动检索 GitHub、官方博客、技术社区、arXiv，经质量审核后收录。也可以 <a href="feed.xml">订阅 RSS</a>。</p></header><article class="log" id="v2026-11-15">
+<header><time>2026-11-15</time><h3>改版为网站并开启每周自动更新；新增 22 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness 等），新增“博客、Newsletter 与视频”分类</h3>
+<p class="note">候选 274 · 新增 22 · 调整 9</p></header>
+<h4>新增 22</h4><ul><li class="add"><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Demystifying evals for AI agents</a> — Anthropic：多轮 agent 评估的设计方法，评分器类型、能力 vs 回归评估、从失败中迭代</li><li class="add"><a href="https://www.anthropic.com/research/components-of-agent-memory">The components of agent memory</a> — Anthropic：从神经科学类比出发拆解 agent 记忆的编码、巩固与检索</li><li class="add"><a href="https://www.anthropic.com/research/harness-design-long-running-apps">Harness design for long-running application development</a> — Anthropic：长时间自主编程的 harness 设计，生成器/评审者分离与多 agent 迭代</li><li class="add"><a href="https://www.anthropic.com/research/code-execution-with-mcp">Code execution with MCP</a> — Anthropic：让 agent 用代码调用 MCP 工具，大幅减少工具定义和结果占用的上下文</li><li class="add"><a href="https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills">Equipping agents for the real world with Agent Skills</a> — Anthropic：Agent Skills 的设计思想——按需加载的指令、脚本和资源包</li><li class="add"><a href="https://www.anthropic.com/research/advanced-tool-use">Introducing advanced tool use</a> — Anthropic：工具搜索、程序化工具调用与工具使用示例，解决大规模工具库的上下文问题</li><li class="add"><a href="https://github.com/anthropics/skills">anthropics/skills</a> — Anthropic 官方 Agent Skills 示例库，学习 SKILL.md 写法的一手材料</li><li class="add"><a href="https://cognition.com/blog/multi-agents-working">Multi-Agents: What&#x27;s Actually Working</a> — Cognition：《Don&#x27;t Build Multi-Agents》的续篇，哪些多智能体模式真正可用（写操作保持单线程）</li><li class="add"><a href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html">The State of Context Engineering</a> — Drew Breunig 演讲整理：上下文失效的类型与对应修复方法，附幻灯片</li><li class="add"><a href="https://www.decodingai.com/p/claude-code-from-scratch-harness-engineering-roadmap">Harness Engineering Roadmap: Claude Code From First Principles</a> — 拆解 Claude Code、OpenCode、Pi 后整理的 harness 工程路线图，配套从零实现课程</li><li class="add"><a href="https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/">Hill-Climbing Agent Quality with Agents CLI Evaluation</a> — Google：从首次评估到回归追踪、模型对比、自动告警的完整 agent 评估循环</li><li class="add"><a href="https://mcp-explained.com/">MCP Explained</a> — 交互式 MCP 课程：消息流可视化、规范版本对比、“故意弄坏”练习（HN 348 分）</li><li class="add"><a href="https://github.com/phuryn/mini-harness">phuryn/mini-harness</a> — 约 1400 行的教学用 harness：goal 模式、权限+AI 判官、Skills、MCP、子代理、压缩</li><li class="add"><a href="https://github.com/undefined-ui/second-brain-os">undefined-ui/second-brain-os</a> — 7 模块 agent 课程（上下文→循环→闸门→harness→评估→生产）+ 5 本分层手册</li><li class="add"><a href="https://github.com/adongwanai/AgentGuide">adongwanai/AgentGuide</a> — 对标 JavaGuide 的 Agent 学习指南：harness、上下文工程、RAG、MCP、Agentic RL、求职</li><li class="add"><a href="https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering">WakeUp-Jin/Practical-Guide-to-Context-Engineering</a> — 上下文工程与 Agent 运行空间（harness）实践指南</li><li class="add"><a href="https://github.com/NirDiamant/Agent_Memory_Techniques">NirDiamant/Agent_Memory_Techniques</a> — 30 个可运行 notebook：缓冲、向量、知识图谱、反思等 agent 记忆技术</li><li class="add"><a href="https://github.com/GiovanniPasq/agentic-rag-for-dummies">GiovanniPasq/agentic-rag-for-dummies</a> — LangGraph 模块化 Agentic RAG：对话记忆、人在回路的查询澄清，代码精简</li><li class="add"><a href="https://github.com/VoltAgent/awesome-ai-agent-papers">VoltAgent/awesome-ai-agent-papers</a> — 2026 年 agent 论文精选，按多智能体、记忆、评估、工具等分类，每周更新</li><li class="add"><a href="https://www.latent.space/">Latent Space</a> — AI 工程师播客与 Newsletter，大量 agent 一线团队访谈</li><li class="add"><a href="https://simonwillison.net/tags/ai-agents/">Simon Willison · ai-agents 标签</a> — 持续追踪 agent 工具与实践的高质量博客，适合跟进最新动态</li><li class="add"><a href="https://www.decodingai.com/">Decoding AI</a> — Paul Iusztin 的 AI 工程 Newsletter，harness、评估、生产化实战文章</li></ul><h4>调整 5</h4><ul><li class="chg">Anthropic 工程文章 5 篇 — URL 从 /engineering/ 迁移到 /research/</li><li class="chg">Claude Code Best Practices — 迁移到 code.claude.com 文档</li><li class="chg">Claude Agent SDK 文档 — 迁移到 code.claude.com</li><li class="chg">Google ADK 文档 — 迁移到 adk.dev</li><li class="chg">Don&#x27;t Build Multi-Agents — 域名迁移到 cognition.com</li></ul><h4>教程正文</h4><ul><li>学习路线 P5 多智能体：补充 Cognition《Multi-Agents: What&#x27;s Actually Working》</li><li>学习路线 P6 评估：补充 Anthropic《Demystifying evals for AI agents》</li><li>学习路线 P2 harness：补充 mini-harness 作为第二个可读源码</li></ul></article>
+<article class="log" id="v2026-11-14">
+<header><time>2026-11-14</time><h3>首版发布：推荐主教材 Hello-Agents，12 周学习路线，收录 78 条资料</h3>
+<p class="note">收录 78</p></header>
+<h4>教程正文</h4><ul><li>基于 GitHub 关键词检索整理首版教程与资料清单，所有链接已逐一核对</li></ul></article>
+<footer>最近更新：2026-11-15 · 每周一自动检索新资料、核对链接并人工式审核后发布 ·
+<a href="changelog.html">更新日志</a> · <a href="https://github.com/hustlyt/agent-dev-guide">源码与数据</a></footer>
+</div>
+<script>
+(function(){
+  const q=document.getElementById('q'); if(!q) return;
+  const rows=[...document.querySelectorAll('#reftbl tbody tr')];
+  const btns=[...document.querySelectorAll('#filters button')]; let key='all';
+  function ok(r){
+    if(key==='all') return true;
+    if(key==='zh') return r.dataset.zh==='1';
+    if(key==='new') return r.dataset.new==='1';
+    const [k,v]=key.split(':'); return r.dataset[k]===v;
+  }
+  function apply(){
+    const s=q.value.trim().toLowerCase();
+    rows.forEach(r=>{ if(r.classList.contains('cat')) return;
+      r.style.display=(ok(r)&&(!s||r.dataset.s.includes(s)))?'':'none'; });
+    rows.forEach((r,i)=>{ if(!r.classList.contains('cat')) return; let j=i+1,any=false;
+      while(j<rows.length&&!rows[j].classList.contains('cat')){ if(rows[j].style.display!=='none') any=true; j++; }
+      r.style.display=any?'':'none'; });
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>{btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');key=b.dataset.k;apply();}));
+  q.addEventListener('input',apply);
+})();
+</script></body></html>

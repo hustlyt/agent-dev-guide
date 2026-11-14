@@ -1,0 +1,5 @@
+work/
+.playwright-mcp/
+__pycache__/
+*.pyc
+/index.html

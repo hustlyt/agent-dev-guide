@@ -1,0 +1,79 @@
+[
+ {
+  "date": "2026-11-15",
+  "summary": "改版为网站并开启每周自动更新；新增 22 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness 等），新增“博客、Newsletter 与视频”分类",
+  "stats": {
+   "候选": 274,
+   "新增": 22,
+   "调整": 9
+  },
+  "added": [
+   "anthropic-demystifying-evals",
+   "anthropic-components-of-agent-memory",
+   "anthropic-harness-design-long-running",
+   "anthropic-code-execution-with-mcp",
+   "anthropic-agent-skills",
+   "anthropic-advanced-tool-use",
+   "anthropics-skills",
+   "cognition-multi-agents-working",
+   "dbreunig-state-of-context-engineering",
+   "decodingai-harness-engineering-roadmap",
+   "google-agents-cli-evaluation",
+   "mcp-explained",
+   "phuryn-mini-harness",
+   "undefined-ui-second-brain-os",
+   "adongwanai-agentguide",
+   "wakeup-jin-context-engineering-guide",
+   "nirdiamant-agent-memory-techniques",
+   "giovannipasq-agentic-rag-for-dummies",
+   "voltagent-awesome-ai-agent-papers",
+   "latent-space",
+   "simonwillison-ai-agents",
+   "decodingai-newsletter"
+  ],
+  "changed": [
+   {
+    "id": "anthropic-engineering",
+    "title": "Anthropic 工程文章 5 篇",
+    "reason": "URL 从 /engineering/ 迁移到 /research/"
+   },
+   {
+    "id": "claude-code-best-practices",
+    "title": "Claude Code Best Practices",
+    "reason": "迁移到 code.claude.com 文档"
+   },
+   {
+    "id": "claude-agent-sdk",
+    "title": "Claude Agent SDK 文档",
+    "reason": "迁移到 code.claude.com"
+   },
+   {
+    "id": "adk-docs",
+    "title": "Google ADK 文档",
+    "reason": "迁移到 adk.dev"
+   },
+   {
+    "id": "cognition",
+    "title": "Don't Build Multi-Agents",
+    "reason": "域名迁移到 cognition.com"
+   }
+  ],
+  "guide_changes": [
+   "学习路线 P5 多智能体：补充 Cognition《Multi-Agents: What's Actually Working》",
+   "学习路线 P6 评估：补充 Anthropic《Demystifying evals for AI agents》",
+   "学习路线 P2 harness：补充 mini-harness 作为第二个可读源码"
+  ]
+ },
+ {
+  "date": "2026-11-14",
+  "initial": true,
+  "summary": "首版发布：推荐主教材 Hello-Agents，12 周学习路线，收录 78 条资料",
+  "stats": {
+   "收录": 78
+  },
+  "added": [],
+  "guide_changes": [
+   "基于 GitHub 关键词检索整理首版教程与资料清单，所有链接已逐一核对"
+  ]
+ }
+]

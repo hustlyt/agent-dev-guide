@@ -1,0 +1,278 @@
+"""Build the static site into docs/ from data/*.json and content/*.
+
+Pages: index.html (guide + resource table), changelog.html, feed.xml (RSS of
+the changelog), resources.json (machine-readable copy).
+Validates data first and exits non-zero on any problem, so a bad update is
+never published.
+"""
+from __future__ import annotations
+
+import html
+import json
+import shutil
+import sys
+from email.utils import format_datetime
+import datetime as dt
+
+from common import CONTENT, DOCS, FORMATS, STATUSES, TYPES, TZ, load, norm_url, today
+
+SITE_URL = "https://hustlyt.github.io/agent-dev-guide/"
+REPO_URL = "https://github.com/hustlyt/agent-dev-guide"
+TITLE = "深入学习 AI Agent 开发"
+
+e = html.escape
+
+
+# ---------- validation ----------
+
+def validate(data: dict, log: list) -> list[str]:
+    errs = []
+    cats = {c["id"] for c in data["categories"]}
+    ids, urls = set(), {}
+    req = ["id", "title", "url", "category", "type", "format", "lang", "desc", "added"]
+    for r in data["resources"]:
+        rid = r.get("id", "?")
+        for k in req:
+            if not r.get(k):
+                errs.append(f"{rid}: 缺少字段 {k}")
+        if rid in ids:
+            errs.append(f"{rid}: id 重复")
+        ids.add(rid)
+        if r.get("category") not in cats:
+            errs.append(f"{rid}: 未知分类 {r.get('category')}")
+        if r.get("type") not in TYPES:
+            errs.append(f"{rid}: 未知类型 {r.get('type')}")
+        if r.get("format") not in FORMATS:
+            errs.append(f"{rid}: 未知形式 {r.get('format')}")
+        if r.get("status", "ok") not in STATUSES:
+            errs.append(f"{rid}: 未知状态 {r.get('status')}")
+        if not str(r.get("url", "")).startswith("https://"):
+            errs.append(f"{rid}: URL 必须是 https")
+        k = norm_url(r.get("url", ""))
+        if k in urls:
+            errs.append(f"{rid}: URL 与 {urls[k]} 重复")
+        urls[k] = rid
+    for entry in log:
+        for k in ("date", "summary"):
+            if not entry.get(k):
+                errs.append(f"changelog {entry.get('date')}: 缺少 {k}")
+        for rid in entry.get("added", []):
+            if rid not in ids:
+                errs.append(f"changelog {entry['date']}: added 里的 {rid} 不在资料库中")
+    return errs
+
+
+# ---------- rendering ----------
+
+def md_links(text: str) -> str:
+    """Escape text, then turn [label](https://url) into links."""
+    import re
+    return re.sub(r"\[([^\]]+)\]\((https://[^)\s]+)\)",
+                  lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', e(text))
+
+
+def stars(n) -> str:
+    if n is None:
+        return "—"
+    return f"{n / 1000:.1f}k" if n >= 1000 else str(n)
+
+
+def badge(r: dict) -> str:
+    out = ""
+    if r.get("pick"):
+        out += ' <span class="pick">★推荐</span>'
+    st = r.get("status", "ok")
+    if st == "archived":
+        out += ' <span class="badge warn">已归档</span>'
+    elif st == "stale":
+        out += ' <span class="badge warn">久未更新</span>'
+    elif st == "broken":
+        out += ' <span class="badge bad">链接失效</span>'
+    return out
+
+
+def resource_table(data: dict, new_ids: set[str]) -> str:
+    cats = data["categories"]
+    rows = []
+    for c in cats:
+        items = [r for r in data["resources"] if r["category"] == c["id"] and r.get("status") != "removed"]
+        if not items:
+            continue
+        items.sort(key=lambda r: (not r.get("pick"), -(r.get("stars") or 0)))
+        rows.append(f'<tr class="cat"><td colspan="5">{e(c["name"])}'
+                    f'<span class="cnt">{len(items)}</span></td></tr>')
+        for r in items:
+            extra = "".join(f' · <a href="{e(x["url"])}">{e(x["label"])}</a>' for x in r.get("extra_links", []))
+            isnew = r["id"] in new_ids
+            new = ' <span class="badge new">新</span>' if isnew else ""
+            tcls = {"official": "t-off", "ai": "t-ai"}.get(r["type"], "")
+            note = f'<div class="note-sm">{e(r["note"])}</div>' if r.get("note") else ""
+            search = " ".join([r["title"], r["desc"], r.get("note", ""), r.get("github") or "",
+                               r["lang"], TYPES[r["type"]], FORMATS[r["format"]]]).lower()
+            rows.append(
+                f'<tr data-t="{r["type"]}" data-f="{r["format"]}" data-zh="{int("中文" in r["lang"])}" '
+                f'data-new="{int(isnew)}" data-s="{e(search)}">'
+                f'<td><a href="{e(r["url"])}">{e(r["title"])}</a>{badge(r)}{new}{extra}{note}</td>'
+                f'<td class="{tcls}">{TYPES[r["type"]]}<span class="fmt">{FORMATS[r["format"]]}</span></td>'
+                f'<td class="hide-sm">{e(r["lang"])}</td>'
+                f'<td class="n">{stars(r.get("stars"))}</td>'
+                f'<td>{md_links(r["desc"])}</td></tr>')
+    total = sum(1 for r in data["resources"] if r.get("status") != "removed")
+    return f'''<section id="refs">
+<h2>参考资料清单 <small>{total} 条 · 按类型、形式筛选或直接搜索</small></h2>
+<div class="toolbar">
+  <input id="q" type="search" placeholder="搜索标题、描述、仓库名…" aria-label="搜索资料">
+  <div class="filters" id="filters">
+    <button class="on" data-k="all">全部</button>
+    <button data-k="t:official">官方</button><button data-k="t:community">第三方</button>
+    <button data-k="t:academic">学术</button><button data-k="t:ai">AI 生成</button>
+    <button data-k="f:article">文章</button><button data-k="f:video">视频</button>
+    <button data-k="f:paper">论文</button><button data-k="zh">只看中文</button>
+    <button data-k="new">最近新增</button>
+  </div>
+</div>
+<div class="tblwrap"><table class="tbl" id="reftbl">
+<thead><tr><th>资料</th><th>类型</th><th class="hide-sm">语言</th><th>★</th><th>说明</th></tr></thead>
+<tbody>
+{chr(10).join(rows)}
+</tbody></table></div>
+<p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。“久未更新”= 超过一年无提交；“链接失效”= 连续两次检查失败，下次更新时会被替换或移除。</p>
+</section>'''
+
+
+def changelog_html(log: list, by_id: dict) -> str:
+    parts = []
+    for entry in log:
+        def li(ids, cls):
+            out = []
+            for x in ids:
+                if isinstance(x, dict):  # removed/changed entries keep their own text
+                    out.append(f'<li class="{cls}">{e(x.get("title", x.get("id", "")))}'
+                               f'{" — " + e(x["reason"]) if x.get("reason") else ""}</li>')
+                elif x in by_id:
+                    r = by_id[x]
+                    out.append(f'<li class="{cls}"><a href="{e(r["url"])}">{e(r["title"])}</a> — {md_links(r["desc"])}</li>')
+            return "".join(out)
+        stats = entry.get("stats", {})
+        stat_txt = " · ".join(f"{k} {v}" for k, v in stats.items())
+        body = ""
+        if entry.get("added"):
+            body += f'<h4>新增 {len(entry["added"])}</h4><ul>{li(entry["added"], "add")}</ul>'
+        if entry.get("changed"):
+            body += f'<h4>调整 {len(entry["changed"])}</h4><ul>{li(entry["changed"], "chg")}</ul>'
+        if entry.get("removed"):
+            body += f'<h4>移除 {len(entry["removed"])}</h4><ul>{li(entry["removed"], "del")}</ul>'
+        if entry.get("guide_changes"):
+            body += "<h4>教程正文</h4><ul>" + "".join(f"<li>{e(x)}</li>" for x in entry["guide_changes"]) + "</ul>"
+        parts.append(f'''<article class="log" id="v{e(entry["date"])}">
+<header><time>{e(entry["date"])}</time><h3>{e(entry["summary"])}</h3>
+{f'<p class="note">{e(stat_txt)}</p>' if stat_txt else ""}</header>
+{body}</article>''')
+    return "\n".join(parts) or "<p>暂无记录。</p>"
+
+
+def page(title: str, body: str, active: str, updated: str) -> str:
+    css = (CONTENT / "style.css").read_text(encoding="utf-8")
+    nav = "".join(
+        f'<a href="{href}"{" class=on" if key == active else ""}>{label}</a>'
+        for key, href, label in [("index", "index.html", "教程"), ("refs", "index.html#refs", "资料库"),
+                                 ("changelog", "changelog.html", "更新日志"), ("feed", "feed.xml", "RSS")])
+    return f'''<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(title)}</title>
+<meta name="description" content="AI Agent 开发深入学习路线与持续更新的资料库：官方教程、社区课程、工程文章、论文与视频。">
+<link rel="alternate" type="application/rss+xml" title="{e(TITLE)} 更新日志" href="feed.xml">
+<style>{css}</style></head>
+<body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
+<nav>{nav}</nav></div></div>
+<div class="wrap">
+{body}
+<footer>最近更新：{e(updated)} · 每周一自动检索新资料、核对链接并人工式审核后发布 ·
+<a href="changelog.html">更新日志</a> · <a href="{REPO_URL}">源码与数据</a></footer>
+</div>
+<script>
+(function(){{
+  const q=document.getElementById('q'); if(!q) return;
+  const rows=[...document.querySelectorAll('#reftbl tbody tr')];
+  const btns=[...document.querySelectorAll('#filters button')]; let key='all';
+  function ok(r){{
+    if(key==='all') return true;
+    if(key==='zh') return r.dataset.zh==='1';
+    if(key==='new') return r.dataset.new==='1';
+    const [k,v]=key.split(':'); return r.dataset[k]===v;
+  }}
+  function apply(){{
+    const s=q.value.trim().toLowerCase();
+    rows.forEach(r=>{{ if(r.classList.contains('cat')) return;
+      r.style.display=(ok(r)&&(!s||r.dataset.s.includes(s)))?'':'none'; }});
+    rows.forEach((r,i)=>{{ if(!r.classList.contains('cat')) return; let j=i+1,any=false;
+      while(j<rows.length&&!rows[j].classList.contains('cat')){{ if(rows[j].style.display!=='none') any=true; j++; }}
+      r.style.display=any?'':'none'; }});
+  }}
+  btns.forEach(b=>b.addEventListener('click',()=>{{btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');key=b.dataset.k;apply();}}));
+  q.addEventListener('input',apply);
+}})();
+</script></body></html>
+'''
+
+
+def feed_xml(log: list, by_id: dict) -> str:
+    items = []
+    for entry in log[:30]:
+        d = dt.datetime.fromisoformat(entry["date"]).replace(hour=9, tzinfo=TZ)
+        added = "".join(f"<li><a href='{by_id[x]['url']}'>{e(by_id[x]['title'])}</a> — {e(by_id[x]['desc'])}</li>"
+                        for x in entry.get("added", []) if isinstance(x, str) and x in by_id)
+        desc = f"<p>{e(entry['summary'])}</p>" + (f"<ul>{added}</ul>" if added else "")
+        items.append(f"""<item><title>{e(entry['date'] + ' ' + entry['summary'])}</title>
+<link>{SITE_URL}changelog.html#v{entry['date']}</link><guid>{SITE_URL}changelog.html#v{entry['date']}</guid>
+<pubDate>{format_datetime(d)}</pubDate><description>{e(desc)}</description></item>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>{e(TITLE)} · 更新日志</title><link>{SITE_URL}</link>
+<description>每周新增的 AI Agent 教程、文档与文章</description><language>zh-CN</language>
+{''.join(items)}
+</channel></rss>
+"""
+
+
+def main() -> int:
+    data = load("resources.json")
+    log = load("changelog.json", [])
+    log.sort(key=lambda x: x["date"], reverse=True)
+    errs = validate(data, log)
+    if errs:
+        print("数据校验失败：\n" + "\n".join(f"  - {x}" for x in errs), file=sys.stderr)
+        return 1
+    by_id = {r["id"]: r for r in data["resources"]}
+    updated = log[0]["date"] if log else today()
+    # "new" = added in the latest 2 changelog entries, excluding the initial import
+    new_ids = {x for entry in log[:2] if not entry.get("initial") for x in entry.get("added", []) if isinstance(x, str)}
+
+    guide = (CONTENT / "guide.html").read_text(encoding="utf-8")
+    latest = ""
+    if log:
+        l0 = log[0]
+        latest = (f'<p class="latest">最近一次更新 <a href="changelog.html#v{e(l0["date"])}">{e(l0["date"])}</a>：'
+                  f'{e(l0["summary"])}</p>')
+    header = (CONTENT / "header.html").read_text(encoding="utf-8").replace("<!-- LATEST -->", latest)
+    body = header + guide.replace("<!-- RESOURCES -->", resource_table(data, new_ids))
+
+    if DOCS.exists():
+        shutil.rmtree(DOCS)
+    DOCS.mkdir()
+    (DOCS / "index.html").write_text(page(f"{TITLE}：学习路线与资料库", body, "index", updated), encoding="utf-8")
+    log_body = (f'<header><h1>更新日志</h1><p class="lead">每周一自动检索 GitHub、官方博客、技术社区、arXiv，'
+                f'经质量审核后收录。也可以 <a href="feed.xml">订阅 RSS</a>。</p></header>'
+                + changelog_html(log, by_id))
+    (DOCS / "changelog.html").write_text(page(f"更新日志 · {TITLE}", log_body, "changelog", updated), encoding="utf-8")
+    (DOCS / "feed.xml").write_text(feed_xml(log, by_id), encoding="utf-8")
+    pub = [{k: v for k, v in r.items() if k not in ("fail_count",)} for r in data["resources"]]
+    (DOCS / "resources.json").write_text(json.dumps({"updated": updated, "categories": data["categories"],
+                                                     "resources": pub}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (DOCS / ".nojekyll").write_text("")
+    print(f"built docs/: {len(data['resources'])} resources, {len(log)} changelog entries")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
