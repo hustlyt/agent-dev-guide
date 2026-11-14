@@ -44,6 +44,10 @@
   {
    "id": "ai-generated",
    "name": "AI 生成 / AI 辅助教程"
+  },
+  {
+   "id": "tools",
+   "name": "工具与辅助网站"
   }
  ],
  "resources": [
@@ -2364,6 +2368,150 @@
    "pushed_at": null,
    "status": "ok",
    "last_checked": null
+  },
+  {
+   "id": "bryanyzhu-agentic-ai-system-course",
+   "title": "bryanyzhu/agentic-ai-system-course",
+   "url": "https://github.com/bryanyzhu/agentic-ai-system-course",
+   "extra_links": [],
+   "category": "courses",
+   "type": "community",
+   "format": "repo",
+   "lang": "英文/中文",
+   "github": "bryanyzhu/agentic-ai-system-course",
+   "desc": "22 章骨架课，框架无关，覆盖 harness/记忆/多智能体/自进化，配套 AI partner 展开",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 9,
+   "stars": 716,
+   "pushed_at": "2026-06-22",
+   "status": "ok",
+   "last_checked": "2026-11-15",
+   "note": ""
+  },
+  {
+   "id": "hesreallyhim-awesome-claude-code",
+   "title": "hesreallyhim/awesome-claude-code",
+   "url": "https://github.com/hesreallyhim/awesome-claude-code",
+   "extra_links": [],
+   "category": "tools",
+   "type": "community",
+   "format": "repo",
+   "lang": "英文",
+   "github": "hesreallyhim/awesome-claude-code",
+   "desc": "57k+ star 的 Claude Code 工具生态精选清单：Skills、Hooks、MCP 服务器、插件、工作流等 200+ 条",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 9,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "note": ""
+  },
+  {
+   "id": "aitmpl-claude-code-templates",
+   "title": "Claude Code Templates (aitmpl.com)",
+   "url": "https://www.aitmpl.com/",
+   "extra_links": [
+    {
+     "label": "文档",
+     "url": "https://docs.aitmpl.com/"
+    }
+   ],
+   "category": "tools",
+   "type": "community",
+   "format": "website",
+   "lang": "英文",
+   "github": null,
+   "desc": "可搜索的 Claude Code Agent 与 Skill 提示词模板库，支持 npx 一键安装到项目",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 7,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "note": ""
+  },
+  {
+   "id": "phistory-cc",
+   "title": "Phistory",
+   "url": "https://phistory.cc/",
+   "extra_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/WEIFENG2333/phistory"
+    }
+   ],
+   "category": "tools",
+   "type": "community",
+   "format": "website",
+   "lang": "英文/中文",
+   "github": "WEIFENG2333/phistory",
+   "desc": "每小时自动追踪 Claude Code、Codex 等 10+ 个 Agent CLI 的系统提示词版本，可查 diff、中文翻译",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 8,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "note": ""
+  },
+  {
+   "id": "ccprompt-feitong",
+   "title": "CCPrompt (feitong.phd)",
+   "url": "https://ccprompt.feitong.phd/",
+   "extra_links": [
+    {
+     "label": "博客",
+     "url": "https://feitong.phd/"
+    }
+   ],
+   "category": "tools",
+   "type": "community",
+   "format": "website",
+   "lang": "英文",
+   "github": null,
+   "desc": "Claude Code 系统提示词在线查看工具，作者 Feitong Yang (Algo Mind)",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 7,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "note": ""
+  },
+  {
+   "id": "cchistory-mariozechner",
+   "title": "cchistory (mariozechner.at)",
+   "url": "https://cchistory.mariozechner.at/",
+   "extra_links": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/badlogic/cchistory"
+    },
+    {
+     "label": "npm",
+     "url": "https://www.npmjs.com/package/@mariozechner/cchistory"
+    }
+   ],
+   "category": "tools",
+   "type": "community",
+   "format": "website",
+   "lang": "英文",
+   "github": "badlogic/cchistory",
+   "desc": "对比 Claude Code 各 npm 版本间系统提示词与工具列表变化，附 diff 视图",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 7,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null,
+   "note": ""
   }
  ]
 }

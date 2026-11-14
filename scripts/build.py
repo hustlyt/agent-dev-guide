@@ -176,8 +176,8 @@ def changelog_html(log: list, by_id: dict) -> str:
 
 
 NAV = [("home", "index.html", "首页"), ("path", "path.html", "学习路线"), ("refs", "resources.html", "资料库"),
-       ("capstone", "capstone.html", "毕业项目"), ("tips", "tips.html", "学习建议"),
-       ("changelog", "changelog.html", "更新日志")]
+       ("tools", "tools.html", "工具网站"), ("capstone", "capstone.html", "毕业项目"),
+       ("tips", "tips.html", "学习建议"), ("changelog", "changelog.html", "更新日志")]
 
 SEARCH_JS = r"""
 (function(){
@@ -224,12 +224,81 @@ SEARCH_JS = r"""
 """
 
 
+TOOLS_SEARCH_JS = r"""
+(function(){
+  const q=document.getElementById('tq'); if(!q) return;
+  const cards=[...document.querySelectorAll('.tool-card')];
+  const cnt=document.getElementById('tcount'), empty=document.getElementById('tempty');
+  function apply(){
+    const words=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let n=0;
+    cards.forEach(c=>{
+      const show=words.every(w=>c.dataset.s.includes(w));
+      c.style.display=show?'':'none'; if(show) n++;
+    });
+    cnt.textContent='显示 '+n+' / '+cards.length+' 个';
+    empty.hidden=n>0;
+    const u=new URL(location); q.value?u.searchParams.set('q',q.value):u.searchParams.delete('q');
+    history.replaceState(null,'',u);
+  }
+  q.addEventListener('input',apply);
+  document.addEventListener('keydown',ev=>{ if(ev.key==='/'&&document.activeElement!==q){ev.preventDefault();q.focus();} });
+  const init=new URL(location).searchParams.get('q'); if(init) q.value=init;
+  apply();
+})();
+"""
+
+
+def tools_table(data: dict, new_ids: set[str]) -> str:
+    items = [r for r in data["resources"] if r["category"] == "tools" and r.get("status") != "removed"]
+    items.sort(key=lambda r: (-(r.get("score") or 0), -(r.get("stars") or 0)))
+    score_key = {9: ("★★★", "顶级"), 8: ("★★☆", "推荐"), 7: ("★☆☆", "收录"), 6: ("☆☆☆", "备选")}
+    cards = []
+    for r in items:
+        isnew = r["id"] in new_ids
+        new = ' <span class="badge new">新</span>' if isnew else ""
+        score = r.get("score")
+        sc_label, sc_text = score_key.get(score, ("", ""))
+        sc_html = f'<span class="sc-badge" title="评分 {score}/10">{sc_label} {sc_text}</span>' if sc_label else ""
+        extra = "".join(f' · <a href="{e(x["url"])}">{e(x["label"])}</a>' for x in r.get("extra_links", []))
+        note = f'<p class="note-sm">{e(r["note"])}</p>' if r.get("note") else ""
+        fmt = FORMATS.get(r["format"], r["format"])
+        star_txt = stars(r.get("stars"))
+        star_html = f'<span class="stat">★ {star_txt}</span>' if star_txt != "—" else ""
+        search = " ".join([r["title"], r["desc"], r.get("note", ""), r.get("github") or "",
+                           r["lang"], TYPES[r["type"]], fmt]).lower()
+        cards.append(
+            f'<article class="tool-card" data-s="{e(search)}">'
+            f'<header><h3><a href="{e(r["url"])}">{e(r["title"])}</a>{new}</h3>'
+            f'<div class="tool-meta">{sc_html}'
+            f'<span class="tag">{fmt}</span><span class="tag">{e(r["lang"])}</span>'
+            f'{star_html}</div></header>'
+            f'<p class="tool-desc">{md_links(r["desc"])}</p>'
+            f'<div class="tool-links"><span class="muted">{e(r["url"])}</span>{extra}</div>'
+            f'{note}</article>')
+    total = len(items)
+    return f'''<header class="pagehead">
+<h1>工具与辅助网站</h1>
+<p class="lead">收录辅助学习和使用 AI Agent 的工具网站：提示词查看器、模板库、生态清单等。每周同步检索更新。</p>
+</header>
+<div class="toolbar">
+  <input id="tq" type="search" placeholder="搜索，例如：prompt、history、模板…" aria-label="搜索工具" autofocus>
+  <p class="note" id="tcount" aria-live="polite"></p>
+</div>
+<div class="tool-grid" id="tool-grid">
+{chr(10).join(cards)}
+</div>
+<p id="tempty" class="empty" hidden>没有匹配的工具。换个关键词。</p>
+<p class="note">评分标准同资料库（满分 10，≥ 7 收录）：实用性、来源可信度、维护状态、独特性。</p>'''
+
+
 def page(title: str, body: str, active: str, updated: str, desc: str = "") -> str:
     css = (CONTENT / "style.css").read_text(encoding="utf-8")
     nav = "".join(f'<a href="{href}"{" class=on" if key == active else ""}>{label}</a>'
                   for key, href, label in NAV)
     desc = desc or "AI Agent 开发深入学习路线与持续更新的资料库：官方教程、社区课程、工程文章、论文与视频。"
-    script = f"<script>{SEARCH_JS}</script>" if active == "refs" else ""
+    script = f"<script>{SEARCH_JS}</script>" if active == "refs" else (
+             f"<script>{TOOLS_SEARCH_JS}</script>" if active == "tools" else "")
     return f'''<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -338,6 +407,8 @@ def main() -> int:
 
     write("resources.html", f"资料库 · {TITLE}", resource_table(data, new_ids), "refs",
           f"{total} 条 AI Agent 教程、文档、文章、论文与视频，可搜索与筛选。")
+    write("tools.html", f"工具网站 · {TITLE}", tools_table(data, new_ids), "tools",
+          "辅助学习和使用 AI Agent 的工具网站：提示词查看器、模板库、生态清单等。")
     write("capstone.html", f"毕业项目 · {TITLE}",
           '<header class="pagehead"><h1>毕业项目建议</h1><p class="lead">选一个，把前面所有阶段串起来。</p></header>'
           + rd("capstone.html"), "capstone")

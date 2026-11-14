@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>资料库 · 深入学习 AI Agent 开发</title>
-<meta name="description" content="115 条 AI Agent 教程、文档、文章、论文与视频，可搜索与筛选。">
+<meta name="description" content="121 条 AI Agent 教程、文档、文章、论文与视频，可搜索与筛选。">
 <link rel="alternate" type="application/rss+xml" title="深入学习 AI Agent 开发 更新日志" href="feed.xml">
 <style>:root{
     --bg:#fbfaf7; --fg:#1d1d1b; --muted:#6b6a65; --line:#e4e1d9; --card:#ffffff;
@@ -122,12 +122,24 @@ li.del{color:var(--muted);text-decoration:line-through}
   .topbar nav{overflow-x:auto;white-space:nowrap;width:100%;gap:16px;padding-bottom:2px}
   .wrap-top{padding:8px 16px}
 }
+
+/* tool cards page */
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:20px 0}
+.tool-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.tool-card header{display:flex;flex-direction:column;gap:4px}
+.tool-card h3{margin:0;font-size:16px;line-height:1.3}
+.tool-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;margin-top:4px}
+.sc-badge{font-size:12px;color:var(--accent);font-weight:600}
+.tool-desc{margin:0;font-size:14px;color:var(--fg);line-height:1.6}
+.tool-links{font-size:12px;color:var(--muted);word-break:break-all}
+.stat{font-size:12px;color:var(--muted)}
+.muted{color:var(--muted)}
 </style></head>
 <body><div class="topbar"><div class="wrap-top"><a class="brand" href="index.html">Agent 开发指南</a>
-<nav><a href="index.html">首页</a><a href="path.html">学习路线</a><a href="resources.html" class=on>资料库</a><a href="capstone.html">毕业项目</a><a href="tips.html">学习建议</a><a href="changelog.html">更新日志</a></nav></div></div>
+<nav><a href="index.html">首页</a><a href="path.html">学习路线</a><a href="resources.html" class=on>资料库</a><a href="tools.html">工具网站</a><a href="capstone.html">毕业项目</a><a href="tips.html">学习建议</a><a href="changelog.html">更新日志</a></nav></div></div>
 <div class="wrap">
 <header class="pagehead"><h1>资料库</h1>
-<p class="lead">115 条教程、课程、文档、文章、论文与视频，每周自动检索并经质量审核后更新。支持搜索标题、说明、仓库名，可叠加筛选。</p></header>
+<p class="lead">121 条教程、课程、文档、文章、论文与视频，每周自动检索并经质量审核后更新。支持搜索标题、说明、仓库名，可叠加筛选。</p></header>
 <div class="toolbar">
   <input id="q" type="search" placeholder="搜索，例如：mcp、评估、中文、langgraph…" aria-label="搜索资料" autofocus>
   <div class="filters" id="filters" data-group="main">
@@ -138,19 +150,20 @@ li.del{color:var(--muted);text-decoration:line-through}
     <button data-k="f:paper">论文</button><button data-k="f:course">课程</button>
     <button data-k="zh">只看中文</button><button data-k="new">最近新增</button>
   </div>
-  <details class="catbox"><summary>按分类</summary><div class="filters" id="catfilters"><button data-k="c:courses">系统课程（主线候选）</button><button data-k="c:from-scratch">从零手写 Agent / Harness</button><button data-k="c:zh-community">中文社区教程</button><button data-k="c:official-sdk">官方文档、SDK 与 Cookbook</button><button data-k="c:protocols">协议：MCP / A2A</button><button data-k="c:articles">必读工程文章与指南</button><button data-k="c:media">博客、Newsletter 与视频</button><button data-k="c:production">生产化、评估与可观测性</button><button data-k="c:examples">示例与项目合集</button><button data-k="c:academic">学术课程与论文</button><button data-k="c:ai-generated">AI 生成 / AI 辅助教程</button></div></details>
+  <details class="catbox"><summary>按分类</summary><div class="filters" id="catfilters"><button data-k="c:courses">系统课程（主线候选）</button><button data-k="c:from-scratch">从零手写 Agent / Harness</button><button data-k="c:zh-community">中文社区教程</button><button data-k="c:official-sdk">官方文档、SDK 与 Cookbook</button><button data-k="c:protocols">协议：MCP / A2A</button><button data-k="c:articles">必读工程文章与指南</button><button data-k="c:media">博客、Newsletter 与视频</button><button data-k="c:production">生产化、评估与可观测性</button><button data-k="c:examples">示例与项目合集</button><button data-k="c:academic">学术课程与论文</button><button data-k="c:ai-generated">AI 生成 / AI 辅助教程</button><button data-k="c:tools">工具与辅助网站</button></div></details>
   <p class="note" id="count" aria-live="polite"></p>
 </div>
 <div class="tblwrap"><table class="tbl" id="reftbl">
 <thead><tr><th>资料</th><th>类型</th><th class="hide-sm">语言</th><th>★</th><th>说明</th></tr></thead>
 <tbody>
-<tr class="cat" data-c="courses"><td colspan="5">系统课程（主线候选）<span class="cnt">12</span></td></tr>
+<tr class="cat" data-c="courses"><td colspan="5">系统课程（主线候选）<span class="cnt">13</span></td></tr>
 <tr data-t="community" data-f="repo" data-zh="1" data-new="0" data-c="courses" data-s="datawhalechina/hello-agents 16 章，原理→框架→自研→rl→评估→项目，含面试题  datawhalechina/hello-agents 中文 第三方 仓库"><td><a href="https://github.com/datawhalechina/hello-agents">datawhalechina/hello-agents</a> <span class="pick">★推荐</span></td><td class="">第三方<span class="fmt">仓库</span></td><td class="hide-sm">中文</td><td class="n">87.0k</td><td>16 章，原理→框架→自研→RL→评估→项目，含面试题</td></tr>
 <tr data-t="official" data-f="repo" data-zh="1" data-new="0" data-c="courses" data-s="microsoft/ai-agents-for-beginners 18 课 + 视频；设计模式、协议、记忆、cua、安全；基于 ms agent framework  microsoft/ai-agents-for-beginners 多语（含中文） 官方 仓库"><td><a href="https://github.com/microsoft/ai-agents-for-beginners">microsoft/ai-agents-for-beginners</a></td><td class="t-off">官方<span class="fmt">仓库</span></td><td class="hide-sm">多语（含中文）</td><td class="n">79.6k</td><td>18 课 + 视频；设计模式、协议、记忆、CUA、安全；基于 MS Agent Framework</td></tr>
 <tr data-t="official" data-f="repo" data-zh="0" data-new="0" data-c="courses" data-s="huggingface/agents-course 4 单元 + 3 个 bonus，框架对比、agentic rag、评估，可获证书  huggingface/agents-course 英文/多语 官方 仓库"><td><a href="https://github.com/huggingface/agents-course">huggingface/agents-course</a></td><td class="t-off">官方<span class="fmt">仓库</span></td><td class="hide-sm">英文/多语</td><td class="n">34.9k</td><td>4 单元 + 3 个 Bonus，框架对比、Agentic RAG、评估，可获证书</td></tr>
 <tr data-t="community" data-f="repo" data-zh="0" data-new="0" data-c="courses" data-s="ed-donner/agents udemy 课程配套：基础 → openai sdk → crewai → langgraph → autogen → mcp  ed-donner/agents 英文 第三方 仓库"><td><a href="https://github.com/ed-donner/agents">ed-donner/agents</a></td><td class="">第三方<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">6.6k</td><td>Udemy 课程配套：基础 → OpenAI SDK → CrewAI → LangGraph → AutoGen → MCP</td></tr>
 <tr data-t="official" data-f="repo" data-zh="0" data-new="0" data-c="courses" data-s="langchain-ai/langchain-academy langgraph 入门课 module 0–6，配 [在线视频](https://academy.langchain.com/courses/intro-to-langgraph)  langchain-ai/langchain-academy 英文 官方 仓库"><td><a href="https://github.com/langchain-ai/langchain-academy">langchain-ai/langchain-academy</a></td><td class="t-off">官方<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">3.0k</td><td>LangGraph 入门课 module 0–6，配 <a href="https://academy.langchain.com/courses/intro-to-langgraph">在线视频</a></td></tr>
 <tr data-t="community" data-f="course" data-zh="0" data-new="1" data-c="courses" data-s="undefined-ui/second-brain-os 7 模块 agent 课程（上下文→循环→闸门→harness→评估→生产）+ 5 本分层手册  undefined-ui/second-brain-os 英文 第三方 课程"><td><a href="https://github.com/undefined-ui/second-brain-os">undefined-ui/second-brain-os</a> <span class="badge new">新</span> · <a href="https://secondbrainos.dev/">在线阅读</a></td><td class="">第三方<span class="fmt">课程</span></td><td class="hide-sm">英文</td><td class="n">1.6k</td><td>7 模块 agent 课程（上下文→循环→闸门→harness→评估→生产）+ 5 本分层手册</td></tr>
+<tr data-t="community" data-f="repo" data-zh="1" data-new="1" data-c="courses" data-s="bryanyzhu/agentic-ai-system-course 22 章骨架课，框架无关，覆盖 harness/记忆/多智能体/自进化，配套 ai partner 展开  bryanyzhu/agentic-ai-system-course 英文/中文 第三方 仓库"><td><a href="https://github.com/bryanyzhu/agentic-ai-system-course">bryanyzhu/agentic-ai-system-course</a> <span class="badge new">新</span></td><td class="">第三方<span class="fmt">仓库</span></td><td class="hide-sm">英文/中文</td><td class="n">716</td><td>22 章骨架课，框架无关，覆盖 harness/记忆/多智能体/自进化，配套 AI partner 展开</td></tr>
 <tr data-t="official" data-f="repo" data-zh="0" data-new="0" data-c="courses" data-s="aws-samples/…strands-agents-course aws strands agents 框架课程  aws-samples/sample-getting-started-with-strands-agents-course 英文 官方 仓库"><td><a href="https://github.com/aws-samples/sample-getting-started-with-strands-agents-course">aws-samples/…strands-agents-course</a></td><td class="t-off">官方<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">196</td><td>AWS Strands Agents 框架课程</td></tr>
 <tr data-t="official" data-f="course" data-zh="0" data-new="0" data-c="courses" data-s="google × kaggle 5-day ai agents google 出品的 5 天集训：白皮书 + codelab，基于 adk   英文 官方 课程"><td><a href="https://www.kaggle.com/learn-guide/5-day-agents">Google × Kaggle 5-Day AI Agents</a> · <a href="https://www.kaggle.com/whitepaper-introduction-to-agents">白皮书：Introduction to Agents</a> · <a href="https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory">白皮书：Context Engineering: Sessions &amp; Memory</a></td><td class="t-off">官方<span class="fmt">课程</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>Google 出品的 5 天集训：白皮书 + Codelab，基于 ADK</td></tr>
 <tr data-t="official" data-f="course" data-zh="0" data-new="0" data-c="courses" data-s="deeplearning.ai · agentic ai（吴恩达） reflection / tool use / planning / multi-agent 四模式，强调评估与误差分析   英文 官方 课程"><td><a href="https://www.deeplearning.ai/courses/agentic-ai/">DeepLearning.AI · Agentic AI（吴恩达）</a></td><td class="t-off">官方<span class="fmt">课程</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>Reflection / Tool use / Planning / Multi-agent 四模式，强调评估与误差分析</td></tr>
@@ -270,6 +283,12 @@ li.del{color:var(--muted);text-decoration:line-through}
 <tr data-t="ai" data-f="repo" data-zh="0" data-new="0" data-c="ai-generated" data-s="genearnold/ai-agent-engineering-course 设计为配合 claude code 学习的从零 agent 课程  genearnold/ai-agent-engineering-course 英文 ai 生成 仓库"><td><a href="https://github.com/GeneArnold/AI-Agent-Engineering-Course">GeneArnold/AI-Agent-Engineering-Course</a></td><td class="t-ai">AI 生成<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">13</td><td>设计为配合 Claude Code 学习的从零 agent 课程</td></tr>
 <tr data-t="ai" data-f="repo" data-zh="1" data-new="0" data-c="ai-generated" data-s="ly-wo/ai-agent-course 作者声明用 composer 编写的 ai agent 教程  ly-wo/ai-agent-course 中文 ai 生成 仓库"><td><a href="https://github.com/ly-wo/ai-agent-course">ly-wo/ai-agent-course</a></td><td class="t-ai">AI 生成<span class="fmt">仓库</span></td><td class="hide-sm">中文</td><td class="n">1</td><td>作者声明用 Composer 编写的 AI Agent 教程</td></tr>
 <tr data-t="ai" data-f="repo" data-zh="0" data-new="0" data-c="ai-generated" data-s="az9713/codex-cli-tutorial openai/codex 克隆 + 深入的 harness 教程文档  az9713/codex-cli-tutorial 英文 ai 生成 仓库"><td><a href="https://github.com/az9713/codex-cli-tutorial">az9713/codex-cli-tutorial</a></td><td class="t-ai">AI 生成<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">0</td><td>openai/codex 克隆 + 深入的 harness 教程文档</td></tr>
+<tr class="cat" data-c="tools"><td colspan="5">工具与辅助网站<span class="cnt">5</span></td></tr>
+<tr data-t="community" data-f="repo" data-zh="0" data-new="1" data-c="tools" data-s="hesreallyhim/awesome-claude-code 57k+ star 的 claude code 工具生态精选清单：skills、hooks、mcp 服务器、插件、工作流等 200+ 条  hesreallyhim/awesome-claude-code 英文 第三方 仓库"><td><a href="https://github.com/hesreallyhim/awesome-claude-code">hesreallyhim/awesome-claude-code</a> <span class="badge new">新</span></td><td class="">第三方<span class="fmt">仓库</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>57k+ star 的 Claude Code 工具生态精选清单：Skills、Hooks、MCP 服务器、插件、工作流等 200+ 条</td></tr>
+<tr data-t="community" data-f="website" data-zh="0" data-new="1" data-c="tools" data-s="claude code templates (aitmpl.com) 可搜索的 claude code agent 与 skill 提示词模板库，支持 npx 一键安装到项目   英文 第三方 网站"><td><a href="https://www.aitmpl.com/">Claude Code Templates (aitmpl.com)</a> <span class="badge new">新</span> · <a href="https://docs.aitmpl.com/">文档</a></td><td class="">第三方<span class="fmt">网站</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>可搜索的 Claude Code Agent 与 Skill 提示词模板库，支持 npx 一键安装到项目</td></tr>
+<tr data-t="community" data-f="website" data-zh="1" data-new="1" data-c="tools" data-s="phistory 每小时自动追踪 claude code、codex 等 10+ 个 agent cli 的系统提示词版本，可查 diff、中文翻译  weifeng2333/phistory 英文/中文 第三方 网站"><td><a href="https://phistory.cc/">Phistory</a> <span class="badge new">新</span> · <a href="https://github.com/WEIFENG2333/phistory">GitHub</a></td><td class="">第三方<span class="fmt">网站</span></td><td class="hide-sm">英文/中文</td><td class="n">—</td><td>每小时自动追踪 Claude Code、Codex 等 10+ 个 Agent CLI 的系统提示词版本，可查 diff、中文翻译</td></tr>
+<tr data-t="community" data-f="website" data-zh="0" data-new="1" data-c="tools" data-s="ccprompt (feitong.phd) claude code 系统提示词在线查看工具，作者 feitong yang (algo mind)   英文 第三方 网站"><td><a href="https://ccprompt.feitong.phd/">CCPrompt (feitong.phd)</a> <span class="badge new">新</span> · <a href="https://feitong.phd/">博客</a></td><td class="">第三方<span class="fmt">网站</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>Claude Code 系统提示词在线查看工具，作者 Feitong Yang (Algo Mind)</td></tr>
+<tr data-t="community" data-f="website" data-zh="0" data-new="1" data-c="tools" data-s="cchistory (mariozechner.at) 对比 claude code 各 npm 版本间系统提示词与工具列表变化，附 diff 视图  badlogic/cchistory 英文 第三方 网站"><td><a href="https://cchistory.mariozechner.at/">cchistory (mariozechner.at)</a> <span class="badge new">新</span> · <a href="https://github.com/badlogic/cchistory">GitHub</a> · <a href="https://www.npmjs.com/package/@mariozechner/cchistory">npm</a></td><td class="">第三方<span class="fmt">网站</span></td><td class="hide-sm">英文</td><td class="n">—</td><td>对比 Claude Code 各 npm 版本间系统提示词与工具列表变化，附 diff 视图</td></tr>
 </tbody></table></div>
 <p id="empty" class="empty" hidden>没有匹配的资料。换个关键词，或取消筛选。</p>
 <p class="note">★ 为 GitHub Star 数，每周自动刷新，仅代表热度。“久未更新”= 超过一年无提交；“链接失效”= 连续两次检查失败，下次更新时会被替换或移除。</p>

@@ -1,10 +1,30 @@
 [
  {
   "date": "2026-11-15",
-  "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行；新增 sandbox 专项：DeepLearning.AI coding agent with tool execution 课程、OpenSandbox 自托管平台",
+  "summary": "新增「工具与辅助网站」分类，收录 5 个辅助学习 Agent 的工具站",
+  "stats": {
+   "候选": 5,
+   "审核": 5,
+   "新增": 5,
+   "移除": 0
+  },
+  "added": [
+   "hesreallyhim-awesome-claude-code",
+   "aitmpl-claude-code-templates",
+   "phistory-cc",
+   "ccprompt-feitong",
+   "cchistory-mariozechner"
+  ],
+  "changed": [],
+  "removed": [],
+  "guide_changes": []
+ },
+ {
+  "date": "2026-11-15",
+  "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行；新增 sandbox 专项：DeepLearning.AI coding agent with tool execution 课程、OpenSandbox 自托管平台；新增 bryanyzhu/agentic-ai-system-course（22 章 agent 设计骨架课）",
   "stats": {
    "候选": 274,
-   "新增": 37,
+   "新增": 38,
    "调整": 11
   },
   "added": [
@@ -44,7 +64,8 @@
    "owasp-agentic-top-10-2026",
    "temporal-dynamic-ai-agents",
    "deeplearning-ai-building-coding-agents-tool-execution",
-   "opensandbox-group-opensandbox"
+   "opensandbox-group-opensandbox",
+   "bryanyzhu-agentic-ai-system-course"
   ],
   "changed": [
    {

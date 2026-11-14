@@ -17,6 +17,7 @@
    - 课程平台：DeepLearning.AI 短课、Coursera、YouTube 上的系统性 agent 课程；
    - 中文：Datawhale、知乎专栏、掘金、机器之心、量子位上的高质量 agent 教程；
    - 重要新论文/综述（agent 评估、上下文工程、记忆、多智能体、Agentic RL）。
+   - **工具网站**（`tools` 分类）：辅助学习和使用 Agent 的网站，如提示词查看器、模板库、生态清单、调试工具，参考书签和 hesreallyhim/awesome-claude-code。
 5. **审核**：对每个有希望的候选，**打开原文读**（README / 正文 / 目录），按下方评分标准打分。不要只看标题和 star 数。
 6. **写入**：通过的条目加进 `data/resources.json`；所有看过的候选（通过和拒绝都算）写进 `data/reviewed.json`，避免下周重复审核。
 7. **教程正文**：只有出现明显更好的资料或某阶段内容过时，才改教程页面。改动要在 changelog 的 `guide_changes` 里写清楚。主教材更换需要非常强的理由。页面对应关系：
@@ -57,9 +58,9 @@
  "title": "显示标题（仓库用 owner/repo）",
  "url": "https://…（主链接）",
  "extra_links": [{"label": "文档", "url": "https://…"}],
- "category": "courses | from-scratch | zh-community | official-sdk | protocols | articles | media | production | examples | academic | ai-generated",
+ "category": "courses | from-scratch | zh-community | official-sdk | protocols | articles | media | production | examples | academic | ai-generated | tools",
  "type": "official | community | academic | ai",
- "format": "repo | course | docs | article | paper | video | newsletter | book",
+ "format": "repo | course | docs | article | paper | video | newsletter | book | website",
  "lang": "中文 | 英文 | 英文/中文 | 多语（含中文）…",
  "github": "owner/repo 或 null（有 GitHub 仓库就填，脚本会自动刷新 star）",
  "desc": "一句话中文说明：它讲什么、适合谁、哪里好（≤ 60 字）",

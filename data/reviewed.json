@@ -1858,5 +1858,41 @@
   "decision": "reject",
   "score": 6,
   "reason": "纯参考文档，无教程结构，作为 extra_link 附在 DeepLearning.AI 条目上"
+ },
+ "github.com/bryanyzhu/agentic-ai-system-course": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 9,
+  "reason": "22 章骨架课，框架无关，harness/自进化覆盖深，与已收录课程互补"
+ },
+ "github.com/hesreallyhim/awesome-claude-code": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 9,
+  "reason": "57k+ star 生态清单，收录范围广，维护活跃"
+ },
+ "aitmpl.com": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "模板库实用，支持 npx 安装，文档完善"
+ },
+ "phistory.cc": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "每小时追踪系统提示词版本，独特，维护中"
+ },
+ "ccprompt.feitong.phd": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "Claude Code 提示词在线查看，作者可信"
+ },
+ "cchistory.mariozechner.at": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "版本 diff 视图，badlogic 有一手经验"
  }
 }
