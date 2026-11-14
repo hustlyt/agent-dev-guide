@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深入学习 AI Agent 开发：推荐教程与学习路线（2026-11）</title>
+<style>
+  :root{
+    --bg:#fbfaf7; --fg:#1d1d1b; --muted:#6b6a65; --line:#e4e1d9; --card:#ffffff;
+    --accent:#b4532a; --accent-soft:#f6e7df; --ok:#2f7a4f; --chip:#efece5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#161614; --fg:#ebe9e3; --muted:#a19f98; --line:#33322e; --card:#1f1f1c;
+      --accent:#e08a5f; --accent-soft:#3a271d; --ok:#6cc28f; --chip:#2a2926; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 20px 80px}
+  header h1{font-size:clamp(26px,4vw,38px);line-height:1.25;margin:0 0 12px;letter-spacing:-.5px}
+  header p.lead{color:var(--muted);margin:0 0 6px;max-width:760px}
+  .meta{font-size:13px;color:var(--muted)}
+  nav.toc{margin:28px 0 8px;display:flex;flex-wrap:wrap;gap:8px}
+  nav.toc a{background:var(--chip);padding:4px 12px;border-radius:999px;font-size:14px;color:var(--fg)}
+  h2{font-size:24px;margin:56px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+  h2 small{font-size:14px;color:var(--muted);font-weight:400;margin-left:8px}
+  h3{font-size:18px;margin:24px 0 6px}
+  .verdict{background:var(--accent-soft);border-left:4px solid var(--accent);padding:18px 22px;border-radius:6px;margin:28px 0}
+  .verdict b{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .card .role{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+  .card h4{margin:4px 0 6px;font-size:17px}
+  .card p{margin:0;font-size:14px;color:var(--muted)}
+  .phase{display:grid;grid-template-columns:88px 1fr;gap:18px;padding:20px 0;border-bottom:1px dashed var(--line)}
+  .phase:last-child{border-bottom:none}
+  .phase .no{font-size:30px;font-weight:700;color:var(--accent);line-height:1}
+  .phase .no span{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:6px}
+  .phase h3{margin:0 0 6px}
+  .phase ul{margin:6px 0 0;padding-left:20px} .phase li{margin:3px 0}
+  .goal{font-size:14px;color:var(--ok);margin-top:8px}
+  .tag{display:inline-block;font-size:12px;padding:0 8px;border-radius:4px;background:var(--chip);color:var(--muted);margin-left:4px;vertical-align:1px}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  .filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+  .filters button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .tbl{width:100%;border-collapse:collapse;font-size:14px}
+  .tbl th,.tbl td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-size:12px;color:var(--muted);font-weight:600;position:sticky;top:0;background:var(--bg)}
+  .tbl td.n{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+  .tbl tr.cat td{background:var(--chip);font-weight:600;font-size:13px}
+  .t-off{color:var(--ok)} .t-ai{color:var(--accent)}
+  .pick{font-weight:700;color:var(--accent)}
+  .note{font-size:14px;color:var(--muted)}
+  ol.tight li,ul.tight li{margin:4px 0}
+  .tblwrap{overflow-x:auto}
+  @media (max-width:640px){
+    .phase{grid-template-columns:1fr;gap:6px}
+    .tbl .hide-sm{display:none}
+  }
+  footer{margin-top:60px;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>深入学习 AI Agent 开发<br>推荐教程与 12 周学习路线</h1>
+  <p class="lead">基于 GitHub 上 “ai agent / tutorial / course / agentic / harness / 智能体教程” 等关键词检索，覆盖官方教程、第三方公司与社区教程、AI 生成的教程。按“先懂原理 → 亲手写 harness → 学框架 → 上下文与协议 → 多智能体 → 评估与生产 → 训练”组织。</p>
+  <p class="meta">整理日期：2026-11-14 · Star 数为当日 GitHub API 数据，仅作热度参考</p>
+  <nav class="toc">
+    <a href="#verdict">结论</a><a href="#combo">推荐组合</a><a href="#path">学习路线</a>
+    <a href="#refs">参考资料清单</a><a href="#ai-gen">关于 AI 生成教程</a>
+  </nav>
+</header>
+
+<section id="verdict">
+<div class="verdict">
+  <p style="margin:0 0 8px"><b>推荐主教材：</b><a href="https://github.com/datawhalechina/hello-agents">Datawhale《Hello-Agents：从零开始构建智能体》</a>（87k★，中文，16 章）。</p>
+  <p style="margin:0">它是目前唯一一份同时覆盖<strong>原理 → 经典范式手写 → 主流框架 → 自研框架 → 记忆/RAG/上下文工程 → MCP/A2A 协议 → Agentic RL 训练 → 评估 → 综合项目</strong>的完整中文教程，深度和广度都够。但它偏“框架与系统”，对 <strong>coding-agent 式的 harness 工程</strong>（权限、hooks、压缩、子代理、任务系统）和<strong>生产级评估</strong>讲得少，所以配两份补充材料：<a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a>（17 课手写 harness）和 <a href="https://github.com/NirDiamant/agents-towards-production">agents-towards-production</a>（生产化），再加 Anthropic 的工程文章作为理论锚点。</p>
+</div>
+</section>
+
+<section id="combo">
+<h2>推荐组合 <small>一本主教材 + 三份补充</small></h2>
+<div class="grid">
+  <div class="card"><div class="role">主教材 · 系统</div><h4><a href="https://github.com/datawhalechina/hello-agents">Hello-Agents</a></h4><p>中文。ReAct / Plan-and-Solve / Reflection 手写实现，AutoGen / AgentScope / LangGraph 实践，从 0 写框架，Memory、上下文工程、MCP/A2A/ANP、SFT→GRPO、评估、DeepResearch 复现。<a href="https://datawhalechina.github.io/hello-agents/">在线阅读</a></p></div>
+  <div class="card"><div class="role">补充 · Harness 工程</div><h4><a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a></h4><p>80k★。从 <code>while True</code> 循环开始，逐课加入工具、权限、Hooks、TodoWrite、子代理、Skill、上下文压缩、记忆、任务系统、后台任务、Agent Teams、MCP、Goal Loop，共 17 课。</p></div>
+  <div class="card"><div class="role">补充 · 进阶 Harness + 评估</div><h4><a href="https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course">Coding Agent from Scratch</a></h4><p>Decoding AI 出品。Pydantic AI 实现，含 Docker/Modal 沙箱、LSP、子代理、可观测性、Eval harness、用失败轨迹扩充回归集、轨迹回放。每节配文章+视频。</p></div>
+  <div class="card"><div class="role">补充 · 生产化</div><h4><a href="https://github.com/NirDiamant/agents-towards-production">Agents Towards Production</a></h4><p>22k★。工具集成、记忆、部署、多智能体协调、GPU 部署、安全、追踪调试、评估、前端，全部 code-first notebook。</p></div>
+</div>
+<p class="note">英文读者可把主教材换成 <a href="https://github.com/microsoft/ai-agents-for-beginners">Microsoft AI Agents for Beginners</a>（18 课，有视频）+ <a href="https://huggingface.co/learn/agents-course">Hugging Face Agents Course</a>（有认证），但两者深度都不如 Hello-Agents。</p>
+</section>
+
+<section id="path">
+<h2>12 周学习路线 <small>每周约 8–10 小时；有 Python 和 LLM API 基础可压缩到 8 周</small></h2>
+
+<div class="phase">
+  <div class="no">P0<span>第 1 周</span></div>
+  <div>
+    <h3>LLM API 与工具调用基础</h3>
+    <ul>
+      <li><a href="https://github.com/anthropics/courses">Anthropic Courses</a>：<code>anthropic_api_fundamentals</code> → <code>tool_use</code>（工具调用最清楚的入门）</li>
+      <li>Hello-Agents 第 1–3 章：智能体定义、发展史、LLM 基础</li>
+      <li>可选：<a href="https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial">Prompt Engineering 交互教程</a></li>
+    </ul>
+    <div class="goal">✔ 产出：不用任何框架，手写一次“模型 → tool_call → 执行 → 回填结果 → 再调用”的往返。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P1<span>第 2 周</span></div>
+  <div>
+    <h3>Agent 原理与经典范式</h3>
+    <ul>
+      <li>必读：<a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic · Building Effective Agents</a>（workflow 与 agent 的区别、5 种模式）</li>
+      <li>必读：<a href="https://lilianweng.github.io/posts/2023-06-23-agent/">Lilian Weng · LLM Powered Autonomous Agents</a>、<a href="https://arxiv.org/abs/2210.03629">ReAct 论文</a></li>
+      <li>Hello-Agents 第 4 章：手写 ReAct、Plan-and-Solve、Reflection</li>
+      <li>对照：<a href="https://github.com/neural-maze/agentic-patterns-course">agentic-patterns-course</a>（从零实现 Reflection / Tool / Planning / Multi-agent 四种模式）</li>
+      <li>读源码：<a href="https://github.com/SWE-agent/mini-swe-agent">mini-swe-agent</a>（约 100 行能解 GitHub issue 的 agent）</li>
+    </ul>
+    <div class="goal">✔ 产出：自己的 ReAct agent，带 3 个工具，能处理工具报错并重试。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P2<span>第 3–4 周</span></div>
+  <div>
+    <h3>从零手写 Agent Harness（核心阶段）</h3>
+    <ul>
+      <li><a href="https://github.com/shareAI-lab/learn-claude-code">learn-claude-code</a> s01–s17 全部跑一遍并改写：Agent Loop → Tool Use → Permission → Hooks → TodoWrite → Subagent → Skill → Context Compact → Memory → Task System → Background → Cron → Agent Teams → MCP → Integrated Harness → Workflow → Goal Loop</li>
+      <li>配读：<a href="https://www.anthropic.com/engineering/writing-tools-for-agents">Writing effective tools for agents</a>、<a href="https://www.anthropic.com/engineering/claude-code-best-practices">Claude Code best practices</a></li>
+      <li>原则：<a href="https://github.com/humanlayer/12-factor-agents">12-Factor Agents</a>（自己掌控 prompt、上下文窗口和控制流）</li>
+    </ul>
+    <div class="goal">✔ 产出：一个能读写文件、跑 shell、需要确认才执行危险命令、会压缩上下文的命令行 coding agent。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P3<span>第 5–6 周</span></div>
+  <div>
+    <h3>主流框架与 SDK</h3>
+    <ul>
+      <li>Hello-Agents 第 5–7 章：Coze / Dify / n8n 低代码，AutoGen / AgentScope / LangGraph，自研 HelloAgents 框架</li>
+      <li><a href="https://github.com/langchain-ai/langchain-academy">LangChain Academy</a> module 0–6（LangGraph 状态图、持久化、人在回路）</li>
+      <li>选 1–2 个 SDK 深入：<a href="https://openai.github.io/openai-agents-python/">OpenAI Agents SDK</a> · <a href="https://docs.claude.com/en/docs/agent-sdk/overview">Claude Agent SDK</a> · <a href="https://google.github.io/adk-docs/">Google ADK</a> · <a href="https://github.com/pydantic/pydantic-ai">Pydantic AI</a> · <a href="https://github.com/huggingface/smolagents">smolagents</a></li>
+      <li>横向对比：<a href="https://huggingface.co/learn/agents-course">HF Agents Course</a> Unit 2（smolagents / LlamaIndex / LangGraph 同一问题三种写法）</li>
+    </ul>
+    <div class="goal">✔ 产出：把 P2 的 agent 用一个框架重写，写一页笔记对比“框架帮你做了什么、藏了什么”。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P4<span>第 7 周</span></div>
+  <div>
+    <h3>上下文工程、记忆、RAG 与协议</h3>
+    <ul>
+      <li>Hello-Agents 第 8–10 章 + Extra02 上下文工程补充</li>
+      <li><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Anthropic · Effective context engineering for AI agents</a></li>
+      <li>Microsoft 课程第 5、11、12、13 课（Agentic RAG、MCP/A2A/NLWeb、上下文工程、记忆）</li>
+      <li><a href="https://github.com/microsoft/mcp-for-beginners">MCP for Beginners</a> + <a href="https://modelcontextprotocol.io">MCP 规范</a>；<a href="https://a2a-protocol.org">A2A 协议</a></li>
+      <li>记忆系统参考实现：<a href="https://github.com/mem0ai/mem0">mem0</a>、<a href="https://github.com/letta-ai/letta">Letta (MemGPT)</a></li>
+    </ul>
+    <div class="goal">✔ 产出：给自己的 agent 写一个 MCP server，并加跨会话长期记忆。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P5<span>第 8 周</span></div>
+  <div>
+    <h3>多智能体系统</h3>
+    <ul>
+      <li>正反两面一起读：<a href="https://www.anthropic.com/engineering/multi-agent-research-system">Anthropic · How we built our multi-agent research system</a> 与 <a href="https://cognition.ai/blog/dont-build-multi-agents">Cognition · Don't Build Multi-Agents</a></li>
+      <li>Hello-Agents 第 14 章（DeepResearch 复现）、第 15 章（赛博小镇）</li>
+      <li><a href="https://github.com/datawhalechina/handy-multi-agent">handy-multi-agent</a>（基于 CAMEL 的中文多智能体教程）</li>
+      <li>框架：<a href="https://github.com/crewAIInc/crewAI">CrewAI</a>、<a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a>、<a href="https://github.com/openai/swarm">OpenAI Swarm</a>（教学用，看 handoff 设计）</li>
+    </ul>
+    <div class="goal">✔ 产出：orchestrator + 并行子代理的研究型 agent，并测量它比单 agent 多花多少 token、多拿多少分。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P6<span>第 9–10 周</span></div>
+  <div>
+    <h3>评估、可观测性与安全</h3>
+    <ul>
+      <li>Hello-Agents 第 12 章（指标、基准、评估框架）</li>
+      <li>Coding Agent from Scratch 课程第 7–8 篇：benchmark 与回归测试、用失败轨迹扩充回归集、轨迹回放</li>
+      <li>HF Agents Course Bonus Unit 2（追踪与评估）</li>
+      <li>工具：<a href="https://github.com/langfuse/langfuse">Langfuse</a> / <a href="https://github.com/Arize-ai/phoenix">Phoenix</a>（追踪），<a href="https://github.com/UKGovernmentBEIS/inspect_ai">Inspect</a>（评估框架）</li>
+      <li>基准：<a href="https://github.com/SWE-bench/SWE-bench">SWE-bench</a>、<a href="https://github.com/sierra-research/tau2-bench">τ²-bench</a></li>
+      <li>安全：Microsoft 课程第 6、18 课（可信 Agent、Agent 安全）；agents-towards-production 安全章节</li>
+    </ul>
+    <div class="goal">✔ 产出：给自己的 agent 建 30+ 条评估用例，改 prompt 或换模型后能自动出对比报告。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P7<span>第 11 周</span></div>
+  <div>
+    <h3>生产部署</h3>
+    <ul>
+      <li><a href="https://github.com/NirDiamant/agents-towards-production">agents-towards-production</a>：部署、GPU 部署、UI、追踪</li>
+      <li><a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">OpenAI · A Practical Guide to Building Agents</a>（PDF，guardrails 与编排）</li>
+      <li>模板：<a href="https://github.com/GoogleCloudPlatform/agent-starter-pack">Agent Starter Pack</a>（含 CI/CD 与评估）、<a href="https://github.com/anthropics/claude-quickstarts">Claude Quickstarts</a></li>
+      <li>Microsoft 课程第 10、16、17 课（生产、可扩展部署、本地 Agent）</li>
+    </ul>
+    <div class="goal">✔ 产出：agent 以无头服务方式部署，能由 webhook / cron 触发，带追踪和费用监控。</div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="no">P8<span>第 12 周</span></div>
+  <div>
+    <h3>进阶：Agentic RL 与前沿</h3>
+    <ul>
+      <li>Hello-Agents 第 11 章：SFT → GRPO 训练智能体</li>
+      <li><a href="https://github.com/microsoft/agent-lightning">Agent Lightning</a>（用 RL 训练已有 agent）</li>
+      <li>HF Agents Course Bonus Unit 1（微调函数调用模型）</li>
+      <li><a href="https://llmagents-learning.org/f24">UC Berkeley LLM Agents MOOC</a>（讲座覆盖推理、规划、代码 agent、安全）</li>
+      <li>论文索引：<a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">LLM-Agent-Paper-List</a></li>
+    </ul>
+    <div class="goal">✔ 产出：读懂并复现一篇 agent 训练论文的小规模实验。</div>
+  </div>
+</div>
+</section>
+
+<section id=”refs”>
+<h2>参考资料清单 <small>点击按钮筛选类型</small></h2>
+<div class="filters" id="filters">
+  <button class="on" data-f="all">全部</button>
+  <button data-f="官方">官方教程</button>
+  <button data-f="第三方">第三方 / 社区</button>
+  <button data-f="学术">学术</button>
+  <button data-f="AI生成">AI 生成</button>
+  <button data-f="中文">只看中文</button>
+</div>
+<div class="tblwrap">
+<table class="tbl" id="reftbl">
+<thead><tr><th>资料</th><th>类型</th><th class="hide-sm">语言</th><th>★</th><th>说明</th></tr></thead>
+<tbody>
+
+<tr class="cat"><td colspan="5">① 系统课程（主线候选）</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/datawhalechina/hello-agents">datawhalechina/hello-agents</a> <span class="pick">★推荐</span></td><td>第三方</td><td class="hide-sm">中文</td><td class="n">87.0k</td><td>16 章，原理→框架→自研→RL→评估→项目，含面试题</td></tr>
+<tr data-t="官方" data-l="英文/多语"><td><a href="https://github.com/microsoft/ai-agents-for-beginners">microsoft/ai-agents-for-beginners</a></td><td class="t-off">官方</td><td class="hide-sm">多语（含中文）</td><td class="n">79.6k</td><td>18 课 + 视频；设计模式、协议、记忆、CUA、安全；基于 MS Agent Framework</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/huggingface/agents-course">huggingface/agents-course</a></td><td class="t-off">官方</td><td class="hide-sm">英文/多语</td><td class="n">34.9k</td><td>4 单元 + 3 个 Bonus，框架对比、Agentic RAG、评估，可获证书</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/ed-donner/agents">ed-donner/agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">6.6k</td><td>Udemy 课程配套：基础 → OpenAI SDK → CrewAI → LangGraph → AutoGen → MCP</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/langchain-ai/langchain-academy">langchain-ai/langchain-academy</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">3.0k</td><td>LangGraph 入门课 module 0–6，配 <a href="https://academy.langchain.com/courses/intro-to-langgraph">在线视频</a></td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/aws-samples/sample-getting-started-with-strands-agents-course">aws-samples/…strands-agents-course</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">196</td><td>AWS Strands Agents 框架课程</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.kaggle.com/learn-guide/5-day-agents">Google × Kaggle 5-Day AI Agents</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Google 出品的 5 天集训：白皮书 + Codelab，基于 ADK</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.deeplearning.ai/courses/agentic-ai/">DeepLearning.AI · Agentic AI（吴恩达）</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Reflection / Tool use / Planning / Multi-agent 四模式，强调评估与误差分析</td></tr>
+
+<tr class="cat"><td colspan="5">② 从零手写 Agent / Harness</td></tr>
+<tr data-t="第三方" data-l="英文/中文"><td><a href="https://github.com/shareAI-lab/learn-claude-code">shareAI-lab/learn-claude-code</a> <span class="pick">★推荐</span></td><td>第三方</td><td class="hide-sm">英文/中文</td><td class="n">80.4k</td><td>17 课从 agent loop 到完整 harness，最适合理解 Claude Code 类产品</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course">decodingai-magazine/…coding-agent-from-scratch-course</a> <span class="pick">★推荐</span></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">1.2k</td><td>沙箱、LSP、子代理、部署、Eval harness、轨迹回放；文章+视频</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/SWE-agent/mini-swe-agent">SWE-agent/mini-swe-agent</a></td><td>学术团队</td><td class="hide-sm">英文</td><td class="n">9.6k</td><td>约 100 行的 coding agent，最好的“读源码”起点</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/neural-maze/agentic-patterns-course">neural-maze/agentic-patterns-course</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">1.8k</td><td>不用框架实现 4 种 agentic 模式</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/pguso/ai-agents-from-scratch">pguso/ai-agents-from-scratch</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">4.9k</td><td>用本地模型从零构建，不依赖黑盒</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/The-Pocket/PocketFlow">The-Pocket/PocketFlow</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">11.3k</td><td>100 行 LLM 框架，看清框架的最小骨架</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/jiji262/build-code-agent">jiji262/build-code-agent</a></td><td>第三方</td><td class="hide-sm">中文/英文</td><td class="n">645</td><td>从零构建 Code Agent，Claude Code 架构解析</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/liiiiiiiiil/coding-agent-from-scratch">liiiiiiiiil/coding-agent-from-scratch</a></td><td>第三方</td><td class="hide-sm">中文/英文</td><td class="n">102</td><td>纯 Python 逐步搭建编程 agent</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/amitshekhariitbhu/ai-agents-tutorial">amitshekhariitbhu/ai-agents-tutorial</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">212</td><td>function calling → agent loop → 多智能体，逐步讲解</td></tr>
+
+<tr class="cat"><td colspan="5">③ 中文社区教程</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/ranxi2001/zero2Agent">ranxi2001/zero2Agent</a></td><td>第三方</td><td class="hide-sm">中文</td><td class="n">1.1k</td><td>面向 Agent 研发岗求职：技术路线 + 面试八股</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/baby-llm/baby-agent">baby-llm/baby-agent</a></td><td>第三方</td><td class="hide-sm">中文/英文</td><td class="n">498</td><td>面向无 AI 背景后端工程师的零基础教程</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/datawhalechina/handy-multi-agent">datawhalechina/handy-multi-agent</a></td><td>第三方</td><td class="hide-sm">中文</td><td class="n">784</td><td>基于 CAMEL 的多智能体教程</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/datawhalechina/llm-cookbook">datawhalechina/llm-cookbook</a></td><td>第三方</td><td class="hide-sm">中文</td><td class="n">24.9k</td><td>吴恩达大模型系列课中文版，适合补 LLM 应用基础</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/chenmingyong0423/mcp-tutorials">chenmingyong0423/mcp-tutorials</a></td><td>第三方</td><td class="hide-sm">中文</td><td class="n">67</td><td>MCP 中文教程</td></tr>
+
+<tr class="cat"><td colspan="5">④ 官方文档、SDK 与 Cookbook</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/anthropics/courses">anthropics/courses</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">23.1k</td><td>API 基础、提示工程、提示评估、工具调用</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">54.6k</td><td>工具调用、agent 模式、子代理等 notebook</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/anthropics/claude-quickstarts">anthropics/claude-quickstarts</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">20.9k</td><td>可部署的 agent 示例，含 computer use</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://docs.claude.com/en/docs/agent-sdk/overview">Claude Agent SDK</a> · <a href="https://github.com/anthropics/claude-agent-sdk-python">Python</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">8.5k</td><td>Claude Code 同款 harness 作为 SDK</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/openai/openai-agents-python">openai/openai-agents-python</a> · <a href="https://openai.github.io/openai-agents-python/">文档</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">30.7k</td><td>Agents / Handoffs / Guardrails / Tracing；另有 <a href="https://github.com/openai/openai-agents-js">JS 版</a></td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/openai/openai-cookbook">openai/openai-cookbook</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">77.1k</td><td>API 与 agent 示例合集</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/google/adk-python">google/adk-python</a> · <a href="https://google.github.io/adk-docs/">文档</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">22.2k</td><td>Google Agent Development Kit；示例见 <a href="https://github.com/google/adk-recipes">adk-recipes</a></td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/langchain-ai/langgraph">langchain-ai/langgraph</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">45.0k</td><td>状态图式 agent 编排；另见 <a href="https://github.com/langchain-ai/deepagents">deepagents</a>（31.3k）</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/microsoft/agent-framework">microsoft/agent-framework</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">14.7k</td><td>AutoGen 与 Semantic Kernel 的后继框架</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/huggingface/smolagents">huggingface/smolagents</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">30.4k</td><td>Code-agent（用代码作为动作）的极简库</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/pydantic/pydantic-ai">pydantic/pydantic-ai</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">21.2k</td><td>类型安全的 Python agent 框架</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/strands-agents/harness-sdk">strands-agents/harness-sdk</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">9.2k</td><td>AWS 开源的生产级 agent harness SDK</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/mastra-ai/mastra">mastra-ai/mastra</a> · <a href="https://github.com/vercel/ai">vercel/ai</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">29.5k / 27.9k</td><td>TypeScript 栈的首选</td></tr>
+
+<tr class="cat"><td colspan="5">⑤ 协议：MCP / A2A</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://modelcontextprotocol.io">MCP 官方站</a> · <a href="https://github.com/modelcontextprotocol/modelcontextprotocol">规范仓库</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">9.7k</td><td>规范与 SDK 文档</td></tr>
+<tr data-t="官方" data-l="英文/多语"><td><a href="https://github.com/microsoft/mcp-for-beginners">microsoft/mcp-for-beginners</a></td><td class="t-off">官方</td><td class="hide-sm">多语（含中文）</td><td class="n">17.6k</td><td>多语言 SDK 的 MCP 实践课</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://a2a-protocol.org">A2A Protocol</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Agent 间通信协议</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/Tsadoq/a2a-mcp-tutorial">Tsadoq/a2a-mcp-tutorial</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">114</td><td>MCP + A2A 联合使用教程</td></tr>
+
+<tr class="cat"><td colspan="5">⑥ 必读工程文章与指南</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective Agents</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Anthropic；先用简单 workflow，必要时才上 agent</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective Context Engineering for AI Agents</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Anthropic；上下文工程方法论</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.anthropic.com/engineering/writing-tools-for-agents">Writing Effective Tools for Agents</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Anthropic；工具设计与评估</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.anthropic.com/engineering/multi-agent-research-system">How We Built Our Multi-Agent Research System</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Anthropic；多智能体的收益与成本</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://www.anthropic.com/engineering/claude-code-best-practices">Claude Code Best Practices</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Anthropic；agentic coding 实践</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">A Practical Guide to Building Agents (PDF)</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">—</td><td>OpenAI；编排模式与 guardrails</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://cognition.ai/blog/dont-build-multi-agents">Don't Build Multi-Agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">—</td><td>Cognition（Devin）；上下文共享的反面论证</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/humanlayer/12-factor-agents">humanlayer/12-factor-agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">27.2k</td><td>构建可靠 LLM 软件的 12 条原则</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://lilianweng.github.io/posts/2023-06-23-agent/">Lilian Weng · LLM Powered Autonomous Agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">—</td><td>规划 / 记忆 / 工具 三分法的经典综述</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/nibzard/awesome-agentic-patterns">nibzard/awesome-agentic-patterns</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">5.1k</td><td>agentic 模式目录</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/dair-ai/Prompt-Engineering-Guide">dair-ai/Prompt-Engineering-Guide</a></td><td>第三方</td><td class="hide-sm">英文/中文</td><td class="n">80.0k</td><td>提示工程、上下文工程、agent 资料汇总</td></tr>
+
+<tr class="cat"><td colspan="5">⑦ 生产化、评估与可观测性</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/NirDiamant/agents-towards-production">NirDiamant/agents-towards-production</a> <span class="pick">★推荐</span></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">21.9k</td><td>部署、安全、记忆、追踪、评估、前端</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/NirDiamant/GenAI_Agents">NirDiamant/GenAI_Agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">25.0k</td><td>50+ 个 agent 技术 notebook，从简单到复杂</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/GoogleCloudPlatform/agent-starter-pack">GoogleCloudPlatform/agent-starter-pack</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">6.6k</td><td>生产模板：CI/CD、评估、可观测</td></tr>
+<tr data-t="官方" data-l="英文"><td><a href="https://github.com/langfuse/langfuse">langfuse/langfuse</a> · <a href="https://github.com/Arize-ai/phoenix">Arize-ai/phoenix</a></td><td class="t-off">官方</td><td class="hide-sm">英文</td><td class="n">37.4k / 12.3k</td><td>开源追踪与评估平台</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://github.com/UKGovernmentBEIS/inspect_ai">UKGovernmentBEIS/inspect_ai</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">3.2k</td><td>英国 AISI 的 LLM / agent 评估框架</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://github.com/SWE-bench/SWE-bench">SWE-bench</a> · <a href="https://github.com/sierra-research/tau2-bench">τ²-bench</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">6.2k / 2.5k</td><td>coding agent 基准；工具-agent-用户交互基准</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> · <a href="https://github.com/letta-ai/letta">letta-ai/letta</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">69.0k / 25.4k</td><td>agent 记忆层的两种实现思路</td></tr>
+
+<tr class="cat"><td colspan="5">⑧ 示例与项目合集</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">144.6k</td><td>100+ 个 agent / RAG 应用，适合找项目灵感</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/patchy631/ai-engineering-hub">patchy631/ai-engineering-hub</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">41.9k</td><td>LLM、RAG、agent 实战教程</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/ashishpatel26/500-AI-Agents-Projects">ashishpatel26/500-AI-Agents-Projects</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">39.9k</td><td>按行业整理的 agent 用例</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/e2b-dev/awesome-ai-agents">e2b-dev/awesome-ai-agents</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">30.9k</td><td>agent 产品与开源项目清单</td></tr>
+<tr data-t="第三方" data-l="英文"><td><a href="https://github.com/OpenHands/OpenHands">OpenHands/OpenHands</a> · <a href="https://github.com/browser-use/browser-use">browser-use</a></td><td>第三方</td><td class="hide-sm">英文</td><td class="n">93.5k / 121.0k</td><td>值得读源码的生产级 coding agent / 浏览器 agent</td></tr>
+<tr data-t="第三方" data-l="中文"><td><a href="https://github.com/HKUDS/nanobot">HKUDS/nanobot</a></td><td>学术团队</td><td class="hide-sm">英文/中文</td><td class="n">50.1k</td><td>轻量个人 agent，代码量小、适合通读</td></tr>
+
+<tr class="cat"><td colspan="5">⑨ 学术课程与论文</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://llmagents-learning.org/f24">UC Berkeley · LLM Agents MOOC</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">—</td><td>业界与学界讲者的系列讲座</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://arxiv.org/abs/2210.03629">ReAct（Yao et al., 2022）</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">—</td><td>推理与行动交替的奠基论文</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">WooooDyy/LLM-Agent-Paper-List</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">8.3k</td><td>《The Rise and Potential of LLM Based Agents》综述配套论文表</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://github.com/Paitesanshi/LLM-Agent-Survey">Paitesanshi/LLM-Agent-Survey</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">2.9k</td><td>人大 LLM 自主智能体综述</td></tr>
+<tr data-t="学术" data-l="英文"><td><a href="https://github.com/microsoft/agent-lightning">microsoft/agent-lightning</a></td><td>学术</td><td class="hide-sm">英文</td><td class="n">19.0k</td><td>用强化学习训练 agent</td></tr>
+
+<tr class="cat" id="ai-gen-row"><td colspan="5">⑩ AI 生成 / AI 辅助教程</td></tr>
+<tr data-t="AI生成" data-l="英文"><td><a href="https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge">The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge</a></td><td class="t-ai">AI生成</td><td class="hide-sm">英文（可生成中文）</td><td class="n">12.8k</td><td>把任意代码库自动生成新手教程；可用来给 OpenHands、LangGraph 等生成源码导读</td></tr>
+<tr data-t="AI生成" data-l="英文"><td><a href="https://github.com/az9713/codex-cli-tutorial">az9713/codex-cli-tutorial</a></td><td class="t-ai">AI生成</td><td class="hide-sm">英文</td><td class="n">—</td><td>openai/codex 克隆 + 深入的 harness 教程文档</td></tr>
+<tr data-t="AI生成" data-l="中文"><td><a href="https://github.com/ly-wo/ai-agent-course">ly-wo/ai-agent-course</a></td><td class="t-ai">AI生成</td><td class="hide-sm">中文</td><td class="n">1</td><td>作者声明用 Composer 编写的 AI Agent 教程</td></tr>
+<tr data-t="AI生成" data-l="英文"><td><a href="https://github.com/GeneArnold/AI-Agent-Engineering-Course">GeneArnold/AI-Agent-Engineering-Course</a></td><td class="t-ai">AI辅助</td><td class="hide-sm">英文</td><td class="n">13</td><td>设计为配合 Claude Code 学习的从零 agent 课程</td></tr>
+<tr data-t="AI生成" data-l="英文"><td><a href="https://github.com/mgratzer/bloomery">mgratzer/bloomery</a></td><td class="t-ai">AI辅助</td><td class="hide-sm">英文</td><td class="n">30</td><td>一个 Agent Skill：让你的 coding agent 当导师，教你用原始 HTTP 写 coding agent</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="ai-gen">
+<h2>关于 AI 生成的教程</h2>
+<ul class="tight">
+  <li>GitHub 上 2026 年新出现的大量 “agent 教程” 仓库由 AI 批量生成，结构完整但常见问题有：API 已过时、代码跑不通、概念张冠李戴、缺少评估与失败案例。</li>
+  <li>它们最有价值的用法不是当主教材，而是当<strong>源码导读工具</strong>：用 PocketFlow-Tutorial-Codebase-Knowledge 或你自己的 coding agent，对 mini-swe-agent、OpenHands、learn-claude-code 生成导读，再对照源码验证。</li>
+  <li>判断质量的快速方法：看是否有可运行代码和测试、最近是否更新、是否引用一手来源、Issue 区是否有人反馈错误。</li>
+</ul>
+</section>
+
+<footer>
+  检索方式：GitHub 仓库搜索（ai agents tutorial、agents course、agentic ai course、agent 教程、agentic patterns、multi-agent tutorial、coding agent from scratch、agent harness tutorial、context engineering、mcp tutorial 等），并通过 GitHub API 核对仓库存在性、Star 数与最近更新时间；非 GitHub 链接于 2026-11-14 逐一检查可访问。
+</footer>
+</div>
+
+<script>
+  const btns=document.querySelectorAll('#filters button');
+  const rows=[...document.querySelectorAll('#reftbl tbody tr')];
+  btns.forEach(b=>b.addEventListener('click',()=>{
+    btns.forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    const f=b.dataset.f;
+    rows.forEach(r=>{
+      if(r.classList.contains('cat')) return;
+      const show = f==='all' || (f==='中文' ? (r.dataset.l||'').includes('中文') : r.dataset.t===f);
+      r.style.display = show ? '' : 'none';
+    });
+    // hide empty category headers
+    rows.forEach((r,i)=>{
+      if(!r.classList.contains('cat')) return;
+      let j=i+1, any=false;
+      while(j<rows.length && !rows[j].classList.contains('cat')){ if(rows[j].style.display!=='none') any=true; j++; }
+      r.style.display = any ? '' : 'none';
+    });
+  }));
+</script>
+</body>
+</html>
