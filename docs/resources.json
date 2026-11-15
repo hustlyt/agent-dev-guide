@@ -2829,6 +2829,55 @@
    "pushed_at": null,
    "status": "ok",
    "last_checked": null
+  },
+  {
+   "id": "little-book-agent-engineering",
+   "title": "The Little Book of Agent Engineering",
+   "url": "https://drive.google.com/file/d/1vABjKH9Xr7Mmconwkmrptv6relysTubZ/view",
+   "extra_links": [],
+   "category": "articles",
+   "type": "community",
+   "format": "book",
+   "lang": "英文",
+   "github": null,
+   "desc": "157 页 agent 工程教材：循环/工具/上下文/检索/控制/多智能体/安全/评估，附伴侣代码，2026-11-14",
+   "note": "PDF via Google Drive，作者 Gappy + Agents，官方仓库待补充",
+   "pick": false,
+   "added": "2026-11-15",
+   "score": 9,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": null
+  },
+  {
+   "id": "cloudflare-agents",
+   "title": "cloudflare/agents",
+   "url": "https://github.com/cloudflare/agents",
+   "extra_links": [
+    {
+     "label": "快速上手",
+     "url": "https://developers.cloudflare.com/agents/getting-started/quick-start/"
+    },
+    {
+     "label": "官方文档",
+     "url": "https://developers.cloudflare.com/agents/"
+    }
+   ],
+   "category": "production",
+   "type": "official",
+   "format": "repo",
+   "lang": "英文",
+   "github": "cloudflare/agents",
+   "desc": "Cloudflare 官方 AI Agent SDK，每个 agent 是 Durable Object，自带 SQLite 持久化、WebSocket、定时任务；含 Anthropic 五大 patterns（Prompt Chaining / Routing / Parallelization / Orchestrator-Workers / Evaluator-Optimizer）完整实现，30+ 示例",
+   "pick": true,
+   "added": "2026-11-15",
+   "stars": 6000,
+   "pushed_at": "2026-11-15",
+   "status": "ok",
+   "last_checked": "2026-11-15",
+   "note": "生产级 Agent 部署底座；Durable Objects 架构，填补课程 Edge 部署空白",
+   "score": 8
   }
  ]
 }
