@@ -1,156 +1,173 @@
 [
- {
-  "date": "2026-11-15",
-  "summary": "新增 11 条：tools 类 5 条(Smithery/mcp.so/skill-of-skills/awesome-ai-agent-tools/Agentic-Index)；书籍/课程 6 条(ai-agent-book/Agentic-Design-Patterns/claude-code-from-scratch/猫书/ai-system-design-guide/auto-compact-explainer)",
-  "stats": {
-   "候选": 17,
-   "审核": 17,
-   "新增": 11,
-   "移除": 0
+  {
+    "date": "2026-11-15",
+    "summary": "新增 11 条：tools 类 5 条(Smithery/mcp.so/skill-of-skills/awesome-ai-agent-tools/Agentic-Index)；书籍/课程 6 条(ai-agent-book/Agentic-Design-Patterns/claude-code-from-scratch/猫书/ai-system-design-guide/auto-compact-explainer)；The Little Book of Agent Engineering",
+    "stats": {
+      "候选": 18,
+      "审核": 18,
+      "新增": 12,
+      "移除": 0
+    },
+    "added": [
+      "smithery-ai",
+      "mcp-so",
+      "the911fund-skill-of-skills",
+      "tonydzi-awesome-ai-agent-tools",
+      "adrianwedd-agentic-index",
+      "bojieli-ai-agent-book",
+      "evoiz-agentic-design-patterns",
+      "windy3f3f3f3f-claude-code-from-scratch",
+      "ce101-ifuryst-context-engineering",
+      "ombharatiya-ai-system-design-guide",
+      "auto-compact-explainer",
+      "little-book-agent-engineering"
+    ],
+    "changed": [],
+    "removed": [],
+    "guide_changes": []
   },
-  "added": [
-   "smithery-ai",
-   "mcp-so",
-   "the911fund-skill-of-skills",
-   "tonydzi-awesome-ai-agent-tools",
-   "adrianwedd-agentic-index",
-   "bojieli-ai-agent-book",
-   "evoiz-agentic-design-patterns",
-   "windy3f3f3f3f-claude-code-from-scratch",
-   "ce101-ifuryst-context-engineering",
-   "ombharatiya-ai-system-design-guide",
-   "auto-compact-explainer"
-  ],
-  "changed": [],
-  "removed": [],
-  "guide_changes": []
- },
- {
-  "date": "2026-11-15",
-  "summary": "新增「工具与辅助网站」分类，收录 5 个辅助学习 Agent 的工具站",
-  "stats": {
-   "候选": 5,
-   "审核": 5,
-   "新增": 5,
-   "移除": 0
+  {
+    "date": "2026-11-15",
+    "summary": "功能改进：为资料库加入评分系统（★★★/★★☆/★☆☆），新增三级筛选按钮，合并「关于」页，学习路线改为双栏布局",
+    "stats": {
+      "功能": 4
+    },
+    "added": [],
+    "changed": [],
+    "removed": [],
+    "guide_changes": [
+      "资料库：为全部 116 条资料加 1-10 分四维评分（内容质量/来源可信度/维护状态/独特性），显示顶级/推荐/收录三档徽章",
+      "资料库：新增三档筛选按钮（顶级/推荐+/收录+），与分类过滤联动",
+      "导航：毕业项目 + 学习建议合并为「关于」页，页面减少两个，导航更简洁",
+      "学习路线页：改为左侧固定阶段导航 + 右侧内容双栏布局"
+    ]
   },
-  "added": [
-   "hesreallyhim-awesome-claude-code",
-   "aitmpl-claude-code-templates",
-   "phistory-cc",
-   "ccprompt-feitong",
-   "cchistory-mariozechner"
-  ],
-  "changed": [],
-  "removed": [],
-  "guide_changes": []
- },
- {
-  "date": "2026-11-15",
-  "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行；新增 sandbox 专项：DeepLearning.AI coding agent with tool execution 课程、OpenSandbox 自托管平台；新增 bryanyzhu/agentic-ai-system-course（22 章 agent 设计骨架课）",
-  "stats": {
-   "候选": 274,
-   "新增": 38,
-   "调整": 11
+  {
+    "date": "2026-11-15",
+    "summary": "新增「工具与辅助网站」分类，收录 5 个辅助学习 Agent 的工具站",
+    "stats": {
+      "候选": 5,
+      "审核": 5,
+      "新增": 5,
+      "移除": 0
+    },
+    "added": [
+      "hesreallyhim-awesome-claude-code",
+      "aitmpl-claude-code-templates",
+      "phistory-cc",
+      "ccprompt-feitong",
+      "cchistory-mariozechner"
+    ],
+    "changed": [],
+    "removed": [],
+    "guide_changes": []
   },
-  "added": [
-   "anthropic-demystifying-evals",
-   "anthropic-components-of-agent-memory",
-   "anthropic-harness-design-long-running",
-   "anthropic-code-execution-with-mcp",
-   "anthropic-agent-skills",
-   "anthropic-advanced-tool-use",
-   "anthropics-skills",
-   "cognition-multi-agents-working",
-   "dbreunig-state-of-context-engineering",
-   "decodingai-harness-engineering-roadmap",
-   "google-agents-cli-evaluation",
-   "mcp-explained",
-   "phuryn-mini-harness",
-   "undefined-ui-second-brain-os",
-   "adongwanai-agentguide",
-   "wakeup-jin-context-engineering-guide",
-   "nirdiamant-agent-memory-techniques",
-   "giovannipasq-agentic-rag-for-dummies",
-   "voltagent-awesome-ai-agent-papers",
-   "latent-space",
-   "simonwillison-ai-agents",
-   "decodingai-newsletter",
-   "walkinglabs-learn-harness-engineering",
-   "anthropic-academy",
-   "claude-code-large-codebases",
-   "obra-superpowers",
-   "addyosmani-agent-skills",
-   "ihower-harness-engineering",
-   "nano-ai-agent-from-scratch",
-   "claude-tool-use-docs",
-   "langchain-ai-rag-from-scratch",
-   "hamel-evals",
-   "simonwillison-lethal-trifecta",
-   "owasp-agentic-top-10-2026",
-   "temporal-dynamic-ai-agents",
-   "deeplearning-ai-building-coding-agents-tool-execution",
-   "opensandbox-group-opensandbox",
-   "bryanyzhu-agentic-ai-system-course"
-  ],
-  "changed": [
-   {
-    "id": "anthropic-engineering",
-    "title": "Anthropic 工程文章 5 篇",
-    "reason": "URL 从 /engineering/ 迁移到 /research/"
-   },
-   {
-    "id": "claude-code-best-practices",
-    "title": "Claude Code Best Practices",
-    "reason": "迁移到 code.claude.com 文档"
-   },
-   {
-    "id": "claude-agent-sdk",
-    "title": "Claude Agent SDK 文档",
-    "reason": "迁移到 code.claude.com"
-   },
-   {
-    "id": "adk-docs",
-    "title": "Google ADK 文档",
-    "reason": "迁移到 adk.dev"
-   },
-   {
-    "id": "cognition",
-    "title": "Don't Build Multi-Agents",
-    "reason": "域名迁移到 cognition.com"
-   },
-   {
-    "id": "anthropic-com-engineering-claude-code-best-practices",
-    "title": "Claude Code Best Practices",
-    "reason": "补充链接：OpenAI Codex Best practices、AGENTS.md"
-   },
-   {
-    "id": "kaggle-com-learn-guide-5-day-agents",
-    "title": "Google × Kaggle 5-Day AI Agents",
-    "reason": "补充链接：两篇白皮书"
-   }
-  ],
-  "guide_changes": [
-   "学习路线 P5 多智能体：补充 Cognition《Multi-Agents: What's Actually Working》",
-   "学习路线 P6 评估：补充 Anthropic《Demystifying evals for AI agents》",
-   "学习路线 P2 harness：补充 mini-harness 作为第二个可读源码",
-   "网站结构调整：资料库独立成可搜索页面；学习路线拆成总览 + 9 个阶段页；毕业项目、学习建议各自成页",
-   "学习路线各阶段拆成“必做 / 选读”，标明 P0–P2 学完即入门，P8 改为选修",
-   "P0 补官方工具调用文档；P1 补吴恩达 Agentic AI；P2 补 Agent Skills；P3 补 TypeScript 路线",
-   "P4 补 RAG from Scratch 和 Anthropic 记忆文章；P6 补 Hamel 评估方法与 agent 安全（lethal trifecta、OWASP）；P7 补持久化执行",
-   "学习路线 P2 选读：补充 sandbox 执行环境教程（DeepLearning.AI × E2B）和 OpenSandbox 自托管方案"
-  ]
- },
- {
-  "date": "2026-11-14",
-  "initial": true,
-  "summary": "首版发布：推荐主教材 Hello-Agents，12 周学习路线，收录 78 条资料",
-  "stats": {
-   "收录": 78
+  {
+    "date": "2026-11-15",
+    "summary": "改版为网站并开启每周自动更新；新增 35 条（Anthropic 评估/记忆/harness 文章、Cognition 多智能体续篇、教学用 harness、harness 工程课、Anthropic Academy、Skills 设计、中文手写 Agent 课等），新增“博客、Newsletter 与视频”分类；学习路线按必做/选读重排，补上工具调用文档、RAG 基础、评估误差分析、agent 安全和持久化执行；新增 sandbox 专项：DeepLearning.AI coding agent with tool execution 课程、OpenSandbox 自托管平台；新增 bryanyzhu/agentic-ai-system-course（22 章 agent 设计骨架课）",
+    "stats": {
+      "候选": 274,
+      "新增": 38,
+      "调整": 11
+    },
+    "added": [
+      "anthropic-demystifying-evals",
+      "anthropic-components-of-agent-memory",
+      "anthropic-harness-design-long-running",
+      "anthropic-code-execution-with-mcp",
+      "anthropic-agent-skills",
+      "anthropic-advanced-tool-use",
+      "anthropics-skills",
+      "cognition-multi-agents-working",
+      "dbreunig-state-of-context-engineering",
+      "decodingai-harness-engineering-roadmap",
+      "google-agents-cli-evaluation",
+      "mcp-explained",
+      "phuryn-mini-harness",
+      "undefined-ui-second-brain-os",
+      "adongwanai-agentguide",
+      "wakeup-jin-context-engineering-guide",
+      "nirdiamant-agent-memory-techniques",
+      "giovannipasq-agentic-rag-for-dummies",
+      "voltagent-awesome-ai-agent-papers",
+      "latent-space",
+      "simonwillison-ai-agents",
+      "decodingai-newsletter",
+      "walkinglabs-learn-harness-engineering",
+      "anthropic-academy",
+      "claude-code-large-codebases",
+      "obra-superpowers",
+      "addyosmani-agent-skills",
+      "ihower-harness-engineering",
+      "nano-ai-agent-from-scratch",
+      "claude-tool-use-docs",
+      "langchain-ai-rag-from-scratch",
+      "hamel-evals",
+      "simonwillison-lethal-trifecta",
+      "owasp-agentic-top-10-2026",
+      "temporal-dynamic-ai-agents",
+      "deeplearning-ai-building-coding-agents-tool-execution",
+      "opensandbox-group-opensandbox",
+      "bryanyzhu-agentic-ai-system-course"
+    ],
+    "changed": [
+      {
+        "id": "anthropic-engineering",
+        "title": "Anthropic 工程文章 5 篇",
+        "reason": "URL 从 /engineering/ 迁移到 /research/"
+      },
+      {
+        "id": "claude-code-best-practices",
+        "title": "Claude Code Best Practices",
+        "reason": "迁移到 code.claude.com 文档"
+      },
+      {
+        "id": "claude-agent-sdk",
+        "title": "Claude Agent SDK 文档",
+        "reason": "迁移到 code.claude.com"
+      },
+      {
+        "id": "adk-docs",
+        "title": "Google ADK 文档",
+        "reason": "迁移到 adk.dev"
+      },
+      {
+        "id": "cognition",
+        "title": "Don't Build Multi-Agents",
+        "reason": "域名迁移到 cognition.com"
+      },
+      {
+        "id": "anthropic-com-engineering-claude-code-best-practices",
+        "title": "Claude Code Best Practices",
+        "reason": "补充链接：OpenAI Codex Best practices、AGENTS.md"
+      },
+      {
+        "id": "kaggle-com-learn-guide-5-day-agents",
+        "title": "Google × Kaggle 5-Day AI Agents",
+        "reason": "补充链接：两篇白皮书"
+      }
+    ],
+    "guide_changes": [
+      "学习路线 P5 多智能体：补充 Cognition《Multi-Agents: What's Actually Working》",
+      "学习路线 P6 评估：补充 Anthropic《Demystifying evals for AI agents》",
+      "学习路线 P2 harness：补充 mini-harness 作为第二个可读源码",
+      "网站结构调整：资料库独立成可搜索页面；学习路线拆成总览 + 9 个阶段页；毕业项目、学习建议各自成页",
+      "学习路线各阶段拆成“必做 / 选读”，标明 P0–P2 学完即入门，P8 改为选修",
+      "P0 补官方工具调用文档；P1 补吴恩达 Agentic AI；P2 补 Agent Skills；P3 补 TypeScript 路线",
+      "P4 补 RAG from Scratch 和 Anthropic 记忆文章；P6 补 Hamel 评估方法与 agent 安全（lethal trifecta、OWASP）；P7 补持久化执行",
+      "学习路线 P2 选读：补充 sandbox 执行环境教程（DeepLearning.AI × E2B）和 OpenSandbox 自托管方案"
+    ]
   },
-  "added": [],
-  "guide_changes": [
-   "基于 GitHub 关键词检索整理首版教程与资料清单，所有链接已逐一核对"
-  ]
- }
+  {
+    "date": "2026-11-14",
+    "initial": true,
+    "summary": "首版发布：推荐主教材 Hello-Agents，12 周学习路线，收录 78 条资料",
+    "stats": {
+      "收录": 78
+    },
+    "added": [],
+    "guide_changes": [
+      "基于 GitHub 关键词检索整理首版教程与资料清单，所有链接已逐一核对"
+    ]
+  }
 ]
