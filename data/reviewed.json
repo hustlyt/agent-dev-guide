@@ -1942,5 +1942,59 @@
   "decision": "reject",
   "score": 7,
   "reason": "本轮未选入，留待下次评估 production 类空缺时"
+ },
+ "github.com/luongnv89/claude-howto": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 6,
+  "reason": "与 shareai-lab-learn-claude-code 重叠，原理较浅"
+ },
+ "github.com/architecture-decision-record/architecture-decision-record": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 0,
+  "reason": "超出主题范围，ADR 是通用架构文档方法论"
+ },
+ "github.com/bojieli/ai-agent-book": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 10,
+  "reason": "10 章+109 实验系统中文教材，填补教科书空缺"
+ },
+ "github.com/ombharatiya/ai-system-design-guide": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 6,
+  "reason": "用户指定收录；agent 相关章节有参考价值"
+ },
+ "ccunpacked.dev": {
+  "date": "2026-11-15",
+  "decision": "reject",
+  "score": 4,
+  "reason": "单次逆向快照易过时，无可跑代码"
+ },
+ "diwang.info/claude-code-from-scratch": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 8,
+  "reason": "13 章双版本+源码对照+免 key 可跑，收录 GitHub 仓库"
+ },
+ "auto-compact-explainer.pages.dev": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 3,
+  "reason": "用户指定收录"
+ },
+ "github.com/evoiz/agentic-design-patterns": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 9,
+  "reason": "424 页+28 notebook 完整 agentic 模式书"
+ },
+ "ce101.ifuryst.com": {
+  "date": "2026-11-15",
+  "decision": "accept",
+  "score": 7,
+  "reason": "首部中文上下文工程系统教材"
  }
 }

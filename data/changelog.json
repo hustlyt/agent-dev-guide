@@ -1,11 +1,11 @@
 [
  {
   "date": "2026-11-15",
-  "summary": "tools 类补充 5 个：Smithery（MCP 注册表）、mcp.so（MCP 目录）、skill-of-skills（Skills 排名引擎）、awesome-ai-agent-tools（机器可读工具目录）、Agentic-Index（评分排名 agent 工具）",
+  "summary": "新增 11 条：tools 类 5 条(Smithery/mcp.so/skill-of-skills/awesome-ai-agent-tools/Agentic-Index)；书籍/课程 6 条(ai-agent-book/Agentic-Design-Patterns/claude-code-from-scratch/猫书/ai-system-design-guide/auto-compact-explainer)",
   "stats": {
-   "候选": 8,
-   "审核": 8,
-   "新增": 5,
+   "候选": 17,
+   "审核": 17,
+   "新增": 11,
    "移除": 0
   },
   "added": [
@@ -13,7 +13,13 @@
    "mcp-so",
    "the911fund-skill-of-skills",
    "tonydzi-awesome-ai-agent-tools",
-   "adrianwedd-agentic-index"
+   "adrianwedd-agentic-index",
+   "bojieli-ai-agent-book",
+   "evoiz-agentic-design-patterns",
+   "windy3f3f3f3f-claude-code-from-scratch",
+   "ce101-ifuryst-context-engineering",
+   "ombharatiya-ai-system-design-guide",
+   "auto-compact-explainer"
   ],
   "changed": [],
   "removed": [],
