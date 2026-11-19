@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-11-19",
+    "summary": "检查 134 条资料，修订 6 处重定向，新增 3 篇生产实践与 3 篇评估论文。",
+    "stats": {
+      "候选": 49,
+      "审核": 7,
+      "新增": 6,
+      "移除": 0
+    },
+    "added": [
+      "swe-cowork",
+      "webarena-pro",
+      "datatrace",
+      "airbnb-cost-per-task",
+      "gke-agent-session-sizing",
+      "inside-the-codex-sandbox"
+    ],
+    "changed": [
+      {
+        "id": "anthropic-com-engineering-claude-code-best-practices",
+        "title": "Claude Code Best Practices",
+        "reason": "更新迁移后的阅读地址：https://learn.chatgpt.com/guides/best-practices"
+      },
+      {
+        "id": "claude-code-large-codebases",
+        "title": "How Claude Code Works in Large Codebases",
+        "reason": "更新迁移后的阅读地址：https://claude.com/resources/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start"
+      },
+      {
+        "id": "claude-tool-use-docs",
+        "title": "Claude Tool Use 文档",
+        "reason": "更新迁移后的阅读地址：https://developers.openai.com/api/docs/guides/function-calling"
+      },
+      {
+        "id": "temporal-dynamic-ai-agents",
+        "title": "Of course you can build dynamic AI agents with Temporal",
+        "reason": "更新迁移后的阅读地址：https://docs.langchain.com/oss/python/langgraph/persistence"
+      },
+      {
+        "id": "deeplearning-ai-building-coding-agents-tool-execution",
+        "title": "DeepLearning.AI · Building Coding Agents with Tool Execution",
+        "reason": "更新迁移后的阅读地址：https://www.deeplearning.ai/courses/building-coding-agents-with-tool-execution"
+      },
+      {
+        "id": "windy3f3f3f3f-claude-code-from-scratch",
+        "title": "Windy3f3f3f3f/claude-code-from-scratch",
+        "reason": "在线教程和镜像已指向同一网站，合并为一个 HTTPS 入口。"
+      },
+      {
+        "id": "microsoft-agent-framework",
+        "title": "microsoft/agent-framework",
+        "reason": "仓库首次返回 404，补充可访问的 Microsoft Learn 教程入口。"
+      },
+      {
+        "id": "chenmingyong0423-mcp-tutorials",
+        "title": "chenmingyong0423/mcp-tutorials",
+        "reason": "文章涵盖 2025 年的 MCP 协议与 Streamable HTTP；实现时请对照现行规范。"
+      },
+      {
+        "id": "tsadoq-a2a-mcp-tutorial",
+        "title": "Tsadoq/a2a-mcp-tutorial",
+        "reason": "适合参考 MCP 工具与 A2A 协作流程；运行前核对示例依赖与协议版本。"
+      },
+      {
+        "id": "langchain-ai-rag-from-scratch",
+        "title": "langchain-ai/rag-from-scratch",
+        "reason": "适合学习索引、检索与生成原理；运行 notebook 前请核对依赖版本。"
+      },
+      {
+        "id": "cchistory-mariozechner",
+        "title": "cchistory (mariozechner.at)",
+        "reason": "用于比较历史版本；本地提取需要登录 Claude Code，每次版本测试会发送模型请求。"
+      }
+    ],
+    "removed": [],
+    "guide_changes": [
+      "P0、P2、P7 更新函数调用、隔离执行课程、LangGraph 持久化文档的链接。"
+    ]
+  },
+  {
     "date": "2026-11-15",
     "summary": "新增 11 条：tools 类 5 条(Smithery/mcp.so/skill-of-skills/awesome-ai-agent-tools/Agentic-Index)；书籍/课程 6 条(ai-agent-book/Agentic-Design-Patterns/claude-code-from-scratch/猫书/ai-system-design-guide/auto-compact-explainer)；The Little Book of Agent Engineering",
     "stats": {

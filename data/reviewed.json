@@ -2002,5 +2002,47 @@
     "decision": "accept",
     "score": 9,
     "reason": "157 页 agent 工程教材，原理+实践，2026-11-14 新出"
+  },
+  "learn.microsoft.com/en-us/agent-framework/get-started": {
+    "date": "2026-11-19",
+    "decision": "reject",
+    "score": 7,
+    "reason": "七步教程覆盖工具、记忆、工作流和托管，作为已有框架条目的补充链接。"
+  },
+  "arxiv.org/abs/2611.20218": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 9,
+    "reason": "用模拟同事、需求记录和私有测试，分开评估编码 Agent 的需求澄清、实现与交付。"
+  },
+  "arxiv.org/abs/2611.17955": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 8,
+    "reason": "在 20 个自托管应用中用 300 项任务评估浏览器 Agent，覆盖音视频操作与可重复执行。"
+  },
+  "arxiv.org/abs/2611.18926": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 8,
+    "reason": "用受控故障分别评估数据库 Agent 的根因判断与证据路径，识别答对却缺乏依据的诊断。"
+  },
+  "aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 7,
+    "reason": "以 Airbnb 的编码工作为例，讲解如何用每任务成本比较模型，并追踪评测与生产开销的差距。"
+  },
+  "developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 9,
+    "reason": "用编码会话的成本模型估算 GKE 节点池容量，并分析空闲超时、并发上限与资源开销。"
+  },
+  "openai.com/index/inside-the-codex-sandbox": {
+    "date": "2026-11-19",
+    "decision": "accept",
+    "score": 9,
+    "reason": "对照三个操作系统的实现，理解 Codex 如何限制文件和网络访问，并用沙箱运行 MCP 服务。"
   }
 }
