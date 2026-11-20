@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "categories": [
   {
    "id": "courses",
@@ -64,10 +64,10 @@
    "desc": "16 章，原理→框架→自研→RL→评估→项目，含面试题",
    "pick": true,
    "added": "2026-11-14",
-   "stars": 87399,
+   "stars": 87429,
    "pushed_at": "2026-11-13",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -84,10 +84,10 @@
    "desc": "18 课 + 视频；设计模式、协议、记忆、CUA、安全；基于 MS Agent Framework",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 80446,
+   "stars": 80495,
    "pushed_at": "2026-11-17",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -104,10 +104,10 @@
    "desc": "4 单元 + 3 个 Bonus，框架对比、Agentic RAG、评估，可获证书",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 35178,
+   "stars": 35201,
    "pushed_at": "2026-11-17",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -124,10 +124,10 @@
    "desc": "Udemy 课程配套：基础 → OpenAI SDK → CrewAI → LangGraph → AutoGen → MCP",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 6642,
+   "stars": 6645,
    "pushed_at": "2026-11-16",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -144,10 +144,10 @@
    "desc": "LangGraph 入门课 module 0–6，配 [在线视频](https://academy.langchain.com/courses/intro-to-langgraph)",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 3030,
+   "stars": 3031,
    "pushed_at": "2026-06-15",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -167,7 +167,7 @@
    "stars": 196,
    "pushed_at": "2026-06-05",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -196,7 +196,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -216,7 +216,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -233,10 +233,10 @@
    "desc": "17 课从 agent loop 到完整 harness，最适合理解 Claude Code 类产品",
    "pick": true,
    "added": "2026-11-14",
-   "stars": 80638,
+   "stars": 80647,
    "pushed_at": "2026-11-15",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -253,10 +253,10 @@
    "desc": "沙箱、LSP、子代理、部署、Eval harness、轨迹回放；文章+视频",
    "pick": true,
    "added": "2026-11-14",
-   "stars": 1212,
+   "stars": 1216,
    "pushed_at": "2026-10-24",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -273,10 +273,10 @@
    "desc": "约 100 行的 coding agent，最好的“读源码”起点",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 9795,
+   "stars": 9862,
    "pushed_at": "2026-11-16",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -296,7 +296,7 @@
    "stars": 1755,
    "pushed_at": "2025-03-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "evergreen": true,
    "score": 7
@@ -314,10 +314,10 @@
    "desc": "用本地模型从零构建，不依赖黑盒",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 4922,
+   "stars": 4924,
    "pushed_at": "2026-07-24",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -334,10 +334,10 @@
    "desc": "100 行 LLM 框架，看清框架的最小骨架",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 11331,
+   "stars": 11332,
    "pushed_at": "2026-07-26",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -357,7 +357,7 @@
    "stars": 644,
    "pushed_at": "2026-11-17",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -374,10 +374,10 @@
    "desc": "纯 Python 逐步搭建编程 agent",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 103,
+   "stars": 104,
    "pushed_at": "2026-10-08",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -397,7 +397,7 @@
    "stars": 214,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -417,7 +417,7 @@
    "stars": 1122,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -437,7 +437,7 @@
    "stars": 500,
    "pushed_at": "2026-11-02",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -457,7 +457,7 @@
    "stars": 784,
    "pushed_at": "2026-01-16",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -474,10 +474,10 @@
    "desc": "吴恩达大模型系列课中文版，适合补 LLM 应用基础",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 24914,
+   "stars": 24915,
    "pushed_at": "2025-06-12",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "evergreen": true,
    "score": 8
@@ -498,7 +498,7 @@
    "stars": 67,
    "pushed_at": "2025-06-19",
    "status": "stale",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "文章涵盖 2025 年的 MCP 协议与 Streamable HTTP；实现时请对照现行规范。",
    "score": 6
   },
@@ -515,10 +515,10 @@
    "desc": "API 基础、提示工程、提示评估、工具调用",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 23133,
+   "stars": 23134,
    "pushed_at": "2026-08-28",
    "status": "archived",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -535,10 +535,10 @@
    "desc": "工具调用、agent 模式、子代理等 notebook",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 54875,
-   "pushed_at": "2026-11-17",
+   "stars": 54881,
+   "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -558,7 +558,7 @@
    "stars": 21109,
    "pushed_at": "2026-11-06",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -580,10 +580,10 @@
    "desc": "Claude Code 同款 harness 作为 SDK",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 8590,
+   "stars": 8591,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -605,10 +605,10 @@
    "desc": "Agents / Handoffs / Guardrails / Tracing；另有 [JS 版](https://github.com/openai/openai-agents-js)",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 30765,
-   "pushed_at": "2026-11-19",
+   "stars": 30774,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -625,10 +625,10 @@
    "desc": "API 与 agent 示例合集",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 77246,
-   "pushed_at": "2026-11-17",
+   "stars": 77244,
+   "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -650,10 +650,10 @@
    "desc": "Google Agent Development Kit；示例见 [adk-recipes](https://github.com/google/adk-recipes)",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 22271,
-   "pushed_at": "2026-11-19",
+   "stars": 22276,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -670,37 +670,12 @@
    "desc": "状态图式 agent 编排；另见 [deepagents](https://github.com/langchain-ai/deepagents)（31.3k）",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 45155,
-   "pushed_at": "2026-11-19",
+   "stars": 45164,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
-  },
-  {
-   "id": "microsoft-agent-framework",
-   "title": "microsoft/agent-framework",
-   "url": "https://github.com/microsoft/agent-framework",
-   "extra_links": [
-    {
-     "label": "Microsoft Learn 七步入门教程",
-     "url": "https://learn.microsoft.com/en-us/agent-framework/get-started/"
-    }
-   ],
-   "category": "official-sdk",
-   "type": "official",
-   "format": "repo",
-   "lang": "英文",
-   "github": "microsoft/agent-framework",
-   "desc": "AutoGen 与 Semantic Kernel 的后继框架",
-   "pick": false,
-   "added": "2026-11-14",
-   "stars": 14674,
-   "pushed_at": "2026-11-14",
-   "status": "ok",
-   "last_checked": "2026-11-19",
-   "note": "",
-   "score": 7
   },
   {
    "id": "huggingface-smolagents",
@@ -715,10 +690,10 @@
    "desc": "Code-agent（用代码作为动作）的极简库",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 30443,
+   "stars": 30447,
    "pushed_at": "2026-11-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -735,10 +710,10 @@
    "desc": "类型安全的 Python agent 框架",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 21288,
-   "pushed_at": "2026-11-19",
+   "stars": 21294,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -755,10 +730,10 @@
    "desc": "AWS 开源的生产级 agent harness SDK",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 9253,
-   "pushed_at": "2026-11-19",
+   "stars": 9259,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -775,10 +750,10 @@
    "desc": "TypeScript agent 框架，含工作流、记忆、评估",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 29637,
-   "pushed_at": "2026-11-19",
+   "stars": 29668,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -795,10 +770,10 @@
    "desc": "Vercel AI SDK，TypeScript 栈 agent / 流式 UI 首选",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 28081,
-   "pushed_at": "2026-11-19",
+   "stars": 28095,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -820,10 +795,10 @@
    "desc": "规范与 SDK 文档",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 9722,
+   "stars": 9724,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -840,10 +815,10 @@
    "desc": "多语言 SDK 的 MCP 实践课",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 17682,
+   "stars": 17686,
    "pushed_at": "2026-11-13",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -863,7 +838,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -883,7 +858,7 @@
    "stars": 114,
    "pushed_at": "2025-04-29",
    "status": "stale",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "适合参考 MCP 工具与 A2A 协作流程；运行前核对示例依赖与协议版本。",
    "score": 7
   },
@@ -903,7 +878,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -923,7 +898,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -943,7 +918,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -963,7 +938,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -992,7 +967,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1012,7 +987,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1032,7 +1007,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1049,10 +1024,10 @@
    "desc": "构建可靠 LLM 软件的 12 条原则",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 27323,
+   "stars": 27334,
    "pushed_at": "2025-09-21",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "evergreen": true,
    "score": 9
@@ -1073,7 +1048,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -1090,10 +1065,10 @@
    "desc": "agentic 模式目录",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 5084,
+   "stars": 5086,
    "pushed_at": "2026-11-16",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1110,10 +1085,10 @@
    "desc": "提示工程、上下文工程、agent 资料汇总",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 80204,
+   "stars": 80207,
    "pushed_at": "2026-03-11",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1130,10 +1105,10 @@
    "desc": "部署、安全、记忆、追踪、评估、前端",
    "pick": true,
    "added": "2026-11-14",
-   "stars": 21928,
+   "stars": 21931,
    "pushed_at": "2026-11-15",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1150,10 +1125,10 @@
    "desc": "50+ 个 agent 技术 notebook，从简单到复杂",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 25065,
+   "stars": 25073,
    "pushed_at": "2026-11-02",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1170,10 +1145,10 @@
    "desc": "生产模板：CI/CD、评估、可观测",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 6574,
+   "stars": 6573,
    "pushed_at": "2026-11-15",
    "status": "archived",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1190,10 +1165,10 @@
    "desc": "开源 agent 追踪、评估与提示管理平台",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 37622,
-   "pushed_at": "2026-11-19",
+   "stars": 37641,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1210,10 +1185,10 @@
    "desc": "开源 LLM 追踪与评估平台",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 12354,
-   "pushed_at": "2026-11-19",
+   "stars": 12357,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1230,10 +1205,10 @@
    "desc": "英国 AISI 的 LLM / agent 评估框架",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 3287,
-   "pushed_at": "2026-11-19",
+   "stars": 3290,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1253,7 +1228,7 @@
    "stars": 6221,
    "pushed_at": "2026-09-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1270,10 +1245,10 @@
    "desc": "工具-agent-用户交互基准（τ²-bench）",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 2483,
+   "stars": 2486,
    "pushed_at": "2026-11-10",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1290,10 +1265,10 @@
    "desc": "agent 记忆层，即插即用",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 69239,
+   "stars": 69251,
    "pushed_at": "2026-11-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1310,10 +1285,10 @@
    "desc": "Letta（原 MemGPT），有状态 agent 与分层记忆",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 25489,
+   "stars": 25496,
    "pushed_at": "2026-10-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1330,10 +1305,10 @@
    "desc": "100+ 个 agent / RAG 应用，适合找项目灵感",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 145059,
+   "stars": 145089,
    "pushed_at": "2026-11-18",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1350,10 +1325,10 @@
    "desc": "LLM、RAG、agent 实战教程",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 42020,
+   "stars": 42023,
    "pushed_at": "2026-11-01",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1370,10 +1345,10 @@
    "desc": "按行业整理的 agent 用例",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 40103,
+   "stars": 40117,
    "pushed_at": "2026-11-06",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -1390,10 +1365,10 @@
    "desc": "agent 产品与开源项目清单",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 30983,
+   "stars": 30990,
    "pushed_at": "2026-08-21",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1410,10 +1385,10 @@
    "desc": "生产级开源 coding agent，值得读源码",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 93817,
-   "pushed_at": "2026-11-19",
+   "stars": 93857,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1430,10 +1405,10 @@
    "desc": "开源浏览器 agent，值得读源码",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 121476,
+   "stars": 121524,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1450,10 +1425,10 @@
    "desc": "轻量个人 agent，代码量小、适合通读",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 50201,
+   "stars": 50216,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1473,7 +1448,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1493,7 +1468,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 9
   },
@@ -1510,10 +1485,10 @@
    "desc": "《The Rise and Potential of LLM Based Agents》综述配套论文表",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 8266,
+   "stars": 8265,
    "pushed_at": "2025-09-12",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "evergreen": true,
    "score": 8
@@ -1531,10 +1506,10 @@
    "desc": "人大 LLM 自主智能体综述",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 2912,
+   "stars": 2911,
    "pushed_at": "2025-02-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "evergreen": true,
    "score": 7
@@ -1552,10 +1527,10 @@
    "desc": "用强化学习训练 agent",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 18982,
+   "stars": 18983,
    "pushed_at": "2026-11-12",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1572,10 +1547,10 @@
    "desc": "把任意代码库自动生成新手教程；可用来给 OpenHands、LangGraph 等生成源码导读",
    "pick": false,
    "added": "2026-11-14",
-   "stars": 12765,
+   "stars": 12769,
    "pushed_at": "2026-05-31",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 8
   },
@@ -1595,7 +1570,7 @@
    "stars": 0,
    "pushed_at": "2026-10-01",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -1615,7 +1590,7 @@
    "stars": 1,
    "pushed_at": "2026-05-26",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -1635,7 +1610,7 @@
    "stars": 13,
    "pushed_at": "2026-01-07",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 6
   },
@@ -1655,7 +1630,7 @@
    "stars": 30,
    "pushed_at": "2026-02-24",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "",
    "score": 7
   },
@@ -1677,7 +1652,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropic-components-of-agent-memory",
@@ -1697,7 +1672,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropic-harness-design-long-running",
@@ -1717,7 +1692,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropic-code-execution-with-mcp",
@@ -1737,7 +1712,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropic-agent-skills",
@@ -1762,7 +1737,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropic-advanced-tool-use",
@@ -1782,7 +1757,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "anthropics-skills",
@@ -1799,10 +1774,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 8,
-   "stars": 197498,
+   "stars": 197710,
    "pushed_at": "2026-11-16",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "cognition-multi-agents-working",
@@ -1822,7 +1797,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "dbreunig-state-of-context-engineering",
@@ -1842,7 +1817,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "decodingai-harness-engineering-roadmap",
@@ -1862,7 +1837,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "google-agents-cli-evaluation",
@@ -1882,7 +1857,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "mcp-explained",
@@ -1902,7 +1877,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "phuryn-mini-harness",
@@ -1922,7 +1897,7 @@
    "stars": 190,
    "pushed_at": "2026-11-07",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "undefined-ui-second-brain-os",
@@ -1947,7 +1922,7 @@
    "stars": 1588,
    "pushed_at": "2026-11-03",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "adongwanai-agentguide",
@@ -1964,10 +1939,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 8,
-   "stars": 12108,
+   "stars": 12115,
    "pushed_at": "2026-11-05",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "wakeup-jin-context-engineering-guide",
@@ -1987,7 +1962,7 @@
    "stars": 857,
    "pushed_at": "2026-11-01",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "nirdiamant-agent-memory-techniques",
@@ -2004,10 +1979,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 1147,
+   "stars": 1146,
    "pushed_at": "2026-11-01",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "giovannipasq-agentic-rag-for-dummies",
@@ -2024,10 +1999,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 4394,
+   "stars": 4395,
    "pushed_at": "2026-11-10",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "voltagent-awesome-ai-agent-papers",
@@ -2044,10 +2019,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 1911,
+   "stars": 1910,
    "pushed_at": "2026-11-17",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "latent-space",
@@ -2067,7 +2042,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "simonwillison-ai-agents",
@@ -2087,7 +2062,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "decodingai-newsletter",
@@ -2107,7 +2082,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "extra_links": [
@@ -2119,10 +2094,10 @@
    "note": "讲怎么约束 agent，与 learn-claude-code（讲怎么手写 agent）互补",
    "pick": false,
    "added": "2026-11-15",
-   "stars": 25525,
+   "stars": 25580,
    "pushed_at": "2026-11-15",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "walkinglabs-learn-harness-engineering",
    "title": "walkinglabs/learn-harness-engineering",
    "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
@@ -2142,7 +2117,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "anthropic-academy",
    "title": "Anthropic Academy",
    "url": "https://anthropic.skilljar.com/",
@@ -2162,7 +2137,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "claude-code-large-codebases",
    "title": "How Claude Code Works in Large Codebases",
    "url": "https://claude.com/resources/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
@@ -2179,10 +2154,10 @@
    "note": "重点读 writing-skills：先用子代理证明没有技能会失败，再写技能",
    "pick": false,
    "added": "2026-11-15",
-   "stars": 321647,
+   "stars": 322084,
    "pushed_at": "2026-11-03",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "obra-superpowers",
    "title": "obra/superpowers",
    "url": "https://github.com/obra/superpowers",
@@ -2202,7 +2177,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "addyosmani-agent-skills",
    "title": "Addy Osmani · Agent Skills",
    "url": "https://addyosmani.com/blog/agent-skills/",
@@ -2222,7 +2197,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "ihower-harness-engineering",
    "title": "ihower · 給 Agent 開發者的 Harness + Loop Engineering 系列",
    "url": "https://ihower.tw/blog/13721-harness-engineering",
@@ -2258,10 +2233,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 571,
+   "stars": 574,
    "pushed_at": "2026-10-30",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "extra_links": [
@@ -2281,10 +2256,10 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "claude-tool-use-docs",
    "title": "Claude Tool Use 文档",
-   "url": "https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview",
+   "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
    "category": "official-sdk",
    "type": "official",
    "format": "docs",
@@ -2301,7 +2276,7 @@
    "stars": 10133,
    "pushed_at": "2025-06-26",
    "status": "stale",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "langchain-ai-rag-from-scratch",
    "title": "langchain-ai/rag-from-scratch",
    "url": "https://github.com/langchain-ai/rag-from-scratch",
@@ -2326,7 +2301,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "hamel-evals",
    "title": "Hamel Husain · Your AI Product Needs Evals",
    "url": "https://hamel.dev/blog/posts/evals/",
@@ -2346,7 +2321,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "simonwillison-lethal-trifecta",
    "title": "The lethal trifecta for AI agents",
    "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
@@ -2366,7 +2341,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "owasp-agentic-top-10-2026",
    "title": "OWASP Top 10 for Agentic Applications 2026",
    "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
@@ -2391,7 +2366,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "id": "temporal-dynamic-ai-agents",
    "title": "Of course you can build dynamic AI agents with Temporal",
    "url": "https://temporal.io/blog/of-course-you-can-build-dynamic-ai-agents-with-temporal",
@@ -2425,7 +2400,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "opensandbox-group-opensandbox",
@@ -2447,10 +2422,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 17636,
+   "stars": 17666,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "bryanyzhu-agentic-ai-system-course",
@@ -2466,10 +2441,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 788,
+   "stars": 789,
    "pushed_at": "2026-06-22",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": ""
   },
   {
@@ -2486,10 +2461,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 9,
-   "stars": 58346,
-   "pushed_at": "2026-11-19",
+   "stars": 58386,
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": ""
   },
   {
@@ -2514,7 +2489,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": ""
   },
   {
@@ -2536,10 +2511,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 8,
-   "stars": 694,
+   "stars": 695,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": ""
   },
   {
@@ -2564,7 +2539,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": ""
   },
   {
@@ -2590,10 +2565,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 7,
-   "stars": 499,
+   "stars": 500,
    "pushed_at": "2025-10-30",
    "status": "stale",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "用于比较历史版本；本地提取需要登录 Claude Code，每次版本测试会发送模型请求。"
   },
   {
@@ -2614,7 +2589,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "mcp-so",
@@ -2639,7 +2614,7 @@
    "stars": 0,
    "pushed_at": "2026-10-25",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "the911fund-skill-of-skills",
@@ -2657,9 +2632,9 @@
    "added": "2026-11-15",
    "score": 8,
    "stars": 84,
-   "pushed_at": "2026-11-19",
+   "pushed_at": "2026-11-20",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "tonydzi-awesome-ai-agent-tools",
@@ -2679,7 +2654,7 @@
    "stars": 1,
    "pushed_at": "2026-10-20",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "adrianwedd-agentic-index",
@@ -2699,7 +2674,7 @@
    "stars": 4,
    "pushed_at": "2026-07-27",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "bojieli-ai-agent-book",
@@ -2721,10 +2696,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 10,
-   "stars": 58795,
+   "stars": 58830,
    "pushed_at": "2026-10-08",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "evoiz-agentic-design-patterns",
@@ -2741,10 +2716,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 9,
-   "stars": 4155,
+   "stars": 4157,
    "pushed_at": "2026-07-24",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "windy3f3f3f3f-claude-code-from-scratch",
@@ -2769,7 +2744,7 @@
    "stars": 2843,
    "pushed_at": "2026-11-09",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "ce101-ifuryst-context-engineering",
@@ -2789,7 +2764,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "ombharatiya-ai-system-design-guide",
@@ -2806,10 +2781,10 @@
    "pick": false,
    "added": "2026-11-15",
    "score": 6,
-   "stars": 4405,
+   "stars": 4416,
    "pushed_at": "2026-11-10",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "auto-compact-explainer",
@@ -2829,7 +2804,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "little-book-agent-engineering",
@@ -2849,7 +2824,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "cloudflare-agents",
@@ -2873,10 +2848,10 @@
    "desc": "Cloudflare 官方 AI Agent SDK，每个 agent 是 Durable Object，自带 SQLite 持久化、WebSocket、定时任务；含 Anthropic 五大 patterns（Prompt Chaining / Routing / Parallelization / Orchestrator-Workers / Evaluator-Optimizer）完整实现，30+ 示例",
    "pick": true,
    "added": "2026-11-15",
-   "stars": 6006,
+   "stars": 6009,
    "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19",
+   "last_checked": "2026-11-20",
    "note": "生产级 Agent 部署底座；Durable Objects 架构，填补课程 Edge 部署空白",
    "score": 8
   },
@@ -2895,10 +2870,10 @@
    "pick": false,
    "added": "2026-11-19",
    "score": 9,
-   "stars": null,
-   "pushed_at": null,
+   "stars": 15,
+   "pushed_at": "2026-11-19",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "webarena-pro",
@@ -2915,10 +2890,10 @@
    "pick": false,
    "added": "2026-11-19",
    "score": 8,
-   "stars": null,
-   "pushed_at": null,
+   "stars": 15,
+   "pushed_at": "2026-11-18",
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "datatrace",
@@ -2938,7 +2913,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "airbnb-cost-per-task",
@@ -2958,7 +2933,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "gke-agent-session-sizing",
@@ -2978,7 +2953,7 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
   },
   {
    "id": "inside-the-codex-sandbox",
@@ -2998,7 +2973,83 @@
    "stars": null,
    "pushed_at": null,
    "status": "ok",
-   "last_checked": "2026-11-19"
+   "last_checked": "2026-11-20"
+  },
+  {
+   "id": "tunix-multi-turn-grpo",
+   "title": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs",
+   "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+   "extra_links": [],
+   "category": "examples",
+   "type": "official",
+   "format": "article",
+   "lang": "英文",
+   "github": null,
+   "desc": "用游戏练习串起环境、工具调用、对话轨迹和 GRPO 训练，适合动手学习多轮 Agent 强化学习。",
+   "pick": false,
+   "added": "2026-11-20",
+   "score": 9,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": "2026-11-20"
+  },
+  {
+   "id": "agentcore-gateway-skyflow",
+   "title": "Protect agent tool calls with Skyflow and Amazon Bedrock AgentCore Gateway",
+   "url": "https://aws.amazon.com/blogs/machine-learning/protect-agent-tool-calls-with-skyflow-and-amazon-bedrock-agentcore-gateway/",
+   "extra_links": [],
+   "category": "production",
+   "type": "official",
+   "format": "article",
+   "lang": "英文",
+   "github": null,
+   "desc": "演示在工具网关中对敏感数据脱敏，并为获授权的调用方还原数据。",
+   "pick": false,
+   "added": "2026-11-20",
+   "score": 8,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": "2026-11-20"
+  },
+  {
+   "id": "benchmark-factory",
+   "title": "Benchmark Factory: Agentic Benchmark Creation via Dataset Curation and Label-Free Quality Anchors",
+   "url": "https://arxiv.org/abs/2611.18890",
+   "extra_links": [],
+   "category": "academic",
+   "type": "academic",
+   "format": "paper",
+   "lang": "英文",
+   "github": null,
+   "desc": "从真实代码改动生成评测任务，用强弱模型的排序和人工复核检验评分质量。",
+   "pick": false,
+   "added": "2026-11-20",
+   "score": 8,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": "2026-11-20"
+  },
+  {
+   "id": "github-agent-host-protocol",
+   "title": "Building the Agent Host Protocol for sessions that continue across devices",
+   "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+   "extra_links": [],
+   "category": "protocols",
+   "type": "official",
+   "format": "article",
+   "lang": "英文",
+   "github": null,
+   "desc": "用跨设备会话讲解状态同步、断线重连及操作回放，并对照两套独立实现。",
+   "pick": false,
+   "added": "2026-11-20",
+   "score": 9,
+   "stars": null,
+   "pushed_at": null,
+   "status": "ok",
+   "last_checked": "2026-11-20"
   }
  ]
 }

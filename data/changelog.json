@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-11-20",
+    "summary": "检查 140 条资料，新增多轮强化学习、工具脱敏、评测集构建与跨设备会话资料。",
+    "stats": {
+      "候选": 32,
+      "审核": 7,
+      "新增": 4,
+      "移除": 1
+    },
+    "added": [
+      "tunix-multi-turn-grpo",
+      "agentcore-gateway-skyflow",
+      "benchmark-factory",
+      "github-agent-host-protocol"
+    ],
+    "changed": [
+      {
+        "id": "claude-tool-use-docs",
+        "title": "Claude Tool Use 文档",
+        "reason": "更新到 Claude Platform Docs 的同篇文档。"
+      }
+    ],
+    "removed": [
+      {
+        "id": "microsoft-agent-framework",
+        "title": "microsoft/agent-framework",
+        "reason": "连续两次检查失败，复核公开仓库返回 HTTP 404。"
+      }
+    ],
+    "guide_changes": [
+      "P0 更新 Claude 工具调用文档地址。",
+      "P5 将 Microsoft Agent Framework 的失效仓库链接替换为 Microsoft Learn 官方概览。"
+    ]
+  },
+  {
     "date": "2026-11-19",
     "summary": "检查 134 条资料，修订 6 处重定向，新增 3 篇生产实践与 3 篇评估论文。",
     "stats": {

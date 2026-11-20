@@ -2044,5 +2044,47 @@
     "decision": "accept",
     "score": 9,
     "reason": "对照三个操作系统的实现，理解 Codex 如何限制文件和网络访问，并用沙箱运行 MCP 服务。"
+  },
+  "developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus": {
+    "date": "2026-11-20",
+    "score": 9,
+    "reason": "用游戏练习串起环境、工具调用、对话轨迹和 GRPO 训练，适合动手学习多轮 Agent 强化学习。",
+    "decision": "accept"
+  },
+  "aws.amazon.com/blogs/machine-learning/protect-agent-tool-calls-with-skyflow-and-amazon-bedrock-agentcore-gateway": {
+    "date": "2026-11-20",
+    "score": 8,
+    "reason": "演示在工具网关中对敏感数据脱敏，并为获授权的调用方还原数据。",
+    "decision": "accept"
+  },
+  "arxiv.org/abs/2611.18890": {
+    "date": "2026-11-20",
+    "score": 8,
+    "reason": "从真实代码改动生成评测任务，用强弱模型的排序和人工复核检验评分质量。",
+    "decision": "accept"
+  },
+  "github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices": {
+    "date": "2026-11-20",
+    "score": 9,
+    "reason": "用跨设备会话讲解状态同步、断线重连及操作回放，并对照两套独立实现。",
+    "decision": "accept"
+  },
+  "devblogs.microsoft.com/foundry/build-once-reuse-across-your-agent-fleet-tools-and-toolboxes-in-foundry": {
+    "date": "2026-11-20",
+    "score": 6,
+    "reason": "以 Foundry 功能发布为主，入门示例较短。",
+    "decision": "reject"
+  },
+  "devblogs.microsoft.com/foundry/the-foundry-dev-pack-is-here-build-foundry-agents-your-way": {
+    "date": "2026-11-20",
+    "score": 6,
+    "reason": "以 Foundry 功能发布为主，入门示例较短。",
+    "decision": "reject"
+  },
+  "arxiv.org/abs/2611.20045": {
+    "date": "2026-11-20",
+    "score": 6,
+    "reason": "侧重深度研究系统的威胁分类和实验，与当前开发路线的实作目标契合度较低。",
+    "decision": "reject"
   }
 }
